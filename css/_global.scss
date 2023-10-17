@@ -10,17 +10,6 @@ body {
 .relative {
     position: relative;
 }
-.background {
-    background: url('../images/JCD.jpg') center center fixed no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -3;
-    filter: brightness(45%);
-}
 section {
     width: 100vw;
 }
