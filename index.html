@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>JCD BBQ</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span> 
+            <ul class="flex col a-i-c" id="menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="menu.html"><li>Menu</li></a>
+                <a href="tel:+1 503 644 7378"><li>Contact</li></a>
+                <a href="https://www.chownow.com/order/33571/locations/50353" target="_blank"><li id="order-online">Order Online</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background"></div>
+        <div class="relative"></div>
+        <section class="flex col j-c-c" id="first-section">
+            <div class="store-name">
+                <h1 class="orange-font">JCD</h1>
+                <h1>BBQ</h1>   
+                <p>A Grill-iant experience awaits you.</p> 
+            </div>
+            <div class="flex a-s-c" id="store-info">
+                <div class="info flex a-i-c" id="address">
+                    <p id="copyLink">
+                        3482 SW <br>
+                        Cedar Hills Blvd, <br>
+                        Beaverton OR <br>
+                        97005
+                    </p>
+                </div>
+                <div class="info flex col j-c-c" id="open-hours">
+                    <p>
+                        <span class="orange-font">Open</span><br>
+                        4PM - 11:30PM
+                    </p>
+                    <br>
+                    <p>
+                        <span class="orange-font">Closed</span> on <br>
+                        Wednesdays
+                    </p>
+                </div>
+            </div>   
+            <div id="double-down">
+                <img src="/images/double-down.png" alt="Down">
+            </div> 
+        </section>
+        <section class="flex col j-c-sb" id="second-section">
+            <div class="flex col j-c-c" id="first-part">
+                <div>
+                    <div class="store-name">
+                        <h1 class="orange-font">JCD</h1>
+                        <h1>BBQ</h1>    
+                    </div>
+                    <div class="grid j-i-c a-i-c" id="images">
+                        <div class="grid-item" id="grid-1"></div>
+                        <div class="grid-item" id="grid-2"></div>
+                        <div class="grid-item" id="grid-3"></div>
+                        <div class="grid-item" id="grid-4"></div>
+                    </div>    
+                </div>
+                <div id="welcome-message">
+                    <p class="orange-font">
+                        Step into a world of sizzling delights <br>
+                        and embrace the flavors of Korea <br>
+                        at JCD BBQ.
+                    </p>
+                    <hr>
+                    <p class="gray-font">
+                        Our Korean BBQ experience invites you to <br>
+                        take charge of the grill, creating delicious <br>
+                        memories with each perfectly seared bite. 
+                    </p>
+                </div>    
+            </div>
+            <div class="flex col j-c-sb" id="second-part">
+                <div class="flex col a-s-c" id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.7637983105565!2d-122.81200852383432!3d45.49470103140336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950ea324c555b5%3A0x13c832d9a63f1fc1!2s3482%20SW%20Cedar%20Hills%20Blvd%2C%20Beaverton%2C%20OR%2097005!5e0!3m2!1sen!2sus!4v1697327348819!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.app.goo.gl/uwiWTDG2AUU9Umd79" target="_blank">Open location on Google Map</a>
+                </div>
+                <div class="store-name">
+                    <h1 class="orange-font">JCD</h1>
+                    <h1>BBQ</h1>    
+                </div>
+                <div class="relative" style="display: none;"></div>
+                <div id="white-background"></div>
+                <div id="footer">
+                    <p>Copyright &copy; 2023</p>
+                    <p>Web design & developer <a href="https://www.hayeong.website" target="_blank">Hayeong</a></p>
+                    <p>Icons by <a href="https://icons8.com/icons" target="_blank">ICON8</a> & Photos by <a href="https://www.pexels.com/" target="_blank">Pexels</a></p>
+                </div>    
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+    <script>
+        document.getElementById("copyLink").addEventListener("click", function() {
+            // Get the anchor's text content
+            var linkText = this.innerText;
+
+            // Create a temporary input element
+            var inputElement = document.createElement("input");
+            inputElement.value = linkText;
+            document.body.appendChild(inputElement);
+
+            // Select and copy the text from the input element
+            inputElement.select();
+            document.execCommand("copy");
+
+            // Remove the temporary input element
+            document.body.removeChild(inputElement);
+
+            // Provide feedback to the user (optional)
+            alert("Address copied!");
+        });
+    </script>
+</html>
