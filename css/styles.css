@@ -15,7 +15,7 @@ body {
 }
 
 .background {
-  background: url("images/JCD.jpg") center center fixed no-repeat;
+  background: url("../images/JCD.jpg") center center fixed no-repeat;
   background-size: cover;
   position: fixed;
   top: 0;
@@ -271,7 +271,7 @@ body {
   height: 16vh;
 }
 #second-section #first-part #images #grid-1 {
-  background-image: url("images/grill.jpg");
+  background-image: url("../images/grill.jpg");
   background-position: center;
   background-size: cover;
   grid-column: 1;
@@ -279,7 +279,7 @@ body {
   border-radius: 20px 0 0 0;
 }
 #second-section #first-part #images #grid-2 {
-  background-image: url("images/banchan.jpg");
+  background-image: url("../images/banchan.jpg");
   background-position: center;
   background-size: cover;
   grid-column: 1;
@@ -287,7 +287,7 @@ body {
   border-radius: 0 0 0 20px;
 }
 #second-section #first-part #images #grid-3 {
-  background-image: url("images/wrap.jpg");
+  background-image: url("../images/wrap.jpg");
   background-position: center;
   background-size: cover;
   grid-column: 2;
@@ -295,7 +295,7 @@ body {
   border-radius: 0 20px 0 0;
 }
 #second-section #first-part #images #grid-4 {
-  background-image: url("images/kimchistew.jpg");
+  background-image: url("../images/kimchistew.jpg");
   background-position: center;
   background-size: cover;
   grid-column: 2;
