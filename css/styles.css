@@ -174,7 +174,7 @@ header nav input:checked ~ #menu {
 
 #footer {
   background-color: black;
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.75rem 1.75rem 0;
 }
 #footer p {
   text-align: right;
@@ -242,11 +242,18 @@ body {
 #first-section #store-info .info p {
   font-weight: 100;
 }
+#first-section #store-info .info p #holidays {
+  font-size: 0.65rem;
+  color: rgb(190, 190, 190);
+}
 #first-section #store-info #address p {
   line-height: 1.5rem;
 }
 #first-section #store-info #address:hover {
   cursor: pointer;
+}
+#first-section #store-info #open-hours {
+  gap: 0.75rem;
 }
 #first-section #double-down img {
   width: 15vw;
@@ -379,4 +386,65 @@ body {
 }
 #section-menu #footer {
   width: 100vw;
+}
+
+@media screen and (max-width: 375px) {
+  header nav #menu {
+    padding: 2rem 0;
+  }
+  header nav #menu li {
+    padding: 1rem 0;
+    font-size: 1.25rem;
+  }
+  #first-section {
+    gap: 3.5rem;
+  }
+  #first-section .store-name {
+    font-size: 2.75rem;
+    line-height: 3.5rem;
+    padding-top: 2rem;
+  }
+  #first-section .store-name p {
+    font-size: 0.85rem;
+  }
+  #first-section #store-info .info p {
+    font-size: 0.85rem;
+  }
+  #first-section #double-down img {
+    width: 12.5vw;
+  }
+  #second-section #first-part .store-name {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    padding: 1rem 0 2rem 0;
+  }
+  #second-section #first-part #images {
+    gap: 0.75rem;
+  }
+  #second-section #first-part #images .grid-item {
+    width: 30vw;
+  }
+  #second-section #first-part #welcome-message .orange-font {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+  }
+  #second-section #first-part #welcome-message .gray-font {
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    padding: 1rem 0;
+  }
+  #second-section #second-part #map iframe {
+    width: 260px;
+    height: 200px;
+  }
+  #second-section #second-part #map a {
+    font-size: 0.85rem;
+    padding: 0.65rem;
+    border-radius: 10px;
+  }
+  #second-section #second-part .store-name {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

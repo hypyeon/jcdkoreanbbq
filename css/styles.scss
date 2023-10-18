@@ -40,6 +40,10 @@
             padding-left: 1rem;
             p {
                 font-weight: 100;
+                #holidays {
+                    font-size: .65rem;
+                    color: rgb(190, 190, 190);
+                }
             }
         }
         #address {
@@ -49,6 +53,9 @@
         }
         #address:hover {
             cursor: pointer;
+        }
+        #open-hours {
+            gap: .75rem;
         }
     }
     #double-down {
@@ -183,5 +190,86 @@
     }
     #footer {
         width: 100vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        nav {
+            #menu {
+                padding: 2rem 0;
+                li {
+                    padding: 1rem 0;
+                    font-size: 1.25rem;
+                }
+            }        
+        }
+    }
+    #first-section {
+        gap: 3.5rem;
+        .store-name {
+            font-size: 2.75rem;
+            line-height: 3.5rem;
+            padding-top: 2rem;
+            p {
+                font-size: .85rem;
+            }
+        }
+        #store-info {
+            .info {
+                p {
+                    font-size: .85rem;
+                }
+            }
+        }
+        #double-down {
+            img {
+                width: 12.5vw;
+            }
+        }
+    }
+    #second-section {
+        #first-part {
+            .store-name {
+                font-size: 1.75rem;
+                line-height: 2.5rem;
+                padding: 1rem 0 2rem 0;
+            }
+            #images {
+                gap: .75rem;
+                .grid-item {
+                    width: 30vw;
+                }
+            }
+            #welcome-message {
+                .orange-font {
+                    font-size: .9rem;
+                    line-height: 1.5rem;
+                    padding: 1rem 0;
+                }
+                .gray-font {
+                    font-size: .8rem;
+                    line-height: 1.25rem;
+                    padding: 1rem 0;
+                }
+            }
+        }
+        #second-part {
+            #map {
+                iframe {
+                    width: 260px;
+                    height: 200px;
+                }
+                a {
+                    font-size: .85rem;
+                    padding: .65rem;
+                    border-radius: 10px;
+                }
+            }
+            .store-name {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        }
     }
 }
