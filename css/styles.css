@@ -85,7 +85,7 @@ header {
   top: 0;
   z-index: 100;
 }
-header nav {
+header #nav-portrait {
   display: block;
   position: relative;
   top: calc((8vh - 24px) / 2);
@@ -95,7 +95,7 @@ header nav {
   -moz-user-select: none;
        user-select: none;
 }
-header nav input {
+header #nav-portrait input {
   width: 40px;
   height: 32px;
   position: absolute;
@@ -105,7 +105,7 @@ header nav input {
   z-index: 2; /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
-header nav span {
+header #nav-portrait span {
   display: block;
   width: 33px;
   height: 4px;
@@ -117,24 +117,24 @@ header nav span {
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
-header nav span:first-child {
+header #nav-portrait span:first-child {
   transform-origin: 0% 0%;
 }
-header nav span:nth-last-child(2) {
+header #nav-portrait span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
-header nav input:checked ~ span {
+header #nav-portrait input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
 }
-header nav input:checked ~ span:nth-last-child(3) {
+header #nav-portrait input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-header nav input:checked ~ span:nth-last-child(2) {
+header #nav-portrait input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
-header nav #menu {
+header #nav-portrait #menu {
   position: absolute;
   top: calc(8vh - (8vh - 24px) / 2);
   left: calc(56px - 100vw);
@@ -150,7 +150,7 @@ header nav #menu {
   transform: scale(0);
   border-bottom: 0.5px solid black;
 }
-header nav #menu li {
+header #nav-portrait #menu li {
   padding: 1.25rem 0;
   font-size: 1.55rem;
   color: black;
@@ -159,7 +159,7 @@ header nav #menu li {
   width: fit-content;
   letter-spacing: 1px;
 }
-header nav #menu #order-online {
+header #nav-portrait #menu #order-online {
   color: white;
   background-color: rgb(255, 140, 0);
   margin-top: 0.75rem;
@@ -167,9 +167,12 @@ header nav #menu #order-online {
   border-radius: 10px;
   letter-spacing: 0;
 }
-header nav input:checked ~ #menu {
+header #nav-portrait input:checked ~ #menu {
   opacity: 1;
   transform: scale(1);
+}
+header #nav-landscape {
+  display: none;
 }
 
 #footer {
@@ -238,9 +241,6 @@ body {
   height: 20vh;
   width: 38vw;
   padding-left: 1rem;
-}
-#first-section #store-info .info p {
-  font-weight: 100;
 }
 #first-section #store-info .info p #holidays {
   font-size: 0.65rem;
@@ -315,6 +315,9 @@ body {
 #second-section #first-part #welcome-message {
   position: relative;
 }
+#second-section #first-part #welcome-message #yes-break {
+  display: none;
+}
 #second-section #first-part #welcome-message .orange-font {
   padding: 1.5rem 0;
   font-size: 1.15rem;
@@ -349,6 +352,9 @@ body {
   background-color: rgb(255, 140, 0);
   padding: 0.75rem;
   border-radius: 15px;
+}
+#second-section #second-part #map #landscape-only {
+  display: none;
 }
 #second-section #second-part .store-name {
   font-size: 2rem;
@@ -446,5 +452,263 @@ body {
   #second-section #second-part .store-name {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  header nav #menu {
+    padding: 2rem 0;
+  }
+  header nav #menu li {
+    padding: 1rem 0;
+    font-size: 1.25rem;
+  }
+  #first-section {
+    gap: 3.75rem;
+  }
+  #first-section .store-name {
+    padding-top: 2rem;
+  }
+  #first-section #double-down img {
+    width: 10vw;
+  }
+  #second-section #first-part .store-name {
+    padding: 1rem 0 2.5rem 0;
+  }
+  #second-section #first-part #images {
+    gap: 0.8rem;
+  }
+  #second-section #first-part #images .grid-item {
+    width: 28vw;
+  }
+  #second-section #first-part #welcome-message .orange-font {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding: 1.25rem 0;
+  }
+  #second-section #first-part #welcome-message .gray-font {
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    padding: 1rem 0;
+  }
+  #second-section #second-part #map iframe {
+    width: 360px;
+    height: 220px;
+  }
+  #second-section #second-part #map a {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    padding: 0.65rem;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 912px) {
+  #first-section {
+    gap: 4.5rem;
+  }
+  #first-section .store-name {
+    padding-top: 2rem;
+  }
+  #first-section #store-info {
+    gap: 2rem;
+  }
+  #first-section #store-info .info {
+    width: 30vw;
+    padding-left: 2rem;
+  }
+  #first-section #store-info .info p {
+    font-size: 1.25rem;
+  }
+  #first-section #store-info .info p #holidays {
+    font-size: 0.75rem;
+    line-height: 0.5rem;
+  }
+  #first-section #store-info #address p {
+    line-height: 2.25rem;
+  }
+  #first-section #store-info #open-hours {
+    gap: 1.25rem;
+  }
+  #first-section #store-info #open-hours p {
+    line-height: 1.65rem;
+  }
+  #first-section #double-down {
+    padding-top: 4rem;
+  }
+  #first-section #double-down img {
+    width: 10vw;
+  }
+  #second-section #first-part {
+    height: 92vh;
+  }
+  #second-section #first-part #images {
+    gap: 1.25rem;
+  }
+  #second-section #first-part #images .grid-item {
+    width: 22vw;
+  }
+  #second-section #first-part #welcome-message .gray-font {
+    padding: 1.5rem 0 0 0;
+  }
+  #second-section #second-part #map iframe {
+    width: 65vw;
+    height: 360px;
+  }
+}
+@media screen and (orientation: landscape) {
+  header {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header #nav-portrait {
+    display: none;
+  }
+  header #nav-landscape {
+    display: block;
+  }
+  header #nav-landscape #menu-landscape a {
+    display: inline-block;
+  }
+  header #nav-landscape #menu-landscape a li {
+    list-style-type: none;
+    width: 15vw;
+    font-size: 1.15rem;
+    color: rgb(50, 50, 50);
+  }
+  header #nav-landscape #menu-landscape a #order-online {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.35rem 1.75rem;
+    border-radius: 12px;
+    background-color: rgb(255, 140, 0);
+    color: white;
+    margin-left: 3rem;
+  }
+  header #nav-landscape #menu-landscape a li:hover {
+    color: rgb(255, 140, 0);
+    font-weight: 600;
+    text-shadow: 1.5px 1.5px 4px rgb(255, 255, 255);
+  }
+  header #nav-landscape #menu-landscape a #order-online:hover {
+    font-weight: 400;
+    text-shadow: none;
+    background-color: black;
+    color: rgb(255, 140, 0);
+  }
+  #first-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0;
+    width: 74vw;
+    margin: 8vh auto 0 auto;
+  }
+  #first-section .store-name {
+    padding-top: 0;
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  #first-section #store-info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  #first-section #store-info .info {
+    width: 16vw;
+    height: 24vh;
+    padding-left: 3rem;
+  }
+  #first-section #store-info #address p {
+    line-height: 2rem;
+  }
+  #first-section #double-down {
+    display: none;
+  }
+  #second-section #first-part {
+    gap: 1.75rem;
+  }
+  #second-section #first-part .store-name {
+    padding: 1rem 0 3rem 0;
+  }
+  #second-section #first-part #images .grid-item {
+    width: 16vw;
+  }
+  #second-section #first-part #images #grid-1 {
+    border-radius: 20px 0 0 20px;
+  }
+  #second-section #first-part #images #grid-2 {
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 0;
+  }
+  #second-section #first-part #images #grid-3 {
+    grid-column: 3;
+    grid-row: 1;
+    border-radius: 0;
+  }
+  #second-section #first-part #images #grid-4 {
+    grid-column: 4;
+    grid-row: 1;
+    border-radius: 0 20px 20px 0;
+  }
+  #second-section #first-part #welcome-message #no-break {
+    display: none;
+  }
+  #second-section #first-part #welcome-message #yes-break {
+    display: block;
+  }
+  #second-section #first-part #welcome-message .orange-font {
+    line-height: 1.5rem;
+  }
+  #second-section #second-part #map {
+    padding: 2rem;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+  }
+  #second-section #second-part #map iframe {
+    width: 42vw;
+    height: 260px;
+  }
+  #second-section #second-part #map a {
+    display: none;
+  }
+  #second-section #second-part #map #landscape-only {
+    display: flex;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 1rem 2rem;
+  }
+  #second-section #second-part #map #landscape-only #days {
+    text-align: center;
+    color: black;
+  }
+  #second-section #second-part #map #landscape-only #days #blue {
+    color: rgb(50, 50, 255);
+  }
+  #second-section #second-part #map #landscape-only #days #red {
+    color: rgb(255, 30, 30);
+  }
+  #second-section #second-part #map #landscape-only p {
+    line-height: 2rem;
+    color: white;
+    text-align: left;
+  }
+  #second-section #second-part #map #landscape-only p #italic {
+    font-style: italic;
+  }
+  #second-section #second-part .store-name {
+    padding-top: 6rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  #second-section #second-part #white-background {
+    height: 120vh;
+    top: 148vh;
+  }
+  #second-section #second-part #footer {
+    padding: 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -8,12 +8,20 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="nav-portrait">
             <input type="checkbox" />
             <span></span>
             <span></span>
             <span></span> 
             <ul class="flex col a-i-c" id="menu">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./menu.html"><li>Menu</li></a>
+                <a href="tel:+1 503 644 7378"><li>Contact</li></a>
+                <a href="https://www.chownow.com/order/33571/locations/50353" target="_blank"><li id="order-online">Order Online</li></a>
+            </ul>
+        </nav>
+        <nav id="nav-landscape">
+            <ul class="" id="menu-landscape">
                 <a href="./index.html"><li>Home</li></a>
                 <a href="./menu.html"><li>Menu</li></a>
                 <a href="tel:+1 503 644 7378"><li>Contact</li></a>
@@ -72,13 +80,13 @@
                 <div id="welcome-message">
                     <p class="orange-font">
                         Step into a world of sizzling delights <br>
-                        and embrace the flavors of Korea <br>
+                        and embrace the flavors of Korea <br id="no-break">
                         at JCD BBQ.
                     </p>
                     <hr>
                     <p class="gray-font">
-                        Our Korean BBQ experience invites you to <br>
-                        take charge of the grill, creating delicious <br>
+                        Our Korean BBQ experience invites you to <br id="no-break">
+                        take charge of the grill, <br id="yes-break"> creating delicious <br id="no-break">
                         memories with each perfectly seared bite. 
                     </p>
                 </div>    
@@ -87,6 +95,26 @@
                 <div class="flex col a-s-c" id="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.7637983105565!2d-122.81200852383432!3d45.49470103140336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950ea324c555b5%3A0x13c832d9a63f1fc1!2s3482%20SW%20Cedar%20Hills%20Blvd%2C%20Beaverton%2C%20OR%2097005!5e0!3m2!1sen!2sus!4v1697327348819!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <a href="https://maps.app.goo.gl/uwiWTDG2AUU9Umd79" target="_blank">Open location on Google Map</a>
+                    <div id="landscape-only">
+                        <p id="days">
+                            Mon <br>
+                            Tue <br>
+                            Wed <br>
+                            Thu <br>
+                            Fri <br>
+                            <span id="blue">Sat</span> <br>
+                            <span id="red">Sun</span>
+                        </p>
+                        <p>
+                            4PM - 11:30PM <br>
+                            4PM - 11:30PM <br>
+                            <span id="italic">CLOSED</span> <br>
+                            4PM - 11:30PM <br>
+                            4PM - 11:30PM <br>
+                            4PM - 11:30PM <br>
+                            4PM - 11:30PM 
+                        </p>
+                    </div>
                 </div>
                 <div class="store-name">
                     <h1 class="orange-font">JCD</h1>
