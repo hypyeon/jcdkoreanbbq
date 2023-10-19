@@ -454,7 +454,7 @@ body {
     line-height: 2rem;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (min-width: 540px) {
   header nav #menu {
     padding: 2rem 0;
   }
@@ -501,7 +501,7 @@ body {
     border-radius: 10px;
   }
 }
-@media screen and (max-width: 912px) {
+@media screen and (min-width: 912px) {
   #first-section {
     gap: 4.5rem;
   }
