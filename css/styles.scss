@@ -19,8 +19,8 @@
     gap: 4.5rem;
     scroll-snap-align: center; 
     .store-name {
-        font-size: 3.5rem;
-        line-height: 4.5rem;
+        font-size: 3rem;
+        line-height: 4rem;
         padding-top: calc(4rem + 8vh);
         p {
             color: rgba(245, 245, 245, 0.75);
@@ -79,8 +79,8 @@
             width: fit-content;
             margin: 0 auto;
             .grid-item {
-                width: 36vw;
-                height: 16vh;
+                width: 34vw;
+                height: 14vh;
             }
             #grid-1 {
                 background-image: url('../images/grill.jpg');
