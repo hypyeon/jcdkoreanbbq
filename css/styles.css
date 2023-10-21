@@ -228,7 +228,7 @@ body {
 
 #first-section {
   gap: 4.5rem;
-  scroll-snap-align: end;
+  scroll-snap-align: center;
 }
 #first-section .store-name {
   font-size: 3.5rem;
@@ -275,7 +275,7 @@ body {
 }
 #second-section #first-part {
   gap: 1rem;
-  scroll-snap-align: end;
+  scroll-snap-align: center;
 }
 #second-section #first-part .store-name {
   padding: 2rem 0 3rem 0;
@@ -350,7 +350,7 @@ body {
 #second-section #second-part {
   margin-top: 8vh;
   height: 92vh;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 #second-section #second-part a {
   color: white;

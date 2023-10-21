@@ -17,7 +17,7 @@
 }
 #first-section {
     gap: 4.5rem;
-    scroll-snap-align: end; 
+    scroll-snap-align: center; 
     .store-name {
         font-size: 3.5rem;
         line-height: 4.5rem;
@@ -68,7 +68,7 @@
     height: 200vh;
     #first-part {
         gap: 1rem;
-        scroll-snap-align: end; 
+        scroll-snap-align: center; 
         .store-name {
             padding: 2rem 0 3rem 0;
             font-size: 2rem;
@@ -143,7 +143,7 @@
     #second-part {
         margin-top: 8vh;
         height: 92vh;
-        scroll-snap-align: start; 
+        scroll-snap-align: center; 
         a {
             color: white;
         }
