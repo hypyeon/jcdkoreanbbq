@@ -17,6 +17,7 @@
 }
 #first-section {
     gap: 6rem;
+    scroll-snap-align: center; 
     .store-name {
         font-size: 3.5rem;
         line-height: 4.5rem;
@@ -67,6 +68,7 @@
     height: 200vh;
     #first-part {
         gap: 1rem;
+        scroll-snap-align: center; 
         .store-name {
             padding: 2rem 0 3rem 0;
             font-size: 2rem;
@@ -141,6 +143,10 @@
     #second-part {
         margin-top: 8vh;
         height: 92vh;
+        scroll-snap-align: center; 
+        a {
+            color: white;
+        }
         #map {
             padding: 3rem 0;
             iframe {
@@ -609,7 +615,7 @@
         }
     }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     #first-section {
         #store-info {
             .info {

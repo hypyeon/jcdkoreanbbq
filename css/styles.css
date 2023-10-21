@@ -227,6 +227,7 @@ body {
 
 #first-section {
   gap: 6rem;
+  scroll-snap-align: center;
 }
 #first-section .store-name {
   font-size: 3.5rem;
@@ -273,6 +274,7 @@ body {
 }
 #second-section #first-part {
   gap: 1rem;
+  scroll-snap-align: center;
 }
 #second-section #first-part .store-name {
   padding: 2rem 0 3rem 0;
@@ -347,6 +349,10 @@ body {
 #second-section #second-part {
   margin-top: 8vh;
   height: 92vh;
+  scroll-snap-align: center;
+}
+#second-section #second-part a {
+  color: white;
 }
 #second-section #second-part #map {
   padding: 3rem 0;
@@ -764,7 +770,7 @@ body {
     line-height: 1.25rem;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   #first-section #store-info .info {
     width: 18vw;
     height: 26vh;
