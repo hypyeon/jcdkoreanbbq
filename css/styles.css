@@ -27,8 +27,7 @@ section {
 }
 
 #first-section, #first-part, #second-part {
-  height: 92vh;
-  margin-top: 8vh;
+  height: 100vh;
 }
 
 .flex {
@@ -234,7 +233,7 @@ body {
 #first-section .store-name {
   font-size: 3.5rem;
   line-height: 4.5rem;
-  padding-top: 4rem;
+  padding-top: calc(4rem + 8vh);
 }
 #first-section .store-name p {
   color: rgba(245, 245, 245, 0.75);
@@ -271,15 +270,13 @@ body {
   width: 15vw;
 }
 
-#second-section {
-  height: 200vh;
-}
 #second-section #first-part {
   gap: 1rem;
+  height: 100vh;
   scroll-snap-align: center;
 }
 #second-section #first-part .store-name {
-  padding: 2rem 0 3rem 0;
+  padding: calc(2rem + 8vh) 0 3rem 0;
   font-size: 2rem;
   line-height: 2.75rem;
 }
@@ -349,15 +346,14 @@ body {
   line-height: 1.5rem;
 }
 #second-section #second-part {
-  margin-top: 8vh;
-  height: 92vh;
+  height: 100vh;
   scroll-snap-align: center;
 }
 #second-section #second-part a {
   color: white;
 }
 #second-section #second-part #map {
-  padding: 3rem 0;
+  padding: calc(3rem + 8vh) 0 3rem 0;
 }
 #second-section #second-part #map iframe {
   width: 280px;

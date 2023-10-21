@@ -21,7 +21,7 @@
     .store-name {
         font-size: 3.5rem;
         line-height: 4.5rem;
-        padding-top: 4rem;
+        padding-top: calc(4rem + 8vh);
         p {
             color: rgba(245, 245, 245, 0.75);
             font-size: 1rem;
@@ -65,12 +65,12 @@
     }
 }
 #second-section {
-    height: 200vh;
     #first-part {
         gap: 1rem;
+        height: 100vh;
         scroll-snap-align: center; 
         .store-name {
-            padding: 2rem 0 3rem 0;
+            padding: calc(2rem + 8vh) 0 3rem 0;
             font-size: 2rem;
             line-height: 2.75rem;
         }
@@ -141,14 +141,13 @@
     
     }
     #second-part {
-        margin-top: 8vh;
-        height: 92vh;
+        height: 100vh;
         scroll-snap-align: center; 
         a {
             color: white;
         }
         #map {
-            padding: 3rem 0;
+            padding: calc(3rem + 8vh) 0 3rem 0;
             iframe {
                 width: 280px;
                 height: 280px;
@@ -682,7 +681,6 @@
         }
     }
 }
-
 @media screen and (min-width: 1280px) {
     #first-section {
         .store-name {
