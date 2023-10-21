@@ -73,7 +73,6 @@ h1, p {
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 header {
@@ -185,6 +184,9 @@ header #nav-landscape {
   font-size: 0.75rem;
   line-height: 1.25rem;
   letter-spacing: 0.15px;
+}
+#footer p a {
+  color: darkgrey;
 }
 
 h1 {
@@ -603,6 +605,7 @@ body {
     justify-content: space-around;
     gap: 0;
     width: 74vw;
+    height: 84vh;
     margin: 8vh auto 0 auto;
   }
   #first-section .store-name {
@@ -617,7 +620,7 @@ body {
   #first-section #store-info .info {
     width: 16vw;
     height: 24vh;
-    padding-left: 3rem;
+    padding-left: 2.5rem;
   }
   #first-section #store-info #address p {
     line-height: 2rem;
@@ -625,11 +628,21 @@ body {
   #first-section #double-down {
     display: none;
   }
+  #second-section {
+    height: 108vh;
+    width: 80vw;
+    margin: auto;
+    background-color: white;
+    border-radius: 30px 30px 0 0;
+    align-items: center;
+  }
   #second-section #first-part {
-    gap: 1.75rem;
+    gap: 0;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   #second-section #first-part .store-name {
-    padding: 1rem 0 3rem 0;
+    display: none;
   }
   #second-section #first-part #images .grid-item {
     width: 16vw;
@@ -652,14 +665,35 @@ body {
     grid-row: 1;
     border-radius: 0 20px 20px 0;
   }
-  #second-section #first-part #welcome-message #no-break {
+  #second-section #first-part #welcome-message {
+    padding: 2rem 0;
+  }
+  #second-section #first-part #welcome-message #no-break, #second-section #first-part #welcome-message br {
     display: none;
   }
   #second-section #first-part #welcome-message #yes-break {
     display: block;
   }
   #second-section #first-part #welcome-message .orange-font {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 0;
+  }
+  #second-section #first-part #welcome-message hr {
+    display: none;
+  }
+  #second-section #first-part #welcome-message .gray-font {
+    font-size: 1rem;
     line-height: 1.5rem;
+    padding: 0.5rem;
+  }
+  #second-section #first-part #welcome-message .gray-font br {
+    display: none;
+  }
+  #second-section #second-part {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 0;
   }
   #second-section #second-part #map {
     padding: 2rem;
@@ -670,6 +704,7 @@ body {
   #second-section #second-part #map iframe {
     width: 42vw;
     height: 260px;
+    border-right: 1px solid black;
   }
   #second-section #second-part #map a {
     display: none;
@@ -677,38 +712,42 @@ body {
   #second-section #second-part #map #landscape-only {
     display: flex;
     gap: 2rem;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
     padding: 1rem 2rem;
   }
   #second-section #second-part #map #landscape-only #days {
     text-align: center;
-    color: black;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
   }
   #second-section #second-part #map #landscape-only #days #blue {
     color: rgb(50, 50, 255);
   }
   #second-section #second-part #map #landscape-only #days #red {
-    color: rgb(255, 30, 30);
+    color: rgb(255, 35, 35);
   }
   #second-section #second-part #map #landscape-only p {
     line-height: 2rem;
-    color: white;
+    color: rgb(105, 105, 105);
     text-align: left;
   }
   #second-section #second-part #map #landscape-only p #italic {
     font-style: italic;
   }
   #second-section #second-part .store-name {
-    padding-top: 6rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    display: none;
   }
   #second-section #second-part #white-background {
-    height: 120vh;
-    top: 148vh;
+    display: none;
   }
   #second-section #second-part #footer {
-    padding: 1rem;
+    width: 100vw;
+    padding: 2rem;
+  }
+  #second-section #second-part #footer .white-font {
+    color: white;
+  }
+  #second-section #second-part #footer p {
+    font-size: 0.85rem;
+    line-height: 1.25rem;
   }
 }/*# sourceMappingURL=styles.css.map */
