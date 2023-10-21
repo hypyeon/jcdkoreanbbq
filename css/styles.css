@@ -10,6 +10,7 @@ html {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
   overflow-y: scroll;
+  height: 100%;
 }
 
 body {
@@ -596,7 +597,7 @@ body {
   #header-landscape #nav-landscape #menu-landscape a li {
     list-style-type: none;
     width: 15vw;
-    font-size: 1.35rem;
+    font-size: 1.45rem;
     color: rgb(50, 50, 50);
   }
   #header-landscape #nav-landscape #menu-landscape a #order-online {
@@ -729,6 +730,7 @@ body {
   #second-section #second-part #map iframe {
     width: 38vw;
     height: 220px;
+    border: none;
   }
   #second-section #second-part #map a {
     display: none;
@@ -777,6 +779,9 @@ body {
   }
 }
 @media screen and (width: 1024px) {
+  #header-landscape #nav-landscape #menu-landscape a li {
+    font-size: 1.15rem;
+  }
   #first-section #store-info .info {
     width: 18vw;
     height: 26vh;
@@ -810,5 +815,28 @@ body {
   #second-section #second-part #map #landscape-only p {
     line-height: 1.5rem;
     font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #first-section .store-name h1 {
+    font-size: 6rem;
+    line-height: 5.25rem;
+  }
+  #first-section .store-name p {
+    font-size: 1.25rem;
+  }
+  #first-section #store-info .info {
+    padding-left: 1.75rem;
+  }
+  #second-section #first-part #welcome-message .orange-font {
+    font-size: 1.45rem;
+    line-height: 2rem;
+  }
+  #second-section #first-part #welcome-message .gray-font {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  #second-section #second-part #map #landscape-only p {
+    font-size: 1.15rem;
   }
 }/*# sourceMappingURL=styles.css.map */

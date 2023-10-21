@@ -435,7 +435,7 @@
                     li {
                         list-style-type: none;
                         width: 15vw;
-                        font-size: 1.35rem;
+                        font-size: 1.45rem;
                         color: rgb(50, 50, 50);
                     }
                     #order-online {
@@ -568,6 +568,7 @@
                 iframe {
                     width: 38vw;
                     height: 220px;
+                    border: none;
                 }
                 a {
                     display: none;
@@ -619,6 +620,17 @@
     }
 }
 @media screen and (width: 1024px) {
+    #header-landscape {
+        #nav-landscape {
+            #menu-landscape {
+                a {
+                    li {
+                        font-size: 1.15rem;
+                    }
+                }
+            }
+        }
+    }
     #first-section {
         #store-info {
             .info {
@@ -664,6 +676,48 @@
                     p {
                         line-height: 1.5rem;
                         font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #first-section {
+        .store-name {
+            h1 {
+                font-size: 6rem;
+                line-height: 5.25rem;
+            }
+            p {
+                font-size: 1.25rem;
+            }
+        }
+        #store-info {
+            .info {
+                padding-left: 1.75rem;
+            }
+        }
+    }
+    #second-section {
+        #first-part {
+            #welcome-message {
+                .orange-font {
+                    font-size: 1.45rem;
+                    line-height: 2rem;
+                }
+                .gray-font {
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
+                }
+            }
+        }
+        #second-part {
+            #map {
+                #landscape-only {
+                    p {
+                        font-size: 1.15rem;
                     }
                 }
             }
