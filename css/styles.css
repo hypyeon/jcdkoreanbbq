@@ -5,6 +5,13 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 body {
   background-color: black;
   text-align: center;
@@ -563,6 +570,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: opacity 0.5s;
   }
   header #nav-portrait {
     display: none;
@@ -591,7 +599,7 @@ body {
   header #nav-landscape #menu-landscape a li:hover {
     color: rgb(255, 140, 0);
     font-weight: 600;
-    text-shadow: 1.5px 1.5px 4px rgb(255, 255, 255);
+    text-shadow: 0 0 6px rgb(255, 255, 255);
   }
   header #nav-landscape #menu-landscape a #order-online:hover {
     font-weight: 400;
@@ -607,6 +615,7 @@ body {
     width: 74vw;
     height: 84vh;
     margin: 8vh auto 0 auto;
+    scroll-snap-align: center;
   }
   #first-section .store-name {
     padding-top: 0;
@@ -635,6 +644,7 @@ body {
     background-color: white;
     border-radius: 30px 30px 0 0;
     align-items: center;
+    scroll-snap-align: end;
   }
   #second-section #first-part {
     gap: 0;
@@ -643,6 +653,9 @@ body {
   }
   #second-section #first-part .store-name {
     display: none;
+  }
+  #second-section #first-part #images {
+    padding-top: 3rem;
   }
   #second-section #first-part #images .grid-item {
     width: 16vw;
@@ -666,7 +679,7 @@ body {
     border-radius: 0 20px 20px 0;
   }
   #second-section #first-part #welcome-message {
-    padding: 2rem 0;
+    padding-top: 2rem;
   }
   #second-section #first-part #welcome-message #no-break, #second-section #first-part #welcome-message br {
     display: none;
@@ -698,13 +711,12 @@ body {
   #second-section #second-part #map {
     padding: 2rem;
     flex-direction: row;
-    gap: 4rem;
+    gap: 3rem;
     align-items: center;
   }
   #second-section #second-part #map iframe {
-    width: 42vw;
-    height: 260px;
-    border-right: 1px solid black;
+    width: 38vw;
+    height: 220px;
   }
   #second-section #second-part #map a {
     display: none;
@@ -712,7 +724,8 @@ body {
   #second-section #second-part #map #landscape-only {
     display: flex;
     gap: 2rem;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
+    border-left: 1px solid rgba(169, 169, 169, 0.5);
   }
   #second-section #second-part #map #landscape-only #days {
     text-align: center;
@@ -741,7 +754,7 @@ body {
   }
   #second-section #second-part #footer {
     width: 100vw;
-    padding: 2rem;
+    padding: 1rem 2.5rem;
   }
   #second-section #second-part #footer .white-font {
     color: white;
@@ -749,5 +762,41 @@ body {
   #second-section #second-part #footer p {
     font-size: 0.85rem;
     line-height: 1.25rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #first-section #store-info .info {
+    width: 18vw;
+    height: 26vh;
+    padding-left: 1.75rem;
+  }
+  #first-section #store-info .info p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  #first-section #store-info #address p {
+    line-height: 1.5rem;
+  }
+  #first-section #store-info #open-hours {
+    gap: 1.25rem;
+  }
+  #first-section #store-info #open-hours p {
+    line-height: 1.25rem;
+  }
+  #second-section #first-part #welcome-message .orange-font {
+    font-size: 1.15rem;
+    line-height: 1.65rem;
+  }
+  #second-section #second-part #map {
+    padding: 0;
+    gap: 2rem;
+  }
+  #second-section #second-part #map iframe {
+    width: 22vw;
+    height: 160px;
+  }
+  #second-section #second-part #map #landscape-only p {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
   }
 }/*# sourceMappingURL=styles.css.map */

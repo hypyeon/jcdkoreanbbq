@@ -414,6 +414,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: opacity .5s;
         #nav-portrait {
             display: none;
         }
@@ -439,7 +440,7 @@
                     li:hover {
                         color: rgb(255, 140, 0);
                         font-weight: 600;
-                        text-shadow: 1.5px 1.5px 4px rgb(255, 255, 255);
+                        text-shadow: 0 0 6px rgb(255, 255, 255);
                     }
                     #order-online:hover {
                         font-weight: 400;
@@ -459,6 +460,7 @@
         width: 74vw;
         height: 84vh;
         margin: 8vh auto 0 auto;
+        scroll-snap-align: center; 
         .store-name {
             padding-top: 0;
             font-size: 3rem;
@@ -489,6 +491,7 @@
         background-color: white;
         border-radius: 30px 30px 0 0;
         align-items: center;
+        scroll-snap-align: end; 
         #first-part {
             gap: 0;
             width: fit-content;
@@ -496,6 +499,7 @@
                 display: none;
             }
             #images {
+                padding-top: 3rem;
                 .grid-item {
                     width: 16vw;
                 }
@@ -519,7 +523,7 @@
                 }
             }
             #welcome-message {
-                padding: 2rem 0;
+                padding-top: 2rem;
                 #no-break, br {
                     display: none;
                 }
@@ -550,12 +554,11 @@
             #map {
                 padding: 2rem;
                 flex-direction: row;
-                gap: 4rem;
+                gap: 3rem;
                 align-items: center;
                 iframe {
-                    width: 42vw;
-                    height: 260px;
-                    border-right: 1px solid black;
+                    width: 38vw;
+                    height: 220px;
                 }
                 a {
                     display: none;
@@ -563,7 +566,8 @@
                 #landscape-only {
                     display: flex;
                     gap: 2rem;
-                    padding: 1rem 2rem;
+                    padding: 0 2rem;
+                    border-left: 1px solid rgba(169, 169, 169, 0.5);
                     #days {
                         text-align: center;
                         color: rgb(0, 0, 0);
@@ -593,13 +597,65 @@
             }   
             #footer {
                 width: 100vw;
-                padding: 2rem;
+                padding: 1rem 2.5rem;
                 .white-font {
                     color: white;
                 }
                 p {
                     font-size: .85rem;
                     line-height: 1.25rem;  
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    #first-section {
+        #store-info {
+            .info {
+                width: 18vw;
+                height: 26vh;
+                padding-left: 1.75rem;
+                p {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+            }
+            #address {
+                p {
+                    line-height: 1.5rem;
+                }
+            }
+            #open-hours {
+                gap: 1.25rem;
+                p {
+                    line-height: 1.25rem;
+                }
+            }
+        }
+    }
+    #second-section {
+        #first-part {
+            #welcome-message {
+                .orange-font {
+                    font-size: 1.15rem;
+                    line-height: 1.65rem;
+                }
+            }
+        }
+        #second-part {
+            #map {
+                padding: 0;
+                gap: 2rem;
+                iframe {
+                    width: 22vw;
+                    height: 160px;
+                }
+                #landscape-only {
+                    p {
+                        line-height: 1.5rem;
+                        font-size: .9rem;
+                    }
                 }
             }
         }
