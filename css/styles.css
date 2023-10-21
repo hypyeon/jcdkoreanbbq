@@ -82,7 +82,7 @@ a {
   text-decoration: none;
 }
 
-header {
+#header-portrait {
   height: 8vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.65);
@@ -91,7 +91,7 @@ header {
   top: 0;
   z-index: 100;
 }
-header #nav-portrait {
+#header-portrait #nav-portrait {
   display: block;
   position: relative;
   top: calc((8vh - 24px) / 2);
@@ -101,7 +101,7 @@ header #nav-portrait {
   -moz-user-select: none;
        user-select: none;
 }
-header #nav-portrait input {
+#header-portrait #nav-portrait input {
   width: 40px;
   height: 32px;
   position: absolute;
@@ -111,7 +111,7 @@ header #nav-portrait input {
   z-index: 2; /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
-header #nav-portrait span {
+#header-portrait #nav-portrait span {
   display: block;
   width: 33px;
   height: 4px;
@@ -123,24 +123,24 @@ header #nav-portrait span {
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
-header #nav-portrait span:first-child {
+#header-portrait #nav-portrait span:first-child {
   transform-origin: 0% 0%;
 }
-header #nav-portrait span:nth-last-child(2) {
+#header-portrait #nav-portrait span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
-header #nav-portrait input:checked ~ span {
+#header-portrait #nav-portrait input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
 }
-header #nav-portrait input:checked ~ span:nth-last-child(3) {
+#header-portrait #nav-portrait input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-header #nav-portrait input:checked ~ span:nth-last-child(2) {
+#header-portrait #nav-portrait input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
-header #nav-portrait #menu {
+#header-portrait #nav-portrait #menu {
   position: absolute;
   top: calc(8vh - (8vh - 24px) / 2);
   left: calc(56px - 100vw);
@@ -156,7 +156,7 @@ header #nav-portrait #menu {
   transform: scale(0);
   border-bottom: 0.5px solid black;
 }
-header #nav-portrait #menu li {
+#header-portrait #nav-portrait #menu li {
   padding: 1.25rem 0;
   font-size: 1.55rem;
   color: black;
@@ -165,7 +165,7 @@ header #nav-portrait #menu li {
   width: fit-content;
   letter-spacing: 1px;
 }
-header #nav-portrait #menu #order-online {
+#header-portrait #nav-portrait #menu #order-online {
   color: white;
   background-color: rgb(255, 140, 0);
   margin-top: 0.75rem;
@@ -173,11 +173,12 @@ header #nav-portrait #menu #order-online {
   border-radius: 10px;
   letter-spacing: 0;
 }
-header #nav-portrait input:checked ~ #menu {
+#header-portrait #nav-portrait input:checked ~ #menu {
   opacity: 1;
   transform: scale(1);
 }
-header #nav-landscape {
+
+#header-landscape #nav-landscape {
   display: none;
 }
 
@@ -226,8 +227,8 @@ body {
 }
 
 #first-section {
-  gap: 6rem;
-  scroll-snap-align: center;
+  gap: 4.5rem;
+  scroll-snap-align: end;
 }
 #first-section .store-name {
   font-size: 3.5rem;
@@ -274,7 +275,7 @@ body {
 }
 #second-section #first-part {
   gap: 1rem;
-  scroll-snap-align: center;
+  scroll-snap-align: end;
 }
 #second-section #first-part .store-name {
   padding: 2rem 0 3rem 0;
@@ -330,7 +331,7 @@ body {
   display: none;
 }
 #second-section #first-part #welcome-message .orange-font {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   font-size: 1.15rem;
   line-height: 1.75rem;
   letter-spacing: 0.25px;
@@ -343,13 +344,13 @@ body {
 }
 #second-section #first-part #welcome-message .gray-font {
   font-weight: 200;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   line-height: 1.5rem;
 }
 #second-section #second-part {
   margin-top: 8vh;
   height: 92vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 #second-section #second-part a {
   color: white;
@@ -363,7 +364,7 @@ body {
   border: 0.5px solid black;
 }
 #second-section #second-part #map a {
-  margin-top: 1rem;
+  margin-top: 2rem;
   background-color: rgb(255, 140, 0);
   padding: 0.75rem;
   border-radius: 15px;
@@ -570,30 +571,35 @@ body {
   }
 }
 @media screen and (orientation: landscape) {
-  header {
+  #header-portrait {
+    display: none;
+  }
+  #header-landscape {
     background-color: rgba(255, 255, 255, 0.75);
     border-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
     transition: opacity 0.5s;
   }
-  header #nav-portrait {
-    display: none;
-  }
-  header #nav-landscape {
+  #header-landscape #nav-landscape {
     display: block;
   }
-  header #nav-landscape #menu-landscape a {
+  #header-landscape #nav-landscape #menu-landscape a {
     display: inline-block;
   }
-  header #nav-landscape #menu-landscape a li {
+  #header-landscape #nav-landscape #menu-landscape a li {
     list-style-type: none;
     width: 15vw;
-    font-size: 1.15rem;
+    font-size: 1.35rem;
     color: rgb(50, 50, 50);
   }
-  header #nav-landscape #menu-landscape a #order-online {
+  #header-landscape #nav-landscape #menu-landscape a #order-online {
     width: -moz-fit-content;
     width: fit-content;
     padding: 0.35rem 1.75rem;
@@ -602,12 +608,12 @@ body {
     color: white;
     margin-left: 3rem;
   }
-  header #nav-landscape #menu-landscape a li:hover {
+  #header-landscape #nav-landscape #menu-landscape a li:hover {
     color: rgb(255, 140, 0);
     font-weight: 600;
     text-shadow: 0 0 6px rgb(255, 255, 255);
   }
-  header #nav-landscape #menu-landscape a #order-online:hover {
+  #header-landscape #nav-landscape #menu-landscape a #order-online:hover {
     font-weight: 400;
     text-shadow: none;
     background-color: black;
@@ -650,7 +656,7 @@ body {
     background-color: white;
     border-radius: 30px 30px 0 0;
     align-items: center;
-    scroll-snap-align: end;
+    scroll-snap-align: start;
   }
   #second-section #first-part {
     gap: 0;
@@ -770,7 +776,7 @@ body {
     line-height: 1.25rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (width: 1024px) {
   #first-section #store-info .info {
     width: 18vw;
     height: 26vh;

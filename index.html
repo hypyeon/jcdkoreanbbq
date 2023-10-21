@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    <title>JCD BBQ</title>
 </head>
 <body>
-    <header>
+    <header id="header-portrait">
         <nav id="nav-portrait">
             <input type="checkbox" />
             <span></span>
@@ -20,6 +20,8 @@
                 <a href="https://www.chownow.com/order/33571/locations/50353" target="_blank"><li id="order-online">Order Online</li></a>
             </ul>
         </nav>
+    </header>
+    <header id="header-landscape">
         <nav id="nav-landscape">
             <ul class="" id="menu-landscape">
                 <a href="./index.html"><li>Home</li></a>
@@ -109,7 +111,7 @@
                 data-aos="fade" 
                 data-aos-offset="100"
                 data-aos-duration="2000"
-                data-aos-delay="1600"
+                data-aos-delay="800"
                 data-aos-once="false">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.7637983105565!2d-122.81200852383432!3d45.49470103140336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950ea324c555b5%3A0x13c832d9a63f1fc1!2s3482%20SW%20Cedar%20Hills%20Blvd%2C%20Beaverton%2C%20OR%2097005!5e0!3m2!1sen!2sus!4v1697327348819!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <a href="https://maps.app.goo.gl/uwiWTDG2AUU9Umd79" target="_blank">Open location on Google Map</a>
@@ -171,14 +173,15 @@
             // Provide feedback to the user (optional)
             alert("Address copied!");
         });
-
+    </script>
+    <script>
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
             if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-                document.querySelector("header").style.opacity = "0";
+                document.getElementById("header-landscape").style.opacity = "0";
             } else {
-                document.querySelector("header").style.opacity = "1";
+                document.getElementById("header-landscape").style.opacity = "1";
             }
         }
     </script>
