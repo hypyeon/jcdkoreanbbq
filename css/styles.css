@@ -597,7 +597,7 @@ body {
   #header-landscape #nav-landscape #menu-landscape a li {
     list-style-type: none;
     width: 15vw;
-    font-size: 1.45rem;
+    font-size: 1.75rem;
     color: rgb(50, 50, 50);
   }
   #header-landscape #nav-landscape #menu-landscape a #order-online {
@@ -632,8 +632,8 @@ body {
   }
   #first-section .store-name {
     padding-top: 0;
-    font-size: 3rem;
-    line-height: 3.75rem;
+    font-size: 5rem;
+    line-height: 5rem;
   }
   #first-section #store-info {
     flex-direction: column;
@@ -643,6 +643,9 @@ body {
     width: 16vw;
     height: 24vh;
     padding-left: 2.5rem;
+  }
+  #first-section #store-info .info p {
+    font-size: 1.75rem;
   }
   #first-section #store-info #address p {
     line-height: 2rem;
@@ -668,7 +671,7 @@ body {
     display: none;
   }
   #second-section #first-part #images {
-    padding-top: 3rem;
+    padding-top: 10rem;
   }
   #second-section #first-part #images .grid-item {
     width: 16vw;
@@ -692,7 +695,7 @@ body {
     border-radius: 0 20px 20px 0;
   }
   #second-section #first-part #welcome-message {
-    padding-top: 2rem;
+    padding-top: 3.5rem;
   }
   #second-section #first-part #welcome-message #no-break, #second-section #first-part #welcome-message br {
     display: none;
@@ -720,16 +723,17 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     margin-top: 0;
+    justify-content: center;
   }
   #second-section #second-part #map {
-    padding: 2rem;
+    padding: 0;
     flex-direction: row;
     gap: 3rem;
     align-items: center;
   }
   #second-section #second-part #map iframe {
-    width: 38vw;
-    height: 220px;
+    width: 36vw;
+    height: 260px;
     border: none;
   }
   #second-section #second-part #map a {
@@ -766,14 +770,14 @@ body {
   #second-section #second-part #white-background {
     display: none;
   }
-  #second-section #second-part #footer {
+  #second-section #footer {
     width: 100vw;
     padding: 1rem 2.5rem;
   }
-  #second-section #second-part #footer .white-font {
+  #second-section #footer .white-font {
     color: white;
   }
-  #second-section #second-part #footer p {
+  #second-section #footer p {
     font-size: 0.85rem;
     line-height: 1.25rem;
   }

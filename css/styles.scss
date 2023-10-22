@@ -436,7 +436,7 @@
                     li {
                         list-style-type: none;
                         width: 15vw;
-                        font-size: 1.45rem;
+                        font-size: 1.75rem;
                         color: rgb(50, 50, 50);
                     }
                     #order-online {
@@ -473,8 +473,8 @@
         scroll-snap-align: center; 
         .store-name {
             padding-top: 0;
-            font-size: 3rem;
-            line-height: 3.75rem;
+            font-size: 5rem;
+            line-height: 5rem;
         }
         #store-info {
             flex-direction: column;
@@ -483,6 +483,9 @@
                 width: 16vw;
                 height: 24vh;
                 padding-left: 2.5rem;
+                p {
+                    font-size: 1.75rem;
+                }
             }
             #address {
                 p {
@@ -509,7 +512,7 @@
                 display: none;
             }
             #images {
-                padding-top: 3rem;
+                padding-top: 10rem;
                 .grid-item {
                     width: 16vw;
                 }
@@ -533,7 +536,7 @@
                 }
             }
             #welcome-message {
-                padding-top: 2rem;
+                padding-top: 3.5rem;
                 #no-break, br {
                     display: none;
                 }
@@ -561,14 +564,15 @@
         #second-part {
             width: fit-content;
             margin-top: 0;
+            justify-content: center;
             #map {
-                padding: 2rem;
+                padding: 0;
                 flex-direction: row;
                 gap: 3rem;
                 align-items: center;
                 iframe {
-                    width: 38vw;
-                    height: 220px;
+                    width: 36vw;
+                    height: 260px;
                     border: none;
                 }
                 a {
@@ -606,16 +610,16 @@
             #white-background {
                 display: none;
             }   
-            #footer {
-                width: 100vw;
-                padding: 1rem 2.5rem;
-                .white-font {
-                    color: white;
-                }
-                p {
-                    font-size: .85rem;
-                    line-height: 1.25rem;  
-                }
+        }
+        #footer {
+            width: 100vw;
+            padding: 1rem 2.5rem;
+            .white-font {
+                color: white;
+            }
+            p {
+                font-size: .85rem;
+                line-height: 1.25rem;  
             }
         }
     }
