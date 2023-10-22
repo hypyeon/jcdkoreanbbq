@@ -70,7 +70,7 @@
                 </div>
             </div>   
             <div id="double-down">
-                <img src="images/double-down.png" alt="Down">
+                <img src="images/double-down.png" alt="Down" id="down-btn">
             </div> 
         </section>
         <section class="flex col j-c-sb" id="second-section">
@@ -136,7 +136,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="store-name">
+                <div class="store-name" id="scroll-up">
                     <h1 class="orange-font">JCD</h1>
                     <h1>BBQ</h1>    
                 </div>
@@ -184,6 +184,40 @@
                 document.getElementById("header-landscape").style.opacity = "1";
             }
         }
+    </script>
+    <script>
+        const toNext = document.getElementById("down-btn");
+
+        toNext.addEventListener("click", () => {
+            let nextPageScroll; 
+
+            if (window.innerWidth < 390) {
+                nextPageScroll = 667;
+            } else if (window.innerWidth == 412) {
+                nextPageScroll = 915;
+            } else if (window.innerWidth == 540) {
+                nextPageScroll = 720;
+            } else if (window.innerWidth == 768) {
+                nextPageScroll = 1024;
+            } else if (window.innerWidth == 912) {
+                nextPageScroll = 1368;
+            } else {
+                nextPageScroll = 844;
+            }
+            window.scrollTo({
+                top: nextPageScroll,
+                behavior: "smooth", 
+            });
+        });
+
+        const toTop = document.getElementById("scroll-up");
+
+        toTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }); 
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

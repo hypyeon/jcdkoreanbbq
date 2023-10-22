@@ -16,7 +16,7 @@
     filter: brightness(40%);
 }
 #first-section {
-    gap: 4.5rem;
+    gap: 3rem;
     scroll-snap-align: center; 
     .store-name {
         font-size: 3rem;
@@ -75,7 +75,7 @@
             line-height: 2.75rem;
         }
         #images {
-            gap: 1rem;
+            gap: .75rem;
             width: fit-content;
             margin: 0 auto;
             .grid-item {
@@ -122,8 +122,8 @@
             }
             .orange-font {
                 padding: 1rem 0;
-                font-size: 1.15rem;
-                line-height: 1.75rem;
+                font-size: 1.1rem;
+                line-height: 1.65rem;
                 letter-spacing: 0.25px;
                 font-weight: 700;
             }
@@ -154,7 +154,7 @@
                 border: .5px solid black; 
             }
             a {
-                margin-top: 2rem;
+                margin-top: 1.75rem;
                 background-color: rgb(255, 140, 0);
                 padding: .75rem;
                 border-radius: 15px;
@@ -164,12 +164,13 @@
             }
         }
         .store-name {
-            font-size: 2rem;
-            line-height: 2.75rem;
+            font-size: 1.75rem;
+            line-height: 2.5rem;
+            padding-top: 2.25rem;
         }
         #white-background {
             width: 100vw;
-            height: 120vh;
+            height: 125vh;
             background-color: white;
             position: absolute;
             top: calc(100vh + 40vh);
@@ -218,7 +219,7 @@
         .store-name {
             font-size: 2.75rem;
             line-height: 3.5rem;
-            padding-top: 2rem;
+            padding-top: calc(2rem + 8vh);
             p {
                 font-size: .85rem;
             }
@@ -238,10 +239,11 @@
     }
     #second-section {
         #first-part {
+            gap: 0;
             .store-name {
                 font-size: 1.75rem;
                 line-height: 2.5rem;
-                padding: 1rem 0 2rem 0;
+                padding: calc(1rem + 8vh) 0 1.5rem 0;
             }
             #images {
                 gap: .75rem;
