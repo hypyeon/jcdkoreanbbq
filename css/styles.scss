@@ -66,21 +66,20 @@
 }
 #second-section {
     #first-part {
-        gap: 1rem;
         height: 100vh;
         scroll-snap-align: center; 
         .store-name {
-            padding: calc(2rem + 8vh) 0 3rem 0;
-            font-size: 2rem;
-            line-height: 2.75rem;
+            padding: calc(2rem + 8vh) 0 2.5rem 0;
+            font-size: 2.25rem;
+            line-height: 3rem;
         }
         #images {
             gap: .75rem;
             width: fit-content;
             margin: 0 auto;
             .grid-item {
-                width: 34vw;
-                height: 14vh;
+                width: 30vw;
+                height: 12vh;
             }
             #grid-1 {
                 background-image: url('../images/grill.jpg');
@@ -121,8 +120,8 @@
                 display: none;
             }
             .orange-font {
-                padding: 1rem 0;
-                font-size: 1.1rem;
+                padding: 2rem 0 1rem 0;
+                font-size: 1rem;
                 line-height: 1.65rem;
                 letter-spacing: 0.25px;
                 font-weight: 700;
@@ -134,19 +133,20 @@
             }
             .gray-font {
                 font-weight: 200;
-                padding: 1rem 0;
+                padding: .95rem 0;
                 line-height: 1.5rem;
             }
         }
     
     }
     #second-part {
-        height: 100vh;
-        scroll-snap-align: center; 
+        height: 90vh;
+        scroll-snap-align: start; 
         a {
             color: white;
         }
         #map {
+            height: 60vh;
             padding: calc(3rem + 8vh) 0 3rem 0;
             iframe {
                 width: 280px;
@@ -154,9 +154,10 @@
                 border: .5px solid black; 
             }
             a {
-                margin-top: 1.75rem;
+                margin: 1.75rem auto 0 auto;
+                width: fit-content;
                 background-color: rgb(255, 140, 0);
-                padding: .75rem;
+                padding: .75rem 1.25rem;
                 border-radius: 15px;
             }
             #landscape-only {
@@ -166,17 +167,20 @@
         .store-name {
             font-size: 1.75rem;
             line-height: 2.5rem;
-            padding-top: 2.25rem;
+            height: 20vh;
         }
         #white-background {
             width: 100vw;
-            height: 125vh;
+            height: 122vh;
             background-color: white;
             position: absolute;
-            top: calc(100vh + 40vh);
+            top: calc(100vh + 42vh);
             z-index: -2;
         }  
     }
+}
+#footer {
+    height: 10vh;
 }
 #section-menu {
     min-height: 92vh;
@@ -271,15 +275,20 @@
                     height: 200px;
                 }
                 a {
-                    font-size: .85rem;
-                    padding: .65rem;
-                    border-radius: 10px;
+                    font-size: .9rem;
+                    border-radius: 12px;
                 }
             }
             .store-name {
                 font-size: 1.5rem;
                 line-height: 2rem;
             }
+        }
+    }
+    #footer {
+        p {
+            font-size: .65rem;
+            line-height: .9rem;
         }
     }
 }
@@ -498,21 +507,22 @@
         }
     }
     #second-section {
-        height: 108vh;
+        height: 96vh;
         width: 80vw;
         margin: auto;
         background-color: white;
         border-radius: 30px 30px 0 0;
         align-items: center;
+        justify-content: end;
         scroll-snap-align: center; 
         #first-part {
             gap: 0;
             width: fit-content;
+            justify-content: end;
             .store-name {
                 display: none;
             }
             #images {
-                padding-top: 10rem;
                 .grid-item {
                     width: 16vw;
                 }
@@ -563,16 +573,18 @@
         }
         #second-part {
             width: fit-content;
+            height: fit-content;
             margin-top: 0;
+            padding: 5rem 0 4rem 0;
             justify-content: center;
             #map {
                 padding: 0;
                 flex-direction: row;
-                gap: 3rem;
+                gap: 5rem;
                 align-items: center;
                 iframe {
-                    width: 36vw;
-                    height: 260px;
+                    width: 28vw;
+                    height: 240px;
                     border: none;
                 }
                 a {
@@ -582,7 +594,8 @@
                     display: flex;
                     gap: 2rem;
                     padding: 0 2rem;
-                    border-left: 1px solid rgba(169, 169, 169, 0.5);
+                    border-left: 1px solid rgba(169, 169, 169, 0.3);
+                    border-right: 1px solid rgba(169, 169, 169, 0.3);
                     #days {
                         text-align: center;
                         color: rgb(0, 0, 0);
@@ -611,16 +624,19 @@
                 display: none;
             }   
         }
-        #footer {
-            width: 100vw;
-            padding: 1rem 2.5rem;
-            .white-font {
-                color: white;
-            }
-            p {
-                font-size: .85rem;
-                line-height: 1.25rem;  
-            }
+    }
+    #footer {
+        position: absolute;
+        top: calc(200vh - 12vh);
+        width: 100vw;
+        height: 12vh;
+        padding: 1rem 2.5rem;
+        .white-font {
+            color: white;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5rem;  
         }
     }
 }
@@ -691,16 +707,22 @@
     #first-section {
         .store-name {
             h1 {
-                font-size: 6rem;
-                line-height: 5.25rem;
+                font-size: 8rem;
+                line-height: 7rem;
             }
             p {
-                font-size: 1.25rem;
+                font-size: 1.5rem;
             }
         }
         #store-info {
             .info {
+                width: 18vw;
                 padding-left: 1.75rem;
+            }
+            #address {
+                p {
+                    line-height: 3rem;
+                }
             }
         }
     }
@@ -708,12 +730,12 @@
         #first-part {
             #welcome-message {
                 .orange-font {
-                    font-size: 1.45rem;
-                    line-height: 2rem;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
                 }
                 .gray-font {
-                    font-size: 1.25rem;
-                    line-height: 1.75rem;
+                    font-size: 1.45rem;
+                    line-height: 2.25rem;
                 }
             }
         }
@@ -721,7 +743,7 @@
             #map {
                 #landscape-only {
                     p {
-                        font-size: 1.15rem;
+                        font-size: 1.25rem;
                     }
                 }
             }

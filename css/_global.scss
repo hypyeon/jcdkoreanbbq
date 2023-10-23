@@ -32,6 +32,9 @@ section {
 .j-c-c {
     justify-content: center;
 }
+.j-c-s {
+    justify-content: start;
+}
 .a-s-c {
     align-self: center;
 }
@@ -173,7 +176,7 @@ a {
 
 #footer {
     background-color: black;
-    padding: 1rem 1.75rem 1.75rem 0;
+    padding: 0 1.75rem;
     p {
         text-align: right;
         color: darkgrey;
@@ -181,7 +184,7 @@ a {
         line-height: 1.25rem;
         letter-spacing: .15px;
         a {
-            color: darkgrey;
+            color: white;
         }
     }
 }  

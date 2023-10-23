@@ -42,6 +42,10 @@ section {
   justify-content: center;
 }
 
+.j-c-s {
+  justify-content: start;
+}
+
 .a-s-c {
   align-self: center;
 }
@@ -184,7 +188,7 @@ a {
 
 #footer {
   background-color: black;
-  padding: 1rem 1.75rem 1.75rem 0;
+  padding: 0 1.75rem;
 }
 #footer p {
   text-align: right;
@@ -194,7 +198,7 @@ a {
   letter-spacing: 0.15px;
 }
 #footer p a {
-  color: darkgrey;
+  color: white;
 }
 
 h1 {
@@ -271,14 +275,13 @@ body {
 }
 
 #second-section #first-part {
-  gap: 1rem;
   height: 100vh;
   scroll-snap-align: center;
 }
 #second-section #first-part .store-name {
-  padding: calc(2rem + 8vh) 0 3rem 0;
-  font-size: 2rem;
-  line-height: 2.75rem;
+  padding: calc(2rem + 8vh) 0 2.5rem 0;
+  font-size: 2.25rem;
+  line-height: 3rem;
 }
 #second-section #first-part #images {
   gap: 0.75rem;
@@ -287,8 +290,8 @@ body {
   margin: 0 auto;
 }
 #second-section #first-part #images .grid-item {
-  width: 34vw;
-  height: 14vh;
+  width: 30vw;
+  height: 12vh;
 }
 #second-section #first-part #images #grid-1 {
   background-image: url("../images/grill.jpg");
@@ -329,8 +332,8 @@ body {
   display: none;
 }
 #second-section #first-part #welcome-message .orange-font {
-  padding: 1rem 0;
-  font-size: 1.1rem;
+  padding: 2rem 0 1rem 0;
+  font-size: 1rem;
   line-height: 1.65rem;
   letter-spacing: 0.25px;
   font-weight: 700;
@@ -342,17 +345,18 @@ body {
 }
 #second-section #first-part #welcome-message .gray-font {
   font-weight: 200;
-  padding: 1rem 0;
+  padding: 0.95rem 0;
   line-height: 1.5rem;
 }
 #second-section #second-part {
-  height: 100vh;
-  scroll-snap-align: center;
+  height: 90vh;
+  scroll-snap-align: start;
 }
 #second-section #second-part a {
   color: white;
 }
 #second-section #second-part #map {
+  height: 60vh;
   padding: calc(3rem + 8vh) 0 3rem 0;
 }
 #second-section #second-part #map iframe {
@@ -361,9 +365,11 @@ body {
   border: 0.5px solid black;
 }
 #second-section #second-part #map a {
-  margin-top: 1.75rem;
+  margin: 1.75rem auto 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: rgb(255, 140, 0);
-  padding: 0.75rem;
+  padding: 0.75rem 1.25rem;
   border-radius: 15px;
 }
 #second-section #second-part #map #landscape-only {
@@ -372,15 +378,19 @@ body {
 #second-section #second-part .store-name {
   font-size: 1.75rem;
   line-height: 2.5rem;
-  padding-top: 2.25rem;
+  height: 20vh;
 }
 #second-section #second-part #white-background {
   width: 100vw;
-  height: 125vh;
+  height: 122vh;
   background-color: white;
   position: absolute;
-  top: 140vh;
+  top: 142vh;
   z-index: -2;
+}
+
+#footer {
+  height: 10vh;
 }
 
 #section-menu {
@@ -462,13 +472,16 @@ body {
     height: 200px;
   }
   #second-section #second-part #map a {
-    font-size: 0.85rem;
-    padding: 0.65rem;
-    border-radius: 10px;
+    font-size: 0.9rem;
+    border-radius: 12px;
   }
   #second-section #second-part .store-name {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+  #footer p {
+    font-size: 0.65rem;
+    line-height: 0.9rem;
   }
 }
 @media screen and (min-width: 540px) {
@@ -654,24 +667,23 @@ body {
     display: none;
   }
   #second-section {
-    height: 108vh;
+    height: 96vh;
     width: 80vw;
     margin: auto;
     background-color: white;
     border-radius: 30px 30px 0 0;
     align-items: center;
+    justify-content: end;
     scroll-snap-align: center;
   }
   #second-section #first-part {
     gap: 0;
     width: -moz-fit-content;
     width: fit-content;
+    justify-content: end;
   }
   #second-section #first-part .store-name {
     display: none;
-  }
-  #second-section #first-part #images {
-    padding-top: 10rem;
   }
   #second-section #first-part #images .grid-item {
     width: 16vw;
@@ -722,18 +734,21 @@ body {
   #second-section #second-part {
     width: -moz-fit-content;
     width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     margin-top: 0;
+    padding: 5rem 0 4rem 0;
     justify-content: center;
   }
   #second-section #second-part #map {
     padding: 0;
     flex-direction: row;
-    gap: 3rem;
+    gap: 5rem;
     align-items: center;
   }
   #second-section #second-part #map iframe {
-    width: 36vw;
-    height: 260px;
+    width: 28vw;
+    height: 240px;
     border: none;
   }
   #second-section #second-part #map a {
@@ -743,7 +758,8 @@ body {
     display: flex;
     gap: 2rem;
     padding: 0 2rem;
-    border-left: 1px solid rgba(169, 169, 169, 0.5);
+    border-left: 1px solid rgba(169, 169, 169, 0.3);
+    border-right: 1px solid rgba(169, 169, 169, 0.3);
   }
   #second-section #second-part #map #landscape-only #days {
     text-align: center;
@@ -770,16 +786,19 @@ body {
   #second-section #second-part #white-background {
     display: none;
   }
-  #second-section #footer {
+  #footer {
+    position: absolute;
+    top: 188vh;
     width: 100vw;
+    height: 12vh;
     padding: 1rem 2.5rem;
   }
-  #second-section #footer .white-font {
+  #footer .white-font {
     color: white;
   }
-  #second-section #footer p {
-    font-size: 0.85rem;
-    line-height: 1.25rem;
+  #footer p {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media screen and (width: 1024px) {
@@ -823,24 +842,28 @@ body {
 }
 @media screen and (min-width: 1280px) {
   #first-section .store-name h1 {
-    font-size: 6rem;
-    line-height: 5.25rem;
+    font-size: 8rem;
+    line-height: 7rem;
   }
   #first-section .store-name p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   #first-section #store-info .info {
+    width: 18vw;
     padding-left: 1.75rem;
   }
+  #first-section #store-info #address p {
+    line-height: 3rem;
+  }
   #second-section #first-part #welcome-message .orange-font {
-    font-size: 1.45rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
   #second-section #first-part #welcome-message .gray-font {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1.45rem;
+    line-height: 2.25rem;
   }
   #second-section #second-part #map #landscape-only p {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
 }/*# sourceMappingURL=styles.css.map */
