@@ -930,13 +930,20 @@ body {
 }
 @media screen and (min-width: 1440px) {
   #header-landscape #nav-landscape #menu-landscape a li {
-    font-size: 1.45rem;
+    font-size: 1.65rem;
+  }
+  #first-section .store-name h1 {
+    font-size: 7.5rem;
+    line-height: 6.5rem;
   }
   #first-section #store-info .info {
-    width: 16vw;
+    width: 18vw;
     height: -moz-fit-content;
     height: fit-content;
     padding: 1.75rem 2rem;
+  }
+  #first-section #store-info .info p {
+    font-size: 1.5rem;
   }
   #second-section #first-part {
     justify-content: center;
@@ -945,6 +952,14 @@ body {
   #second-section #first-part #images {
     padding-top: 10vh;
   }
+  #second-section #first-part #welcome-message .orange-font {
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+  }
+  #second-section #first-part #welcome-message .gray-font {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
   #second-section #second-part {
     justify-content: center;
     height: 40vh;
@@ -952,5 +967,13 @@ body {
   }
   #second-section #second-part #map {
     padding-bottom: 2.5rem;
+  }
+  #second-section #second-part #map iframe {
+    width: 28vw;
+    height: 280px;
+  }
+  #second-section #second-part #map #landscape-only p {
+    font-size: 1.35rem;
+    line-height: 2.25rem;
   }
 }/*# sourceMappingURL=styles.css.map */

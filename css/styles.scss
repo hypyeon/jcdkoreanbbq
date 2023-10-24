@@ -836,18 +836,27 @@
             #menu-landscape {
                 a {
                     li {
-                        font-size: 1.45rem;
+                        font-size: 1.65rem;
                     }
                 }
             }
         }
     }
     #first-section {
+        .store-name {
+            h1 {
+                font-size: 7.5rem;
+                line-height: 6.5rem;    
+            }
+        }
         #store-info {
             .info {
-                width: 16vw;
+                width: 18vw;
                 height: fit-content;
                 padding: 1.75rem 2rem;
+                p {
+                    font-size: 1.5rem;
+                }
             }
         }
     }
@@ -858,6 +867,16 @@
             #images {
                 padding-top: 10vh;
             }
+            #welcome-message {
+                .orange-font {
+                    font-size: 1.5rem;
+                    line-height: 2.75rem;
+                }
+                .gray-font {
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                }
+            }
         }
         #second-part {
             justify-content: center;
@@ -865,6 +884,16 @@
             padding: 0;
             #map {
                 padding-bottom: 2.5rem;
+                iframe {
+                    width: 28vw;
+                    height: 280px;
+                }
+                #landscape-only {
+                    p {
+                        font-size: 1.35rem;
+                        line-height: 2.25rem;
+                    }
+                }
             }
         }
     }
