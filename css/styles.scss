@@ -76,6 +76,9 @@
             line-height: 3rem;
         }
         #images {
+            .landscape {
+                display: none;
+            }
             gap: .75rem;
             width: fit-content;
             margin: 0 auto;
@@ -142,6 +145,9 @@
     
     }
     #second-part {
+        #welcome {
+            display: none;
+        }
         height: 90vh;
         scroll-snap-align: start; 
         a {
@@ -185,7 +191,7 @@
     height: 10vh;
 }
 #section-menu {
-    min-height: 92vh;
+    height: 80vh;
     margin-top: 8vh;
     #full-menu {
         margin-top: 8vh;
@@ -205,7 +211,7 @@
         }
     }
     #footer {
-        width: 100vw;
+        top: 88vh;
     }
 }
 @media screen and (max-width: 375px) {
@@ -428,7 +434,7 @@
         display: none;
     }
     #header-landscape {
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(0, 0, 0, 0.25);
         border-bottom: 0;
         display: flex;
         justify-content: center;
@@ -448,7 +454,7 @@
                         list-style-type: none;
                         width: 15vw;
                         font-size: 1.75rem;
-                        color: rgb(50, 50, 50);
+                        color: white;
                     }
                     #order-online {
                         width: fit-content;
@@ -456,446 +462,188 @@
                         border-radius: 12px;
                         background-color: rgb(255, 140, 0);
                         color: white;
-                        margin-left: 3rem;
+                        position: absolute;
+                        top: 1rem;
+                        right: 3vw;
                     }
                     li:hover {
                         color: rgb(255, 140, 0);
-                        font-weight: 600;
-                        text-shadow: 0 0 6px rgb(255, 255, 255);
+                        transition-duration: .6s;
                     }
                     #order-online:hover {
                         font-weight: 400;
                         text-shadow: none;
                         background-color: black;
                         color: rgb(255, 140, 0);
+                        transition-duration: .6s;
                     }
                 }
             }
         }
     }
     #first-section {
-        flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        gap: 0;
-        width: 74vw;
-        height: 84vh;
-        margin: 8vh auto 0 auto;
-        scroll-snap-align: center; 
+        padding-top: 8vh;
+        height: 54vh;
         .store-name {
             padding-top: 0;
-            font-size: 5rem;
-            line-height: 5rem;
-        }
-        #store-info {
-            flex-direction: column;
-            gap: 1.5rem;
-            .info {
-                width: 16vw;
-                height: 24vh;
-                padding-left: 2.5rem;
-                p {
-                    font-size: 1.75rem;
-                }
+            h1 {
+                font-size: 6.5rem;
+                line-height: 5.25rem;
             }
-            #address {
-                p {
-                    line-height: 2rem;
-                }
+            p {
+                font-size: 1rem;
+                line-height: 1.75rem;
             }
         }
-        #double-down {
+        #store-info, #double-down {
             display: none;
         }
     }
     #second-section {
-        height: 96vh;
-        width: 80vw;
-        margin: auto;
-        background-color: white;
-        border-radius: 30px 30px 0 0;
+        height: 88vh;
+        width: 100vw;
         align-items: center;
-        justify-content: end;
-        scroll-snap-align: start; 
+        justify-content: space-around;
+        flex-direction: column-reverse;
         #first-part {
             gap: 0;
-            width: fit-content;
-            justify-content: end;
+            width: 100vw;
+            height: 42vh;
+            background-color: black;
+            justify-content: center;
             .store-name {
                 display: none;
             }
             #images {
+                gap: 0;
+                padding: 2rem 3rem;
+                background-color: white;
+                .landscape {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: left;
+                    padding: .5rem 1rem .5rem .75rem;
+                    h4 {
+                        font-size: 1.25rem;
+                    }
+                    p {
+                        color: gray;
+                    }
+                }
                 .grid-item {
-                    width: 16vw;
+                    width: 150px;
+                    height: 250px;
                 }
                 #grid-1 {
-                    border-radius: 20px 0 0 20px;
+                    border-radius: 0;
+                }
+                #g-1 {
+                    grid-row: 1;
+                    grid-column: 2;
                 }
                 #grid-2 {
-                    grid-column: 2;
                     grid-row: 1;
+                    grid-column: 3;
                     border-radius: 0;
+                }
+                #g-2 {
+                    grid-row: 1;
+                    grid-column: 4;
                 }
                 #grid-3 {
-                    grid-column: 3;
                     grid-row: 1;
+                    grid-column: 5;
                     border-radius: 0;
                 }
-                #grid-4 {
-                    grid-column: 4;
+                #g-3 {
                     grid-row: 1;
-                    border-radius: 0 20px 20px 0;
+                    grid-column: 6;
+                }
+                #grid-4 {
+                    grid-row: 1;
+                    grid-column: 7;
+                    border-radius: 0;
+                }
+                #g-4 {
+                    grid-row: 1;
+                    grid-column: 8;
                 }
             }
             #welcome-message {
-                padding-top: 3.5rem;
-                #no-break, br {
-                    display: none;
-                }
-                #yes-break {
-                    display: block;
-                }
-                .orange-font {
-                    font-size: 1.25rem;
-                    line-height: 1.75rem;
-                    padding: 0;
-                }
-                hr {
-                    display: none;
-                }
-                .gray-font {
-                    font-size: 1rem;
-                    line-height: 1.5rem;
-                    padding: .5rem;
-                    br {
-                        display: none;
-                    }
-                }
+                display: none;
             }
         }
         #second-part {
-            width: fit-content;
-            height: fit-content;
-            margin-top: 0;
-            padding: 5rem 0 4rem 0;
+            width: 100vw;
+            height: 46vh;
+            background-color: rgb(255, 255, 255);
             justify-content: center;
-            #map {
-                padding: 0;
-                height: fit-content;
-                flex-direction: row;
-                gap: 5rem;
-                align-items: center;
-                iframe {
-                    width: 28vw;
-                    height: 240px;
-                    border: none;
-                }
-                a {
-                    display: none;
-                }
-                #landscape-only {
-                    display: flex;
-                    gap: 2rem;
-                    padding: 0 2rem;
-                    border-left: 1px solid rgba(169, 169, 169, 0.3);
-                    border-right: 1px solid rgba(169, 169, 169, 0.3);
-                    #days {
-                        text-align: center;
-                        color: rgb(0, 0, 0);
-                        font-weight: 700;
-                        #blue {
-                            color: rgb(50, 50, 255);
-                        }
-                        #red {
-                            color: rgb(255, 35, 35);
-                        }
-                    }
-                    p {
-                        line-height: 2rem;
-                        color: rgb(105, 105, 105);
-                        text-align: left;
-                        #italic {
-                            font-style: italic;
-                        }
-                    }
-                }
-            }
-            .store-name {
+            scroll-snap-align: center;
+            #map, .store-name, #white-background {
                 display: none;
             }
-            #white-background {
-                display: none;
-            }   
+            #welcome {
+                display: block;
+                z-index: 3;
+                text-align: left;
+                width: 80vw;
+                margin: 0 auto;
+                h1 {
+                    color: black;
+                    font-family: 'Ruda', sans-serif;
+                    font-weight: 600;
+                    font-size: 4.25rem;
+                    line-height: 4rem;
+                    #jcdbbq {
+                        font-family: 'Rubik Mono One', monospace;
+                        font-size: 4.5rem;
+                        letter-spacing: 1.25px;
+                    }
+                }
+                p {
+                    color: gray;
+                }
+                #where {
+                    padding-left: .5rem;
+                    padding-bottom: .25rem;
+                    font-style: italic;
+                    color: rgb(255, 140, 0);
+                }
+                #subtitle {
+                    padding-top: 1.5rem;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                }
+                #welcome-title {
+                    align-items: end;
+                }
+            }
         }
     }
     #footer {
         position: absolute;
-        top: calc(200vh - 12vh);
+        top: 142vh;
         width: 100vw;
         height: 12vh;
         padding: 1rem 2.5rem;
-        .white-font {
+        background-color: black;
+        p {
             color: white;
-        }
-        p {
-            font-size: 1rem;
+            font-weight: 100;
+            font-size: 1.15rem;
             line-height: 1.5rem;  
-        }
-    }
-}
-@media screen and (min-width: 1024px) {
-    #header-landscape {
-        #nav-landscape {
-            #menu-landscape {
-                a {
-                    li {
-                        font-size: 1.15rem;
-                    }
-                }
+            a {
+                color: white;
+                cursor: pointer;
+            }
+            .hayeong:hover {
+                text-decoration: none;
+                color: rgb(255, 189, 108);
+                transition-duration: .6s;
             }
         }
     }
-    #first-section {
-        .store-name {
-            font-size: 3.5rem;
-            line-height: 4.25rem;
-        }
-        #store-info {
-            .info {
-                width: 18vw;
-                height: 26vh;
-                padding-left: 1.75rem;
-                p {
-                    font-size: 1rem;
-                    line-height: 1.5rem;
-                }
-            }
-            #address {
-                p {
-                    line-height: 1.5rem;
-                }
-            }
-            #open-hours {
-                gap: 1.25rem;
-                p {
-                    line-height: 1.25rem;
-                }
-            }
-        }
-    }
-    #second-section {
-        #first-part {
-            #images {
-                .grid-item {
-                    width: 15vw;
-                    height: 16vh;
-                }
-            }
-            #welcome-message {
-                padding-top: 2rem;
-                .orange-font {
-                    font-size: 1.15rem;
-                    line-height: 1.65rem;
-                }
-            }
-        }
-        #second-part {
-            padding: 3rem 0;
-            #map {
-                padding: 0;
-                gap: 2rem;
-                iframe {
-                    width: 22vw;
-                    height: 160px;
-                }
-                #landscape-only {
-                    p {
-                        line-height: 1.5rem;
-                        font-size: .9rem;
-                    }
-                }
-            }
-        }
-    }
-    #footer {
-        p {
-            font-size: .9rem;
-            line-height: 1.25rem;
-        }
-    }
-}
-@media screen and (min-width: 1280px) {
-    #header-landscape {
-        #nav-landscape {
-            #menu-landscape {
-                a {
-                    li {
-                        font-size: 1.25rem;
-                    }
-                }
-            }
-        }
-    }
-    #first-section {
-        .store-name {
-            font-size: 4rem;
-            line-height: 4.75rem;
-        }
-        #store-info {
-            .info {
-                width: 16vw;
-                p {
-                    font-size: 1.25rem;
-                }
-            }
-            #address {
-                p {
-                    line-height: 2.25rem;
-                }
-            }
-            #open-hours {
-                p {
-                    line-height: 1.5rem;
-                }
-            }
-        }
-    }
-    #second-section {
-        #second-part {
-            padding: 3.5rem 0 4rem 0;
-            #map {
-                iframe {
-                    width: 32vw;
-                    height: 260px;
-                }
-                #landscape-only {
-                    p {
-                        font-size: 1rem;
-                        line-height: 1.65rem;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (min-width: 1366px) {
-    #first-section {
-        .store-name {
-            h1 {
-                font-size: 6rem;
-                line-height: 5.5rem;
-            }
-            p {
-                font-size: 1.25rem;
-            }
-        }
-        #store-info {
-            .info {
-                width: 18vw;
-                padding-left: 1.75rem;
-            }
-            #address {
-                p {
-                    line-height: 2.25rem;
-                }
-            }
-        }
-    }
-    #second-section {
-        #first-part {
-            #welcome-message {
-                .orange-font {
-                    font-size: 1.25rem;
-                    line-height: 2.25rem;
-                }
-                .gray-font {
-                    font-size: 1.05rem;
-                    line-height: 1.75rem;
-                }
-            }
-        }
-        #second-part {
-            padding: 2.75rem 0 3.25rem 0;
-            #map {
-                iframe {
-                    height: 240px;
-                }
-                #landscape-only {
-                    p {
-                        font-size: 1.05rem;
-                        line-height: 1.85rem;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (min-width: 1440px) {
-    #header-landscape {
-        #nav-landscape {
-            #menu-landscape {
-                a {
-                    li {
-                        font-size: 1.65rem;
-                    }
-                }
-            }
-        }
-    }
-    #first-section {
-        .store-name {
-            h1 {
-                font-size: 7.5rem;
-                line-height: 6.5rem;    
-            }
-        }
-        #store-info {
-            .info {
-                width: 18vw;
-                height: fit-content;
-                padding: 1.75rem 2rem;
-                p {
-                    font-size: 1.5rem;
-                }
-            }
-        }
-    }
-    #second-section {
-        #first-part {
-            justify-content: center;
-            height: 50vh;
-            #images {
-                padding-top: 10vh;
-            }
-            #welcome-message {
-                .orange-font {
-                    font-size: 1.5rem;
-                    line-height: 2.75rem;
-                }
-                .gray-font {
-                    font-size: 1.4rem;
-                    line-height: 2rem;
-                }
-            }
-        }
-        #second-part {
-            justify-content: center;
-            height: 40vh;
-            padding: 0;
-            #map {
-                padding-bottom: 2.5rem;
-                iframe {
-                    width: 28vw;
-                    height: 280px;
-                }
-                #landscape-only {
-                    p {
-                        font-size: 1.35rem;
-                        line-height: 2.25rem;
-                    }
-                }
-            }
-        }
-    }
-
 }

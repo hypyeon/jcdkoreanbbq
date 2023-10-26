@@ -291,6 +291,9 @@ body {
   width: fit-content;
   margin: 0 auto;
 }
+#second-section #first-part #images .landscape {
+  display: none;
+}
 #second-section #first-part #images .grid-item {
   width: 30vw;
   height: 12vh;
@@ -354,6 +357,9 @@ body {
   height: 90vh;
   scroll-snap-align: start;
 }
+#second-section #second-part #welcome {
+  display: none;
+}
 #second-section #second-part a {
   color: white;
 }
@@ -396,7 +402,7 @@ body {
 }
 
 #section-menu {
-  min-height: 92vh;
+  height: 80vh;
   margin-top: 8vh;
 }
 #section-menu #full-menu {
@@ -417,7 +423,7 @@ body {
   padding: 0 2rem 0.5rem 2rem;
 }
 #section-menu #footer {
-  width: 100vw;
+  top: 88vh;
 }
 
 @media screen and (max-width: 375px) {
@@ -591,7 +597,7 @@ body {
     display: none;
   }
   #header-landscape {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(0, 0, 0, 0.25);
     border-bottom: 0;
     display: flex;
     justify-content: center;
@@ -613,7 +619,7 @@ body {
     list-style-type: none;
     width: 15vw;
     font-size: 1.75rem;
-    color: rgb(50, 50, 50);
+    color: white;
   }
   #header-landscape #nav-landscape #menu-landscape a #order-online {
     width: -moz-fit-content;
@@ -622,358 +628,184 @@ body {
     border-radius: 12px;
     background-color: rgb(255, 140, 0);
     color: white;
-    margin-left: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 3vw;
   }
   #header-landscape #nav-landscape #menu-landscape a li:hover {
     color: rgb(255, 140, 0);
-    font-weight: 600;
-    text-shadow: 0 0 6px rgb(255, 255, 255);
+    transition-duration: 0.6s;
   }
   #header-landscape #nav-landscape #menu-landscape a #order-online:hover {
     font-weight: 400;
     text-shadow: none;
     background-color: black;
     color: rgb(255, 140, 0);
+    transition-duration: 0.6s;
   }
   #first-section {
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    gap: 0;
-    width: 74vw;
-    height: 84vh;
-    margin: 8vh auto 0 auto;
-    scroll-snap-align: center;
+    padding-top: 8vh;
+    height: 54vh;
   }
   #first-section .store-name {
     padding-top: 0;
-    font-size: 5rem;
-    line-height: 5rem;
   }
-  #first-section #store-info {
-    flex-direction: column;
-    gap: 1.5rem;
+  #first-section .store-name h1 {
+    font-size: 6.5rem;
+    line-height: 5.25rem;
   }
-  #first-section #store-info .info {
-    width: 16vw;
-    height: 24vh;
-    padding-left: 2.5rem;
+  #first-section .store-name p {
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
-  #first-section #store-info .info p {
-    font-size: 1.75rem;
-  }
-  #first-section #store-info #address p {
-    line-height: 2rem;
-  }
-  #first-section #double-down {
+  #first-section #store-info, #first-section #double-down {
     display: none;
   }
   #second-section {
-    height: 96vh;
-    width: 80vw;
-    margin: auto;
-    background-color: white;
-    border-radius: 30px 30px 0 0;
+    height: 88vh;
+    width: 100vw;
     align-items: center;
-    justify-content: end;
-    scroll-snap-align: start;
+    justify-content: space-around;
+    flex-direction: column-reverse;
   }
   #second-section #first-part {
     gap: 0;
-    width: -moz-fit-content;
-    width: fit-content;
-    justify-content: end;
+    width: 100vw;
+    height: 42vh;
+    background-color: black;
+    justify-content: center;
   }
   #second-section #first-part .store-name {
     display: none;
   }
+  #second-section #first-part #images {
+    gap: 0;
+    padding: 2rem 3rem;
+    background-color: white;
+  }
+  #second-section #first-part #images .landscape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0.5rem 1rem 0.5rem 0.75rem;
+  }
+  #second-section #first-part #images .landscape h4 {
+    font-size: 1.25rem;
+  }
+  #second-section #first-part #images .landscape p {
+    color: gray;
+  }
   #second-section #first-part #images .grid-item {
-    width: 16vw;
+    width: 150px;
+    height: 250px;
   }
   #second-section #first-part #images #grid-1 {
-    border-radius: 20px 0 0 20px;
+    border-radius: 0;
+  }
+  #second-section #first-part #images #g-1 {
+    grid-row: 1;
+    grid-column: 2;
   }
   #second-section #first-part #images #grid-2 {
-    grid-column: 2;
     grid-row: 1;
+    grid-column: 3;
     border-radius: 0;
+  }
+  #second-section #first-part #images #g-2 {
+    grid-row: 1;
+    grid-column: 4;
   }
   #second-section #first-part #images #grid-3 {
-    grid-column: 3;
     grid-row: 1;
+    grid-column: 5;
     border-radius: 0;
   }
-  #second-section #first-part #images #grid-4 {
-    grid-column: 4;
+  #second-section #first-part #images #g-3 {
     grid-row: 1;
-    border-radius: 0 20px 20px 0;
+    grid-column: 6;
+  }
+  #second-section #first-part #images #grid-4 {
+    grid-row: 1;
+    grid-column: 7;
+    border-radius: 0;
+  }
+  #second-section #first-part #images #g-4 {
+    grid-row: 1;
+    grid-column: 8;
   }
   #second-section #first-part #welcome-message {
-    padding-top: 3.5rem;
-  }
-  #second-section #first-part #welcome-message #no-break, #second-section #first-part #welcome-message br {
-    display: none;
-  }
-  #second-section #first-part #welcome-message #yes-break {
-    display: block;
-  }
-  #second-section #first-part #welcome-message .orange-font {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    padding: 0;
-  }
-  #second-section #first-part #welcome-message hr {
-    display: none;
-  }
-  #second-section #first-part #welcome-message .gray-font {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    padding: 0.5rem;
-  }
-  #second-section #first-part #welcome-message .gray-font br {
     display: none;
   }
   #second-section #second-part {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin-top: 0;
-    padding: 5rem 0 4rem 0;
+    width: 100vw;
+    height: 46vh;
+    background-color: rgb(255, 255, 255);
     justify-content: center;
+    scroll-snap-align: center;
   }
-  #second-section #second-part #map {
-    padding: 0;
-    height: -moz-fit-content;
-    height: fit-content;
-    flex-direction: row;
-    gap: 5rem;
-    align-items: center;
-  }
-  #second-section #second-part #map iframe {
-    width: 28vw;
-    height: 240px;
-    border: none;
-  }
-  #second-section #second-part #map a {
+  #second-section #second-part #map, #second-section #second-part .store-name, #second-section #second-part #white-background {
     display: none;
   }
-  #second-section #second-part #map #landscape-only {
-    display: flex;
-    gap: 2rem;
-    padding: 0 2rem;
-    border-left: 1px solid rgba(169, 169, 169, 0.3);
-    border-right: 1px solid rgba(169, 169, 169, 0.3);
-  }
-  #second-section #second-part #map #landscape-only #days {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-  }
-  #second-section #second-part #map #landscape-only #days #blue {
-    color: rgb(50, 50, 255);
-  }
-  #second-section #second-part #map #landscape-only #days #red {
-    color: rgb(255, 35, 35);
-  }
-  #second-section #second-part #map #landscape-only p {
-    line-height: 2rem;
-    color: rgb(105, 105, 105);
+  #second-section #second-part #welcome {
+    display: block;
+    z-index: 3;
     text-align: left;
+    width: 80vw;
+    margin: 0 auto;
   }
-  #second-section #second-part #map #landscape-only p #italic {
+  #second-section #second-part #welcome h1 {
+    color: black;
+    font-family: "Ruda", sans-serif;
+    font-weight: 600;
+    font-size: 4.25rem;
+    line-height: 4rem;
+  }
+  #second-section #second-part #welcome h1 #jcdbbq {
+    font-family: "Rubik Mono One", monospace;
+    font-size: 4.5rem;
+    letter-spacing: 1.25px;
+  }
+  #second-section #second-part #welcome p {
+    color: gray;
+  }
+  #second-section #second-part #welcome #where {
+    padding-left: 0.5rem;
+    padding-bottom: 0.25rem;
     font-style: italic;
+    color: rgb(255, 140, 0);
   }
-  #second-section #second-part .store-name {
-    display: none;
+  #second-section #second-part #welcome #subtitle {
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
-  #second-section #second-part #white-background {
-    display: none;
+  #second-section #second-part #welcome #welcome-title {
+    align-items: end;
   }
   #footer {
     position: absolute;
-    top: 188vh;
+    top: 142vh;
     width: 100vw;
     height: 12vh;
     padding: 1rem 2.5rem;
+    background-color: black;
   }
-  #footer .white-font {
+  #footer p {
     color: white;
-  }
-  #footer p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #header-landscape #nav-landscape #menu-landscape a li {
+    font-weight: 100;
     font-size: 1.15rem;
-  }
-  #first-section .store-name {
-    font-size: 3.5rem;
-    line-height: 4.25rem;
-  }
-  #first-section #store-info .info {
-    width: 18vw;
-    height: 26vh;
-    padding-left: 1.75rem;
-  }
-  #first-section #store-info .info p {
-    font-size: 1rem;
     line-height: 1.5rem;
   }
-  #first-section #store-info #address p {
-    line-height: 1.5rem;
+  #footer p a {
+    color: white;
+    cursor: pointer;
   }
-  #first-section #store-info #open-hours {
-    gap: 1.25rem;
-  }
-  #first-section #store-info #open-hours p {
-    line-height: 1.25rem;
-  }
-  #second-section #first-part #images .grid-item {
-    width: 15vw;
-    height: 16vh;
-  }
-  #second-section #first-part #welcome-message {
-    padding-top: 2rem;
-  }
-  #second-section #first-part #welcome-message .orange-font {
-    font-size: 1.15rem;
-    line-height: 1.65rem;
-  }
-  #second-section #second-part {
-    padding: 3rem 0;
-  }
-  #second-section #second-part #map {
-    padding: 0;
-    gap: 2rem;
-  }
-  #second-section #second-part #map iframe {
-    width: 22vw;
-    height: 160px;
-  }
-  #second-section #second-part #map #landscape-only p {
-    line-height: 1.5rem;
-    font-size: 0.9rem;
-  }
-  #footer p {
-    font-size: 0.9rem;
-    line-height: 1.25rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  #header-landscape #nav-landscape #menu-landscape a li {
-    font-size: 1.25rem;
-  }
-  #first-section .store-name {
-    font-size: 4rem;
-    line-height: 4.75rem;
-  }
-  #first-section #store-info .info {
-    width: 16vw;
-  }
-  #first-section #store-info .info p {
-    font-size: 1.25rem;
-  }
-  #first-section #store-info #address p {
-    line-height: 2.25rem;
-  }
-  #first-section #store-info #open-hours p {
-    line-height: 1.5rem;
-  }
-  #second-section #second-part {
-    padding: 3.5rem 0 4rem 0;
-  }
-  #second-section #second-part #map iframe {
-    width: 32vw;
-    height: 260px;
-  }
-  #second-section #second-part #map #landscape-only p {
-    font-size: 1rem;
-    line-height: 1.65rem;
-  }
-}
-@media screen and (min-width: 1366px) {
-  #first-section .store-name h1 {
-    font-size: 6rem;
-    line-height: 5.5rem;
-  }
-  #first-section .store-name p {
-    font-size: 1.25rem;
-  }
-  #first-section #store-info .info {
-    width: 18vw;
-    padding-left: 1.75rem;
-  }
-  #first-section #store-info #address p {
-    line-height: 2.25rem;
-  }
-  #second-section #first-part #welcome-message .orange-font {
-    font-size: 1.25rem;
-    line-height: 2.25rem;
-  }
-  #second-section #first-part #welcome-message .gray-font {
-    font-size: 1.05rem;
-    line-height: 1.75rem;
-  }
-  #second-section #second-part {
-    padding: 2.75rem 0 3.25rem 0;
-  }
-  #second-section #second-part #map iframe {
-    height: 240px;
-  }
-  #second-section #second-part #map #landscape-only p {
-    font-size: 1.05rem;
-    line-height: 1.85rem;
-  }
-}
-@media screen and (min-width: 1440px) {
-  #header-landscape #nav-landscape #menu-landscape a li {
-    font-size: 1.65rem;
-  }
-  #first-section .store-name h1 {
-    font-size: 7.5rem;
-    line-height: 6.5rem;
-  }
-  #first-section #store-info .info {
-    width: 18vw;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 1.75rem 2rem;
-  }
-  #first-section #store-info .info p {
-    font-size: 1.5rem;
-  }
-  #second-section #first-part {
-    justify-content: center;
-    height: 50vh;
-  }
-  #second-section #first-part #images {
-    padding-top: 10vh;
-  }
-  #second-section #first-part #welcome-message .orange-font {
-    font-size: 1.5rem;
-    line-height: 2.75rem;
-  }
-  #second-section #first-part #welcome-message .gray-font {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-  #second-section #second-part {
-    justify-content: center;
-    height: 40vh;
-    padding: 0;
-  }
-  #second-section #second-part #map {
-    padding-bottom: 2.5rem;
-  }
-  #second-section #second-part #map iframe {
-    width: 28vw;
-    height: 280px;
-  }
-  #second-section #second-part #map #landscape-only p {
-    font-size: 1.35rem;
-    line-height: 2.25rem;
+  #footer p .hayeong:hover {
+    text-decoration: none;
+    color: rgb(255, 189, 108);
+    transition-duration: 0.6s;
   }
 }/*# sourceMappingURL=styles.css.map */
