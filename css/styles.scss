@@ -203,7 +203,10 @@
             padding-top: .75rem;
         }
         h3 {
-            padding-bottom: .75rem;
+            width: fit-content;
+            margin: 0 auto .75rem auto;
+            padding: 0 .35rem;
+            border-bottom: 4px inset rgba(255, 140, 0, 0.5);
         }
         p {
             color: black;
@@ -224,7 +227,7 @@
         width: 30vw;
         height: 54vh;
         background-color: rgb(252, 252, 252);
-        gap: 1.75rem;
+        gap: 2rem;
     }
     iframe {
         width: 20vw;
@@ -243,7 +246,8 @@
         color: black;
     }
     #copyLink {
-        padding: 1rem 0;
+        padding: 1.5rem 0 .25rem 0;
+        line-height: 1.75rem;
     }
     #copyLink:hover {
         text-decoration: underline;
@@ -257,7 +261,7 @@
     #open-hours {
         width: fit-content;
         height: fit-content;
-        margin: 0 auto;
+        margin: 0 auto 3.5rem auto;
         line-height: 2rem;
         gap: 2rem;
         #days {
@@ -535,7 +539,7 @@
                         background-color: rgb(255, 140, 0);
                         color: white;
                         position: absolute;
-                        top: 1rem;
+                        top: 1.5vh;
                         right: 3vw;
                     }
                     li:hover {
@@ -594,7 +598,7 @@
             }
             #images {
                 gap: 0;
-                padding: 2rem 3rem;
+                padding: 2rem;
                 background-color: white;
                 .landscape {
                     display: flex;
@@ -610,8 +614,8 @@
                     }
                 }
                 .grid-item {
-                    width: 150px;
-                    height: 250px;
+                    width: 11vw;
+                    height: 265px;
                 }
                 #grid-1 {
                     border-radius: 0;
@@ -662,11 +666,15 @@
                 display: none;
             }
             #welcome {
-                display: block;
+                display: flex;
                 z-index: 3;
                 text-align: left;
-                width: 80vw;
+                width: 100vw;
                 margin: 0 auto;
+                justify-content: space-between;
+                #texts {
+                    padding-left: 10vw;
+                }
                 h1 {
                     color: black;
                     font-family: 'Ruda', sans-serif;
@@ -687,6 +695,8 @@
                     padding-bottom: .25rem;
                     font-style: italic;
                     color: rgb(255, 140, 0);
+                    letter-spacing: 1px;
+                    font-size: 1rem;
                 }
                 #subtitle {
                     padding-top: 1.5rem;
@@ -695,6 +705,22 @@
                 }
                 #welcome-title {
                     align-items: end;
+                }
+                #icons {
+                    align-items: end;
+                    padding-right: 5vw;
+                    img {
+                        object-fit: cover;
+                        opacity: .25;
+                    }
+                    #grill {
+                        width: 80px;
+                        height: 80px;
+                    }
+                    #soju {
+                        width: 100px;
+                        height: 100px;
+                    }
                 }
             }
         }
@@ -705,6 +731,7 @@
     #section-menu {
         #full-menu {
             margin-top: 0;
+            width: 40vw;
         }
     }
     #footer {

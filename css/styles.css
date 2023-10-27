@@ -46,6 +46,10 @@ section {
   flex-direction: column;
 }
 
+.row {
+  flex-direction: row;
+}
+
 .j-c-c {
   justify-content: center;
 }
@@ -424,7 +428,11 @@ body {
   padding-top: 0.75rem;
 }
 #section-menu #full-menu h3 {
-  padding-bottom: 0.75rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 0.75rem auto;
+  padding: 0 0.35rem;
+  border-bottom: 4px inset rgba(255, 140, 0, 0.5);
 }
 #section-menu #full-menu p {
   color: black;
@@ -445,7 +453,7 @@ body {
   width: 30vw;
   height: 54vh;
   background-color: rgb(252, 252, 252);
-  gap: 1.75rem;
+  gap: 2rem;
 }
 #section-contact iframe {
   width: 20vw;
@@ -464,7 +472,8 @@ body {
   color: black;
 }
 #section-contact #copyLink {
-  padding: 1rem 0;
+  padding: 1.5rem 0 0.25rem 0;
+  line-height: 1.75rem;
 }
 #section-contact #copyLink:hover {
   text-decoration: underline;
@@ -480,7 +489,7 @@ body {
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin: 0 auto;
+  margin: 0 auto 3.5rem auto;
   line-height: 2rem;
   gap: 2rem;
 }
@@ -712,7 +721,7 @@ body {
     background-color: rgb(255, 140, 0);
     color: white;
     position: absolute;
-    top: 1rem;
+    top: 1.5vh;
     right: 3vw;
   }
   #header-landscape #nav-landscape #menu-landscape a li:hover {
@@ -769,7 +778,7 @@ body {
   }
   #second-section #first-part #images {
     gap: 0;
-    padding: 2rem 3rem;
+    padding: 2rem;
     background-color: white;
   }
   #second-section #first-part #images .landscape {
@@ -786,8 +795,8 @@ body {
     color: gray;
   }
   #second-section #first-part #images .grid-item {
-    width: 150px;
-    height: 250px;
+    width: 11vw;
+    height: 265px;
   }
   #second-section #first-part #images #grid-1 {
     border-radius: 0;
@@ -837,11 +846,15 @@ body {
     display: none;
   }
   #second-section #second-part #welcome {
-    display: block;
+    display: flex;
     z-index: 3;
     text-align: left;
-    width: 80vw;
+    width: 100vw;
     margin: 0 auto;
+    justify-content: space-between;
+  }
+  #second-section #second-part #welcome #texts {
+    padding-left: 10vw;
   }
   #second-section #second-part #welcome h1 {
     color: black;
@@ -863,6 +876,8 @@ body {
     padding-bottom: 0.25rem;
     font-style: italic;
     color: rgb(255, 140, 0);
+    letter-spacing: 1px;
+    font-size: 1rem;
   }
   #second-section #second-part #welcome #subtitle {
     padding-top: 1.5rem;
@@ -872,11 +887,29 @@ body {
   #second-section #second-part #welcome #welcome-title {
     align-items: end;
   }
+  #second-section #second-part #welcome #icons {
+    align-items: end;
+    padding-right: 5vw;
+  }
+  #second-section #second-part #welcome #icons img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0.25;
+  }
+  #second-section #second-part #welcome #icons #grill {
+    width: 80px;
+    height: 80px;
+  }
+  #second-section #second-part #welcome #icons #soju {
+    width: 100px;
+    height: 100px;
+  }
   #second-section #footer {
     top: 142vh;
   }
   #section-menu #full-menu {
     margin-top: 0;
+    width: 40vw;
   }
   #footer {
     position: absolute;
