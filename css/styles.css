@@ -14,8 +14,15 @@ html {
 }
 
 body {
-  background-color: black;
   text-align: center;
+}
+
+.body-black {
+  background-color: black;
+}
+
+.body-whitesmoke {
+  background-color: whitesmoke;
 }
 
 .relative {
@@ -426,6 +433,81 @@ body {
   top: 88vh;
 }
 
+#section-contact {
+  height: 80vh;
+  margin-top: 8vh;
+  gap: 2rem;
+}
+#section-contact .card {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  width: 30vw;
+  height: 54vh;
+  background-color: rgb(252, 252, 252);
+  gap: 1.75rem;
+}
+#section-contact iframe {
+  width: 20vw;
+  height: 20vh;
+  border: 0;
+}
+#section-contact p {
+  color: black;
+  font-size: 1.15rem;
+}
+#section-contact h1 {
+  font-size: 2rem;
+  line-height: 1.75rem;
+}
+#section-contact .black-font {
+  color: black;
+}
+#section-contact #copyLink {
+  padding: 1rem 0;
+}
+#section-contact #copyLink:hover {
+  text-decoration: underline;
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
+#section-contact #click {
+  color: rgb(255, 140, 0);
+  font-size: 0.85rem;
+}
+#section-contact #open-hours {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  line-height: 2rem;
+  gap: 2rem;
+}
+#section-contact #open-hours #days {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+#section-contact #open-hours #days #blue {
+  color: rgb(0, 0, 195);
+}
+#section-contact #open-hours #days #red {
+  color: rgb(195, 0, 0);
+}
+#section-contact #open-hours #time {
+  text-align: left;
+}
+#section-contact #phone {
+  background-color: rgb(255, 140, 0);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+}
+#section-contact #phone p {
+  color: white;
+}
+#section-contact #footer {
+  top: 88vh;
+}
+
 @media screen and (max-width: 375px) {
   header nav #menu {
     padding: 2rem 0;
@@ -785,9 +867,11 @@ body {
   #second-section #second-part #welcome #welcome-title {
     align-items: end;
   }
+  #second-section #footer {
+    top: 142vh;
+  }
   #footer {
     position: absolute;
-    top: 142vh;
     width: 100vw;
     height: 12vh;
     padding: 1rem 2.5rem;

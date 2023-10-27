@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>JCD BBQ</title>
 </head>
-<body>
+<body class="body-black">
     <header id="header-portrait">
         <nav id="nav-portrait">
             <input type="checkbox" />
@@ -33,7 +34,11 @@
     </header>
     <main>
         <section class="flex col a-i-c j-c-c" id="section-menu">
-            <div id="full-menu">
+            <div id="full-menu"
+            data-aos="fade-up" 
+            data-aos-offset="100"
+            data-aos-duration="1600"
+            data-aos-delay="400">
                 <div class="meal-type" id="appetizer">
                     <h3 class="orange-font">Appetizer</h2>
                     <div class="flex j-c-sb">
@@ -93,9 +98,9 @@
             </div>  
         </section>
     </main>
-    <footer>
-
-    </footer>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

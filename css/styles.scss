@@ -214,6 +214,78 @@
         top: 88vh;
     }
 }
+#section-contact {
+    height: 80vh;
+    margin-top: 8vh;
+    gap: 2rem;
+    .card {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+        width: 30vw;
+        height: 54vh;
+        background-color: rgb(252, 252, 252);
+        gap: 1.75rem;
+    }
+    iframe {
+        width: 20vw;
+        height: 20vh;
+        border: 0;
+    }
+    p {
+        color: black;
+        font-size: 1.15rem;
+    }
+    h1 {
+        font-size: 2rem;
+        line-height: 1.75rem;
+    }
+    .black-font {
+        color: black;
+    }
+    #copyLink {
+        padding: 1rem 0;
+    }
+    #copyLink:hover {
+        text-decoration: underline;
+        transition-duration: .6s;
+        cursor: pointer;
+    }
+    #click {
+        color: rgb(255, 140, 0);
+        font-size: .85rem;
+    }
+    #open-hours {
+        width: fit-content;
+        height: fit-content;
+        margin: 0 auto;
+        line-height: 2rem;
+        gap: 2rem;
+        #days {
+            letter-spacing: 1px;
+            font-weight: 600;
+            #blue {
+                color: rgb(0, 0, 195);
+            }
+            #red {
+                color: rgb(195, 0, 0);
+            }
+        }
+        #time {
+            text-align: left;
+        }
+    }
+    #phone {
+        background-color: rgb(255, 140, 0);
+        padding: 1rem 2rem;
+        border-radius: 15px;
+        p {
+            color: white;
+        }
+    }
+    #footer {
+        top: 88vh;
+    }
+}
 @media screen and (max-width: 375px) {
     header {
         nav {
@@ -622,10 +694,12 @@
                 }
             }
         }
+        #footer {
+            top: 142vh;
+        }
     }
     #footer {
         position: absolute;
-        top: 142vh;
         width: 100vw;
         height: 12vh;
         padding: 1rem 2.5rem;

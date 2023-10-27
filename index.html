@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    <title>JCD BBQ</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
+    <title>JCD BBQ</title>
 </head>
-<body>
+<body class="body-black">
     <header id="header-portrait">
         <nav id="nav-portrait">
             <input type="checkbox" />
@@ -48,7 +49,8 @@
             data-aos="fade-up" 
             data-aos-offset="100"
             data-aos-duration="2000"
-            data-aos-delay="800">
+            data-aos-delay="800"
+            data-aos-once="false">
                 <div class="info flex a-i-c" id="address">
                     <p id="copyLink">
                         3482 SW <br>
@@ -175,12 +177,7 @@
                 <div class="relative" style="display: none;"></div>
                 <div id="white-background"></div>
                 <div class="flex col" id="welcome">
-                    <div class="flex row" id="welcome-title"
-                    data-aos="fade" 
-                    data-aos-offset="100"
-                    data-aos-duration="2000"
-                    data-aos-delay="800"
-                    data-aos-once="false">
+                    <div class="flex row" id="welcome-title">
                         <h1>
                             Welcome to <br>
                             <span id="jcdbbq">
@@ -189,12 +186,7 @@
                         </h1>
                         <p id="where">where Flavor and Tradition meet.</p>
                     </div>
-                    <div
-                    data-aos="fade" 
-                    data-aos-offset="100"
-                    data-aos-duration="2000"
-                    data-aos-delay="1200"
-                    data-aos-once="false">
+                    <div>
                         <p id="subtitle">
                             Dive into an authentic Korean BBQ experience, sizzle with excitement, <br> 
                             and savor the essence of Korean cuisine at its finest. <br>
@@ -211,9 +203,6 @@
             </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
     <script>
         document.getElementById("copyLink").addEventListener("click", function() {
             // Get the anchor's text content
