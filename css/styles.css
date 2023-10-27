@@ -15,11 +15,11 @@ html {
 
 body {
   text-align: center;
+  z-index: -20;
 }
 
 .body-black {
   background-color: black;
-  z-index: -20;
 }
 
 .body-whitesmoke {

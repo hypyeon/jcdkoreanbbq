@@ -87,7 +87,8 @@
                     data-aos-offset="100"
                     data-aos-duration="1600"
                     data-aos-delay="400"
-                    data-aos-once="false">
+                    data-aos-once="false"
+                    data-aos-mobile="disable">
                         <div class="grid-item" id="grid-1"></div>
                         <div class="grid-item landscape" id="g-1">
                             <h4>
@@ -271,10 +272,38 @@
                 behavior: "smooth", 
             });
         });
+        toNext.addEventListener("touchstart", () => {
+            let nextPageScroll; 
+
+            if (window.innerWidth < 390) {
+                nextPageScroll = 667;
+            } else if (window.innerWidth == 412) {
+                nextPageScroll = 915;
+            } else if (window.innerWidth == 540) {
+                nextPageScroll = 720;
+            } else if (window.innerWidth == 768) {
+                nextPageScroll = 1024;
+            } else if (window.innerWidth == 912) {
+                nextPageScroll = 1368;
+            } else {
+                nextPageScroll = 844;
+            }
+
+            window.scrollTo({
+                top: nextPageScroll,
+                behavior: "smooth", 
+            });
+        });
 
         const toTop = document.getElementById("scroll-up");
 
         toTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }); 
+        toTop.addEventListener("touchstart", () => {
             window.scrollTo({
                 top: 0,
                 behavior: "smooth",
