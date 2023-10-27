@@ -16,6 +16,7 @@
     height: 100vh;
     z-index: -5;
     filter: brightness(40%);
+    transform: translate3d(0,0,0); //suggested by AI - fixing issue for iOS
 }
 #first-section {
     gap: 3rem;
