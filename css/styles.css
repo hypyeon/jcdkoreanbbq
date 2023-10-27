@@ -415,11 +415,10 @@ body {
 }
 
 #section-menu {
-  height: 80vh;
+  height: 82vh;
   margin-top: 8vh;
 }
 #section-menu #full-menu {
-  margin-top: 8vh;
   width: 80vw;
   background-color: white;
   border-radius: 15px;
@@ -440,7 +439,9 @@ body {
   padding: 0 2rem 0.5rem 2rem;
 }
 #section-menu #footer {
-  top: 88vh;
+  position: absolute;
+  top: 90vh;
+  width: 100vw;
 }
 
 #section-contact {
@@ -908,8 +909,10 @@ body {
   #second-section #footer {
     top: 142vh;
   }
+  #section-menu {
+    height: 80vh;
+  }
   #section-menu #full-menu {
-    margin-top: 0;
     width: 40vw;
   }
   #footer {

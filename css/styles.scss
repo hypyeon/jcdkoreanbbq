@@ -192,10 +192,9 @@
     height: 10vh;
 }
 #section-menu {
-    height: 80vh;
+    height: 82vh;
     margin-top: 8vh;
     #full-menu {
-        margin-top: 8vh;
         width: 80vw;
         background-color: white;
         border-radius: 15px;
@@ -215,7 +214,9 @@
         }
     }
     #footer {
-        top: 88vh;
+        position: absolute;
+        top: 90vh;
+        width: 100vw;
     }
 }
 #section-contact {
@@ -730,8 +731,8 @@
         }
     }
     #section-menu {
+        height: 80vh;
         #full-menu {
-            margin-top: 0;
             width: 40vw;
         }
     }

@@ -272,7 +272,7 @@
                 behavior: "smooth", 
             });
         });
-        toNext.addEventListener("touchstart", () => {
+        toNext.addEventListener("touchend", () => {
             let nextPageScroll; 
 
             if (window.innerWidth < 390) {
@@ -303,7 +303,7 @@
                 behavior: "smooth",
             });
         }); 
-        toTop.addEventListener("touchstart", () => {
+        toTop.addEventListener("touchend", () => {
             window.scrollTo({
                 top: 0,
                 behavior: "smooth",
