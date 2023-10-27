@@ -14,7 +14,7 @@
     display: block;
     width: 100vw;
     height: 100vh;
-    z-index: -10;
+    z-index: -5;
     filter: brightness(40%);
 }
 #first-section {
@@ -506,7 +506,7 @@
         display: none;
     }
     #header-landscape {
-        background-color: rgba(0, 0, 0, 0.25);
+        background-color: rgba(0, 0, 0, 0.35);
         border-bottom: 0;
         display: flex;
         justify-content: center;
@@ -552,6 +552,10 @@
                 }
             }
         }
+    }
+    .background {
+        background-position-y: 80%;
+        filter: brightness(30%);
     }
     #first-section {
         align-items: center;
@@ -696,6 +700,11 @@
         }
         #footer {
             top: 142vh;
+        }
+    }
+    #section-menu {
+        #full-menu {
+            margin-top: 0;
         }
     }
     #footer {
