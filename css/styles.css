@@ -23,7 +23,26 @@ body {
 }
 
 .body-whitesmoke {
+  position: relative;
   background-color: whitesmoke;
+  width: 100%;
+  height: 72vh;
+  margin-top: 8vh;
+  background-image: url("../images/Grill.png");
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  background-blend-mode: soft-light;
+}
+
+.body-whitesmoke::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72vh;
+  background: linear-gradient(90deg, transparent 500px, rgba(0, 0, 0, 0) 500px);
+  pointer-events: none;
 }
 
 .relative {
@@ -491,7 +510,7 @@ body {
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin: 0 auto 3.5rem auto;
+  margin: 1.5rem auto;
   line-height: 2rem;
   gap: 2rem;
 }
@@ -712,7 +731,7 @@ body {
   #header-landscape #nav-landscape #menu-landscape a li {
     list-style-type: none;
     width: 15vw;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: white;
   }
   #header-landscape #nav-landscape #menu-landscape a #order-online {
@@ -751,11 +770,11 @@ body {
     padding-top: 0;
   }
   #first-section .store-name h1 {
-    font-size: 6.5rem;
+    font-size: 6rem;
     line-height: 5.25rem;
   }
   #first-section .store-name p {
-    font-size: 1rem;
+    font-size: 1.15rem;
     line-height: 1.75rem;
   }
   #first-section #store-info, #first-section #double-down {
@@ -862,12 +881,12 @@ body {
     color: black;
     font-family: "Ruda", sans-serif;
     font-weight: 600;
-    font-size: 4.25rem;
+    font-size: 3.25rem;
     line-height: 4rem;
   }
   #second-section #second-part #welcome h1 #jcdbbq {
     font-family: "Rubik Mono One", monospace;
-    font-size: 4.5rem;
+    font-size: 3.75rem;
     letter-spacing: 1.25px;
   }
   #second-section #second-part #welcome p {
@@ -875,16 +894,17 @@ body {
   }
   #second-section #second-part #welcome #where {
     padding-left: 0.5rem;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.5rem;
     font-style: italic;
     color: rgb(255, 140, 0);
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-size: 1rem;
   }
   #second-section #second-part #welcome #subtitle {
     padding-top: 1.5rem;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    letter-spacing: 0.25px;
   }
   #second-section #second-part #welcome #welcome-title {
     align-items: end;
@@ -915,6 +935,12 @@ body {
   #section-menu #full-menu {
     width: 40vw;
   }
+  #section-menu #footer {
+    top: 80vh;
+  }
+  #section-contact #footer {
+    top: 80vh;
+  }
   #footer {
     position: absolute;
     width: 100vw;
@@ -923,9 +949,9 @@ body {
     background-color: black;
   }
   #footer p {
-    color: white;
+    color: rgba(255, 255, 255, 0.85);
     font-weight: 100;
-    font-size: 1.15rem;
+    font-size: 1rem;
     line-height: 1.5rem;
   }
   #footer p a {
@@ -936,5 +962,66 @@ body {
     text-decoration: none;
     color: rgb(255, 189, 108);
     transition-duration: 0.6s;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+  #first-section .store-name h1 {
+    font-size: 5.25rem;
+    line-height: 4.75rem;
+  }
+  #second-section #first-part #images {
+    padding: 0.5rem;
+  }
+  #second-section #first-part #images .grid-item {
+    height: 220px;
+  }
+  #second-section #second-part #welcome h1 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+  #second-section #second-part #welcome h1 #jcdbbq {
+    font-size: 3.25rem;
+  }
+  #second-section #second-part #welcome #subtitle {
+    font-size: 1.1rem;
+    padding-top: 1rem;
+  }
+}
+@media screen and (orientation: landscape) and (width: 1024px) {
+  #header-landscape #nav-landscape #menu-landscape a li {
+    font-size: 1.15rem;
+  }
+  #first-section .store-name h1 {
+    font-size: 4.25rem;
+    line-height: 3.75rem;
+  }
+  #second-section #first-part #images {
+    padding: 0.5rem;
+  }
+  #second-section #first-part #images .grid-item {
+    width: 11.5vw;
+    height: 160px;
+  }
+  #second-section #first-part #images .landscape h4 {
+    font-size: 1rem;
+  }
+  #second-section #first-part #images .landscape p {
+    font-size: 0.75rem;
+  }
+  #second-section #second-part #welcome h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  #second-section #second-part #welcome h1 #jcdbbq {
+    font-size: 2.75rem;
+  }
+  #second-section #second-part #welcome #subtitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+  }
+  #footer p {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
   }
 }/*# sourceMappingURL=styles.css.map */

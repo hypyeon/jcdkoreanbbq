@@ -263,7 +263,7 @@
     #open-hours {
         width: fit-content;
         height: fit-content;
-        margin: 0 auto 3.5rem auto;
+        margin: 1.5rem auto;
         line-height: 2rem;
         gap: 2rem;
         #days {
@@ -506,7 +506,6 @@
         }
     }
 }
-
 @media screen and (orientation: landscape) {
     #header-portrait {
         display: none;
@@ -531,7 +530,7 @@
                     li {
                         list-style-type: none;
                         width: 15vw;
-                        font-size: 1.75rem;
+                        font-size: 1.5rem;
                         color: white;
                     }
                     #order-online {
@@ -571,11 +570,11 @@
         .store-name {
             padding-top: 0;
             h1 {
-                font-size: 6.5rem;
+                font-size: 6rem;
                 line-height: 5.25rem;
             }
             p {
-                font-size: 1rem;
+                font-size: 1.15rem;
                 line-height: 1.75rem;
             }
         }
@@ -681,11 +680,11 @@
                     color: black;
                     font-family: 'Ruda', sans-serif;
                     font-weight: 600;
-                    font-size: 4.25rem;
+                    font-size: 3.25rem;
                     line-height: 4rem;
                     #jcdbbq {
                         font-family: 'Rubik Mono One', monospace;
-                        font-size: 4.5rem;
+                        font-size: 3.75rem;
                         letter-spacing: 1.25px;
                     }
                 }
@@ -694,16 +693,17 @@
                 }
                 #where {
                     padding-left: .5rem;
-                    padding-bottom: .25rem;
+                    padding-bottom: .5rem;
                     font-style: italic;
                     color: rgb(255, 140, 0);
-                    letter-spacing: 1px;
+                    letter-spacing: .5px;
                     font-size: 1rem;
                 }
                 #subtitle {
                     padding-top: 1.5rem;
-                    font-size: 1.5rem;
-                    line-height: 2.5rem;
+                    font-size: 1.25rem;
+                    line-height: 2rem;
+                    letter-spacing: .25px;
                 }
                 #welcome-title {
                     align-items: end;
@@ -735,6 +735,14 @@
         #full-menu {
             width: 40vw;
         }
+        #footer {
+            top: 80vh;
+        }
+    }
+    #section-contact {
+        #footer {
+            top: 80vh;
+        }
     }
     #footer {
         position: absolute;
@@ -743,9 +751,9 @@
         padding: 1rem 2.5rem;
         background-color: black;
         p {
-            color: white;
+            color: rgba(255, 255, 255, 0.85);
             font-weight: 100;
-            font-size: 1.15rem;
+            font-size: 1rem;
             line-height: 1.5rem;  
             a {
                 color: white;
@@ -756,6 +764,103 @@
                 color: rgb(255, 189, 108);
                 transition-duration: .6s;
             }
+        }
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+    #first-section {
+        .store-name {
+            h1 {
+                font-size: 5.25rem;
+                line-height: 4.75rem;
+            }
+        }
+    }
+    #second-section {
+        #first-part {
+            #images {
+                padding: .5rem;
+                .grid-item {
+                    height: 220px;
+                }
+            }
+        }
+        #second-part {
+            #welcome {
+                h1 {
+                    font-size: 2.75rem;
+                    line-height: 3rem;
+                    #jcdbbq {
+                        font-size: 3.25rem;
+                    }
+                }
+                #subtitle {
+                    font-size: 1.1rem;
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (orientation: landscape) and (width: 1024px) {
+    #header-landscape {
+        #nav-landscape {
+            #menu-landscape {
+                a {
+                    li {
+                        font-size: 1.15rem;
+                    }
+                }
+            }
+        }
+    }
+    #first-section {
+        .store-name {
+            h1 {
+                font-size: 4.25rem;
+                line-height: 3.75rem;
+            }
+        }
+    }
+    #second-section {
+        #first-part {
+            #images {
+                padding: .5rem;
+                .grid-item {
+                    width: 11.5vw;
+                    height: 160px;
+                }
+                .landscape {
+                    h4 {
+                        font-size: 1rem;
+                    }
+                    p {
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+        #second-part {
+            #welcome {
+                h1 {
+                    font-size: 2.25rem;
+                    line-height: 2.75rem;
+                    #jcdbbq {
+                        font-size: 2.75rem;
+                    }
+                }
+                #subtitle {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+    #footer {
+        p {
+            font-size: .75rem;
+            line-height: 1.25rem;
         }
     }
 }
