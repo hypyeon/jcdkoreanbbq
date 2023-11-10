@@ -378,7 +378,6 @@
         }
     }
 }
-
 @media screen and (min-width: 540px) {
     header {
         nav {
@@ -437,70 +436,6 @@
                     font-size: .85rem;
                     padding: .65rem;
                     border-radius: 10px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 912px) {
-    #first-section {
-        gap: 4.5rem;
-        .store-name {
-            padding-top: 2rem;
-        }
-        #store-info {
-            gap: 2rem;
-            .info {
-                width: 30vw;
-                padding-left: 2rem;
-                p {
-                    font-size: 1.25rem;
-                    #holidays {
-                        font-size: .75rem;
-                        line-height: .5rem;
-                    }
-                }
-            }
-            #address {
-                p {
-                    line-height: 2.25rem;
-                }
-            }
-            #open-hours {
-                gap: 1.25rem;
-                p {
-                    line-height: 1.65rem;
-                }
-            }
-        }
-        #double-down {
-            padding-top: 4rem;
-            img {
-                width: 10vw;
-            }
-        }
-    }
-    #second-section {
-        #first-part {
-            height: 92vh;
-            #images {
-                gap: 1.25rem;
-                .grid-item {
-                    width: 22vw;
-                }
-            }
-            #welcome-message {
-                .gray-font {
-                    padding: 1.5rem 0 0 0;
-                }
-            }
-        }
-        #second-part {
-            #map {
-                iframe {
-                    width: 65vw;
-                    height: 360px;
                 }
             }
         }
@@ -861,6 +796,244 @@
         p {
             font-size: .75rem;
             line-height: 1.25rem;
+        }
+    }
+}
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+    #header-portrait {
+        display: none;
+    }
+    #header-landscape {
+        background-color: rgba(0, 0, 0, 0.35);
+        border-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        transition: opacity .5s;
+        #nav-landscape {
+            display: block;
+            #menu-landscape {
+                a {
+                    display: inline-block;
+                    li {
+                        list-style-type: none;
+                        width: 15vw;
+                        font-size: 1.25rem;
+                        color: white;
+                    }
+                    #order-online {
+                        width: fit-content;
+                        padding: .25rem 1rem;
+                        border-radius: 12px;
+                        background-color: rgb(255, 140, 0);
+                        color: white;
+                        position: absolute;
+                        top: 2.5vh;
+                        right: 3.5vw;
+                    }
+                }
+            }
+        }
+    }
+    .background {
+        background-position-y: 250%;
+        filter: brightness(30%);
+    }
+    #first-section {
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 8vh;
+        height: 54vh;
+        .store-name {
+            padding-top: 0;
+            h1 {
+                font-size: 5rem;
+                line-height: 4.25rem;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 2.25rem;
+            }
+        }
+        #store-info, #double-down {
+            display: none;
+        }
+    }
+    #second-section {
+        height: 88vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        #first-part {
+            gap: 0;
+            width: 100vw;
+            height: 42vh;
+            background-color: black;
+            justify-content: center;
+            .store-name {
+                display: none;
+            }
+            #images {
+                gap: 1rem;
+                padding: 1.5rem;
+                background-color: white;
+                .landscape {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: left;
+                    padding: .25rem;
+                    h4 {
+                        font-size: 1.25rem;
+                    }
+                    p {
+                        color: gray;
+                    }
+                }
+                .grid-item {
+                    width: 20vw;
+                    height: 16vh;
+                }
+                #grid-1 {
+                    border-radius: 0;
+                }
+                #g-1 {
+                    grid-row: 1;
+                    grid-column: 2;
+                }
+                #grid-2 {
+                    grid-row: 1;
+                    grid-column: 3;
+                    border-radius: 0;
+                }
+                #g-2 {
+                    grid-row: 1;
+                    grid-column: 4;
+                }
+                #grid-3 {
+                    grid-row: 2;
+                    grid-column: 1;
+                    border-radius: 0;
+                }
+                #g-3 {
+                    grid-row: 2;
+                    grid-column: 2;
+                }
+                #grid-4 {
+                    grid-row: 2;
+                    grid-column: 3;
+                    border-radius: 0;
+                }
+                #g-4 {
+                    grid-row: 2;
+                    grid-column: 4;
+                }
+            }
+            #welcome-message {
+                display: none;
+            }
+        }
+        #second-part {
+            width: 100vw;
+            height: 46vh;
+            background-color: rgb(255, 255, 255);
+            justify-content: center;
+            scroll-snap-align: center;
+            #map, .store-name, #white-background {
+                display: none;
+            }
+            #welcome {
+                display: flex;
+                z-index: 3;
+                text-align: left;
+                width: 100vw;
+                margin: 0 auto;
+                justify-content: space-between;
+                #texts {
+                    width: fit-content;
+                    margin: auto;
+                }
+                h1 {
+                    color: black;
+                    font-family: 'Ruda', sans-serif;
+                    font-weight: 600;
+                    font-size: 2.75rem;
+                    line-height: 3.25rem;
+                    #jcdbbq {
+                        font-family: 'Rubik Mono One', monospace;
+                        font-size: 3rem;
+                        letter-spacing: 1.25px;
+                    }
+                }
+                p {
+                    color: gray;
+                }
+                #where {
+                    padding-left: .5rem;
+                    padding-bottom: .5rem;
+                    font-style: italic;
+                    color: rgb(255, 140, 0);
+                    letter-spacing: .5px;
+                    font-size: 1rem;
+                }
+                #subtitle {
+                    padding-top: 1.5rem;
+                    font-size: 1.25rem;
+                    line-height: 2rem;
+                    letter-spacing: .25px;
+                }
+                #welcome-title {
+                    align-items: end;
+                }
+                #icons {
+                    display: none;
+                }
+            }
+        }
+        #footer {
+            top: 142vh;
+        }
+    }
+    #section-menu {
+        height: 80vh;
+        #full-menu {
+            width: 40vw;
+        }
+        #footer {
+            top: 80vh;
+        }
+    }
+    #section-contact {
+        #footer {
+            top: 80vh;
+        }
+    }
+    #footer {
+        position: absolute;
+        width: 100vw;
+        height: 12vh;
+        padding: 1rem 2.5rem;
+        background-color: black;
+        p {
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 100;
+            font-size: 1rem;
+            line-height: 1.5rem;  
+            a {
+                color: white;
+                cursor: pointer;
+            }
+            .hayeong:hover {
+                text-decoration: none;
+                color: rgb(255, 189, 108);
+                transition-duration: .6s;
+            }
         }
     }
 }

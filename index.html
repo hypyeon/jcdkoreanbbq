@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+    <script src="./js/scripts.js"></script>
     <title>JCD BBQ</title>
 </head>
 <body class="body-black">
@@ -215,13 +216,16 @@
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script>
-        document.getElementById("copyLink").addEventListener("click", function() {
+        const copyLink = document.getElementById("copyLink")
+        copyLink.addEventListener("click", () => {
             // Get the anchor's text content
-            var linkText = this.innerText;
+            let linkText = copyLink.innerText;
 
             // Create a temporary input element
-            var inputElement = document.createElement("input");
+            const inputElement = document.createElement("input");
             inputElement.value = linkText;
             document.body.appendChild(inputElement);
 
@@ -235,84 +239,6 @@
             // Provide feedback to the user (optional)
             alert("Address copied!");
         });
-    </script>
-    <script>
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                document.getElementById("header-landscape").style.opacity = "0";
-            } else {
-                document.getElementById("header-landscape").style.opacity = "1";
-            }
-        }
-    </script>
-    <script>
-        const toNext = document.getElementById("down-btn");
-
-        toNext.addEventListener("click", () => {
-            let nextPageScroll; 
-
-            if (window.innerWidth < 390) {
-                nextPageScroll = 667;
-            } else if (window.innerWidth == 412) {
-                nextPageScroll = 915;
-            } else if (window.innerWidth == 540) {
-                nextPageScroll = 720;
-            } else if (window.innerWidth == 768) {
-                nextPageScroll = 1024;
-            } else if (window.innerWidth == 912) {
-                nextPageScroll = 1368;
-            } else {
-                nextPageScroll = 844;
-            }
-
-            window.scrollTo({
-                top: nextPageScroll,
-                behavior: "smooth", 
-            });
-        });
-        toNext.addEventListener("touchend", () => {
-            let nextPageScroll; 
-
-            if (window.innerWidth < 390) {
-                nextPageScroll = 667;
-            } else if (window.innerWidth == 412) {
-                nextPageScroll = 915;
-            } else if (window.innerWidth == 540) {
-                nextPageScroll = 720;
-            } else if (window.innerWidth == 768) {
-                nextPageScroll = 1024;
-            } else if (window.innerWidth == 912) {
-                nextPageScroll = 1368;
-            } else {
-                nextPageScroll = 844;
-            }
-
-            window.scrollTo({
-                top: nextPageScroll,
-                behavior: "smooth", 
-            });
-        });
-
-        const toTop = document.getElementById("scroll-up");
-
-        toTop.addEventListener("click", () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-            });
-        }); 
-        toTop.addEventListener("touchend", () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-            });
-        }); 
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
     </script>
 </body>
 </html>
