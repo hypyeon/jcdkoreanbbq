@@ -433,36 +433,6 @@ body {
   height: 10vh;
 }
 
-#section-menu {
-  height: 82vh;
-  margin-top: 8vh;
-}
-#section-menu #full-menu {
-  width: 80vw;
-  background-color: white;
-  border-radius: 15px;
-  padding: 1.25rem 0;
-}
-#section-menu #full-menu .meal-type {
-  padding-top: 0.75rem;
-}
-#section-menu #full-menu h3 {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto 0.75rem auto;
-  padding: 0 0.35rem;
-  border-bottom: 4px inset rgba(255, 140, 0, 0.5);
-}
-#section-menu #full-menu p {
-  color: black;
-  padding: 0 2rem 0.5rem 2rem;
-}
-#section-menu #footer {
-  position: absolute;
-  top: 90vh;
-  width: 100vw;
-}
-
 #section-contact {
   height: 80vh;
   margin-top: 8vh;
@@ -674,12 +644,14 @@ body {
   }
   #header-landscape #nav-landscape #menu-landscape a {
     display: inline-block;
+    cursor: default;
   }
   #header-landscape #nav-landscape #menu-landscape a li {
     list-style-type: none;
-    width: 15vw;
+    margin: 0 3.5rem;
     font-size: 1.5rem;
     color: white;
+    cursor: pointer;
   }
   #header-landscape #nav-landscape #menu-landscape a #order-online {
     width: -moz-fit-content;

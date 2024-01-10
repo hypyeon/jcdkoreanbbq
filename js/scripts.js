@@ -8,8 +8,8 @@ window.onscroll = () => {
 };
 
 // Button scroll
-const toNext = document.getElementById("down-btn");
-toNext.addEventListener("click", () => {
+
+function scrollDown() {
     let nextPageScroll; 
 
     if (window.innerWidth < 390) {
@@ -30,41 +30,10 @@ toNext.addEventListener("click", () => {
         top: nextPageScroll,
         behavior: "smooth", 
     });
-});
-toNext.addEventListener("touchend", () => {
-    let nextPageScroll; 
-
-    if (window.innerWidth < 390) {
-        nextPageScroll = 667;
-    } else if (window.innerWidth == 412) {
-        nextPageScroll = 915;
-    } else if (window.innerWidth == 540) {
-        nextPageScroll = 720;
-    } else if (window.innerWidth == 768) {
-        nextPageScroll = 1024;
-    } else if (window.innerWidth == 912) {
-        nextPageScroll = 1368;
-    } else {
-        nextPageScroll = 844;
-    }
-
-    window.scrollTo({
-        top: nextPageScroll,
-        behavior: "smooth", 
-    });
-});
-const toTop = document.getElementById("scroll-up");
-toTop.addEventListener("click", () => {
+}
+function scrollUp() {
     window.scrollTo({
         top: 0,
         behavior: "smooth",
     });
-}); 
-toTop.addEventListener("touchend", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-    });
-}); 
-
-
+}

@@ -17,7 +17,7 @@
             <span></span> 
             <ul class="flex col a-i-c" id="menu">
                 <a href="./index.html"><li>Home</li></a>
-                <a href="./menu.html"><li>Menu</li></a>
+                <a onclick="openPDF()"><li>Menu</li></a>
                 <a href="tel:+1 503 644 7378"><li>Contact</li></a>
                 <a href="https://www.chownow.com/order/33571/locations/50353" target="_blank"><li id="order-online">Order Online</li></a>
             </ul>
@@ -25,9 +25,9 @@
     </header>
     <header id="header-landscape">
         <nav id="nav-landscape">
-            <ul class="" id="menu-landscape">
+            <ul id="menu-landscape">
                 <a href="./index.html"><li>Home</li></a>
-                <a href="./menu.html"><li>Menu</li></a>
+                <a onclick="openPDF()"><li>Menu</li></a>
                 <a href="./contact.html"><li>Contact</li></a>
                 <a href="https://www.chownow.com/order/33571/locations/50353" target="_blank"><li id="order-online">Order Online</li></a>
             </ul>
@@ -73,7 +73,7 @@
                 </div>
             </div>   
             <div id="double-down">
-                <img src="images/double-down.png" alt="Down" id="down-btn">
+                <img src="images/double-down.png" alt="Down" onclick="scrollDown()">
             </div> 
         </section>
         <section class="flex col j-c-sb" id="second-section">
@@ -172,7 +172,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="store-name flex col j-c-c" id="scroll-up">
+                <div class="store-name flex col j-c-c" onclick="scrollUp()">
                     <h1 class="orange-font">JCD</h1>
                     <h1>BBQ</h1>    
                 </div>
@@ -239,6 +239,9 @@
             // Provide feedback to the user (optional)
             alert("Address copied!");
         });
+        function openPDF() {
+            window.open('./images/pdf/full-menu.pdf', '_blank');
+        }
     </script>
 </body>
 </html>

@@ -191,34 +191,6 @@
 #footer {
     height: 10vh;
 }
-#section-menu {
-    height: 82vh;
-    margin-top: 8vh;
-    #full-menu {
-        width: 80vw;
-        background-color: white;
-        border-radius: 15px;
-        padding: 1.25rem 0;
-        .meal-type {
-            padding-top: .75rem;
-        }
-        h3 {
-            width: fit-content;
-            margin: 0 auto .75rem auto;
-            padding: 0 .35rem;
-            border-bottom: 4px inset rgba(255, 140, 0, 0.5);
-        }
-        p {
-            color: black;
-            padding: 0 2rem .5rem 2rem;
-        }
-    }
-    #footer {
-        position: absolute;
-        top: 90vh;
-        width: 100vw;
-    }
-}
 #section-contact {
     height: 80vh;
     margin-top: 8vh;
@@ -462,11 +434,13 @@
             #menu-landscape {
                 a {
                     display: inline-block;
+                    cursor: default;
                     li {
                         list-style-type: none;
-                        width: 15vw;
+                        margin: 0 3.5rem;
                         font-size: 1.5rem;
                         color: white;
+                        cursor: pointer;
                     }
                     #order-online {
                         width: fit-content;
