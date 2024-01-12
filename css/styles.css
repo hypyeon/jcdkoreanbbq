@@ -369,7 +369,7 @@ body {
   display: none;
 }
 #second-section #first-part #welcome-message .orange-font {
-  padding: 2rem 0 1rem 0;
+  padding: 2rem 1rem 1rem 1rem;
   font-size: 1rem;
   line-height: 1.65rem;
   letter-spacing: 0.25px;
@@ -382,7 +382,7 @@ body {
 }
 #second-section #first-part #welcome-message .gray-font {
   font-weight: 200;
-  padding: 0.95rem 0;
+  padding: 0.95rem 1.25rem;
   line-height: 1.5rem;
 }
 #second-section #second-part {
