@@ -356,7 +356,7 @@
     #first-section {
         gap: 3.75rem;
         #logo-main {
-            width: 38vw;
+            width: 52vw;
         }
         #double-down {
             img {
@@ -367,7 +367,7 @@
     #second-section {
         #first-part {
             #logo-intro {
-                display: none;
+                width: 36vw;
             }
             #images {
                 gap: .8rem;
@@ -380,15 +380,20 @@
                     font-size: .9rem;
                     line-height: 1.5rem;
                     padding: 1.25rem 0;
+                    margin: 0 20vw;
                 }
                 .gray-font {
                     font-size: .8rem;
                     line-height: 1.25rem;
                     padding: 1rem 0;
+                    margin: 0 16vw;
                 }
             }
         }
         #second-part {
+            #logo-end {
+                width: 28vw;
+            }
             #map {
                 iframe {
                     width: 360px;
@@ -467,16 +472,9 @@
         justify-content: space-around;
         padding-top: 8vh;
         height: 54vh;
-        .store-name {
-            padding-top: 0;
-            h1 {
-                font-size: 6rem;
-                line-height: 5.25rem;
-            }
-            p {
-                font-size: 1.15rem;
-                line-height: 1.75rem;
-            }
+        #logo-main {
+            width: 32vw;
+            padding-left: 14px;
         }
         #store-info, #double-down {
             display: none;
@@ -494,7 +492,7 @@
             height: 42vh;
             background-color: black;
             justify-content: center;
-            .store-name {
+            #logo-intro {
                 display: none;
             }
             #images {
@@ -563,6 +561,9 @@
             background-color: rgb(255, 255, 255);
             justify-content: center;
             scroll-snap-align: center;
+            #logo-end {
+                display: none;
+            }
             #map, .store-name, #white-background {
                 display: none;
             }
@@ -902,6 +903,9 @@
             background-color: rgb(255, 255, 255);
             justify-content: center;
             scroll-snap-align: center;
+            #logo-end {
+                display: none;
+            }
             #map, .store-name, #white-background {
                 display: none;
             }

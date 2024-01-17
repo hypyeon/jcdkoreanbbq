@@ -577,13 +577,13 @@ body {
     gap: 3.75rem;
   }
   #first-section #logo-main {
-    width: 38vw;
+    width: 52vw;
   }
   #first-section #double-down img {
     width: 10vw;
   }
   #second-section #first-part #logo-intro {
-    display: none;
+    width: 36vw;
   }
   #second-section #first-part #images {
     gap: 0.8rem;
@@ -595,11 +595,16 @@ body {
     font-size: 0.9rem;
     line-height: 1.5rem;
     padding: 1.25rem 0;
+    margin: 0 20vw;
   }
   #second-section #first-part #welcome-message .gray-font {
     font-size: 0.8rem;
     line-height: 1.25rem;
     padding: 1rem 0;
+    margin: 0 16vw;
+  }
+  #second-section #second-part #logo-end {
+    width: 28vw;
   }
   #second-section #second-part #map iframe {
     width: 360px;
@@ -675,16 +680,9 @@ body {
     padding-top: 8vh;
     height: 54vh;
   }
-  #first-section .store-name {
-    padding-top: 0;
-  }
-  #first-section .store-name h1 {
-    font-size: 6rem;
-    line-height: 5.25rem;
-  }
-  #first-section .store-name p {
-    font-size: 1.15rem;
-    line-height: 1.75rem;
+  #first-section #logo-main {
+    width: 32vw;
+    padding-left: 14px;
   }
   #first-section #store-info, #first-section #double-down {
     display: none;
@@ -703,7 +701,7 @@ body {
     background-color: black;
     justify-content: center;
   }
-  #second-section #first-part .store-name {
+  #second-section #first-part #logo-intro {
     display: none;
   }
   #second-section #first-part #images {
@@ -771,6 +769,9 @@ body {
     background-color: rgb(255, 255, 255);
     justify-content: center;
     scroll-snap-align: center;
+  }
+  #second-section #second-part #logo-end {
+    display: none;
   }
   #second-section #second-part #map, #second-section #second-part .store-name, #second-section #second-part #white-background {
     display: none;
@@ -1072,6 +1073,9 @@ body {
     background-color: rgb(255, 255, 255);
     justify-content: center;
     scroll-snap-align: center;
+  }
+  #second-section #second-part #logo-end {
+    display: none;
   }
   #second-section #second-part #map, #second-section #second-part .store-name, #second-section #second-part #white-background {
     display: none;
