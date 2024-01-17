@@ -102,7 +102,7 @@ section {
 }
 
 .orange-font {
-  color: rgb(255, 140, 0);
+  color: rgb(255, 93, 44);
 }
 
 .gray-font {
@@ -268,16 +268,9 @@ body {
   gap: 3rem;
   scroll-snap-align: center;
 }
-#first-section .store-name {
-  font-size: 3rem;
-  line-height: 4rem;
-  padding-top: calc(4rem + 8vh);
-}
-#first-section .store-name p {
-  color: rgba(245, 245, 245, 0.75);
-  font-size: 1rem;
-  line-height: 3rem;
-  font-weight: 200;
+#first-section #logo-main {
+  width: 88vw;
+  padding-left: 16px;
 }
 #first-section #store-info {
   text-align: left;
@@ -312,10 +305,10 @@ body {
   height: 100vh;
   scroll-snap-align: start;
 }
-#second-section #first-part .store-name {
-  padding: calc(2rem + 8vh) 0 2.5rem 0;
-  font-size: 2.25rem;
-  line-height: 3rem;
+#second-section #first-part #logo-intro {
+  width: 56vw;
+  padding-left: 14px;
+  margin: 1rem 0;
 }
 #second-section #first-part #images {
   gap: 0.75rem;
@@ -331,7 +324,7 @@ body {
   height: 12vh;
 }
 #second-section #first-part #images #grid-1 {
-  background-image: url("../images/grill.jpg");
+  background-image: url("../images/galbi.jpeg");
   background-position: center;
   background-size: cover;
   grid-column: 1;
@@ -339,7 +332,7 @@ body {
   border-radius: 20px 0 0 0;
 }
 #second-section #first-part #images #grid-2 {
-  background-image: url("../images/banchan.jpg");
+  background-image: url("../images/bibimbap.jpg");
   background-position: center;
   background-size: cover;
   grid-column: 1;
@@ -347,7 +340,7 @@ body {
   border-radius: 0 0 0 20px;
 }
 #second-section #first-part #images #grid-3 {
-  background-image: url("../images/wrap.jpg");
+  background-image: url("../images/bulgogi.jpg");
   background-position: center;
   background-size: cover;
   grid-column: 2;
@@ -355,7 +348,7 @@ body {
   border-radius: 0 20px 0 0;
 }
 #second-section #first-part #images #grid-4 {
-  background-image: url("../images/kimchistew.jpg");
+  background-image: url("../images/porkbelly.jpg");
   background-position: center;
   background-size: cover;
   grid-column: 2;
@@ -369,7 +362,7 @@ body {
   display: none;
 }
 #second-section #first-part #welcome-message .orange-font {
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 3rem 1rem 1rem 1rem;
   font-size: 1rem;
   line-height: 1.65rem;
   letter-spacing: 0.25px;
@@ -397,7 +390,7 @@ body {
 }
 #second-section #second-part #map {
   height: 60vh;
-  padding: calc(3rem + 8vh) 0 3rem 0;
+  padding: calc(3rem + 6vh) 0 3rem 0;
 }
 #second-section #second-part #map iframe {
   width: 280px;
@@ -415,17 +408,16 @@ body {
 #second-section #second-part #map #landscape-only {
   display: none;
 }
-#second-section #second-part .store-name {
-  font-size: 1.75rem;
-  line-height: 2.5rem;
-  height: 20vh;
+#second-section #second-part #logo-end {
+  width: 52vw;
+  padding-left: 14px;
 }
 #second-section #second-part #white-background {
   width: 100vw;
-  height: 122vh;
+  height: 118vh;
   background-color: white;
   position: absolute;
-  top: 142vh;
+  top: 146vh;
   z-index: -2;
 }
 
@@ -537,10 +529,8 @@ body {
   #second-section #first-part {
     gap: 0;
   }
-  #second-section #first-part .store-name {
-    font-size: 1.75rem;
-    line-height: 2.5rem;
-    padding: calc(1rem + 8vh) 0 1.5rem 0;
+  #second-section #first-part #logo-intro {
+    width: 40vw;
   }
   #second-section #first-part #images {
     gap: 0.75rem;
@@ -586,14 +576,14 @@ body {
   #first-section {
     gap: 3.75rem;
   }
-  #first-section .store-name {
-    padding-top: 2rem;
+  #first-section #logo-main {
+    width: 38vw;
   }
   #first-section #double-down img {
     width: 10vw;
   }
-  #second-section #first-part .store-name {
-    padding: 1rem 0 2.5rem 0;
+  #second-section #first-part #logo-intro {
+    display: none;
   }
   #second-section #first-part #images {
     gap: 0.8rem;
@@ -994,16 +984,8 @@ body {
     padding-top: 8vh;
     height: 54vh;
   }
-  #first-section .store-name {
-    padding-top: 0;
-  }
-  #first-section .store-name h1 {
-    font-size: 5rem;
-    line-height: 4.25rem;
-  }
-  #first-section .store-name p {
-    font-size: 1rem;
-    line-height: 2.25rem;
+  #first-section #logo-main {
+    width: 68vw;
   }
   #first-section #store-info, #first-section #double-down {
     display: none;
@@ -1022,7 +1004,7 @@ body {
     background-color: black;
     justify-content: center;
   }
-  #second-section #first-part .store-name {
+  #second-section #first-part #logo-intro {
     display: none;
   }
   #second-section #first-part #images {
@@ -1122,22 +1104,15 @@ body {
   #second-section #second-part #welcome p {
     color: gray;
   }
-  #second-section #second-part #welcome #where {
-    padding-left: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-style: italic;
-    color: rgb(255, 140, 0);
-    letter-spacing: 0.5px;
-    font-size: 1rem;
-  }
   #second-section #second-part #welcome #subtitle {
-    padding-top: 1.5rem;
+    padding: 1.5rem 2rem 0;
     font-size: 1.25rem;
     line-height: 2rem;
     letter-spacing: 0.25px;
   }
   #second-section #second-part #welcome #welcome-title {
     align-items: end;
+    padding: 0 2rem;
   }
   #second-section #second-part #welcome #icons {
     display: none;

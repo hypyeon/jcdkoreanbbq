@@ -21,16 +21,9 @@
 #first-section {
     gap: 3rem;
     scroll-snap-align: center; 
-    .store-name {
-        font-size: 3rem;
-        line-height: 4rem;
-        padding-top: calc(4rem + 8vh);
-        p {
-            color: rgba(245, 245, 245, 0.75);
-            font-size: 1rem;
-            line-height: 3rem;
-            font-weight: 200;
-        }
+    #logo-main {
+        width: 88vw;
+        padding-left: 16px;
     }
     #store-info {
         text-align: left;
@@ -71,10 +64,10 @@
     #first-part {
         height: 100vh;
         scroll-snap-align: start; 
-        .store-name {
-            padding: calc(2rem + 8vh) 0 2.5rem 0;
-            font-size: 2.25rem;
-            line-height: 3rem;
+        #logo-intro {
+            width: 56vw;
+            padding-left: 14px;
+            margin: 1rem 0;
         }
         #images {
             .landscape {
@@ -88,7 +81,7 @@
                 height: 12vh;
             }
             #grid-1 {
-                background-image: url('../images/grill.jpg');
+                background-image: url('../images/galbi.jpeg');
                 background-position: center;
                 background-size: cover;
                 grid-column: 1;
@@ -96,7 +89,7 @@
                 border-radius: 20px 0 0 0;
             }
             #grid-2 {
-                background-image: url('../images/banchan.jpg');
+                background-image: url('../images/bibimbap.jpg');
                 background-position: center;
                 background-size: cover;
                 grid-column: 1;
@@ -104,7 +97,7 @@
                 border-radius: 0 0 0 20px;
             }
             #grid-3 {
-                background-image: url('../images/wrap.jpg');
+                background-image: url('../images/bulgogi.jpg');
                 background-position: center;
                 background-size: cover;
                 grid-column: 2;
@@ -112,7 +105,7 @@
                 border-radius: 0 20px 0 0;
             }
             #grid-4 {
-                background-image: url('../images/kimchistew.jpg');
+                background-image: url('../images/porkbelly.jpg');
                 background-position: center;
                 background-size: cover;
                 grid-column: 2;
@@ -126,7 +119,7 @@
                 display: none;
             }
             .orange-font {
-                padding: 2rem 1rem 1rem 1rem;
+                padding: 3rem 1rem 1rem 1rem;
                 font-size: 1rem;
                 line-height: 1.65rem;
                 letter-spacing: 0.25px;
@@ -156,7 +149,7 @@
         }
         #map {
             height: 60vh;
-            padding: calc(3rem + 8vh) 0 3rem 0;
+            padding: calc(3rem + 6vh) 0 3rem 0;
             iframe {
                 width: 280px;
                 height: 280px;
@@ -173,17 +166,16 @@
                 display: none;
             }
         }
-        .store-name {
-            font-size: 1.75rem;
-            line-height: 2.5rem;
-            height: 20vh;
+        #logo-end {
+            width: 52vw;
+            padding-left: 14px;
         }
         #white-background {
             width: 100vw;
-            height: 122vh;
+            height: 118vh;
             background-color: white;
             position: absolute;
-            top: calc(100vh + 42vh);
+            top: calc(100vh + 46vh);
             z-index: -2;
         }  
     }
@@ -302,10 +294,9 @@
     #second-section {
         #first-part {
             gap: 0;
-            .store-name {
-                font-size: 1.75rem;
-                line-height: 2.5rem;
-                padding: calc(1rem + 8vh) 0 1.5rem 0;
+            #logo-intro {
+                width: 40vw;
+
             }
             #images {
                 gap: .75rem;
@@ -364,8 +355,8 @@
     }
     #first-section {
         gap: 3.75rem;
-        .store-name {
-            padding-top: 2rem;
+        #logo-main {
+            width: 38vw;
         }
         #double-down {
             img {
@@ -375,8 +366,8 @@
     }
     #second-section {
         #first-part {
-            .store-name {
-                padding: 1rem 0 2.5rem 0;
+            #logo-intro {
+                display: none;
             }
             #images {
                 gap: .8rem;
@@ -823,16 +814,8 @@
         justify-content: space-around;
         padding-top: 8vh;
         height: 54vh;
-        .store-name {
-            padding-top: 0;
-            h1 {
-                font-size: 5rem;
-                line-height: 4.25rem;
-            }
-            p {
-                font-size: 1rem;
-                line-height: 2.25rem;
-            }
+        #logo-main {
+            width: 68vw;
         }
         #store-info, #double-down {
             display: none;
@@ -850,7 +833,7 @@
             height: 42vh;
             background-color: black;
             justify-content: center;
-            .store-name {
+            #logo-intro {
                 display: none;
             }
             #images {
@@ -948,22 +931,15 @@
                 p {
                     color: gray;
                 }
-                #where {
-                    padding-left: .5rem;
-                    padding-bottom: .5rem;
-                    font-style: italic;
-                    color: rgb(255, 140, 0);
-                    letter-spacing: .5px;
-                    font-size: 1rem;
-                }
                 #subtitle {
-                    padding-top: 1.5rem;
+                    padding: 1.5rem 2rem 0;
                     font-size: 1.25rem;
                     line-height: 2rem;
                     letter-spacing: .25px;
                 }
                 #welcome-title {
                     align-items: end;
+                    padding: 0 2rem;
                 }
                 #icons {
                     display: none;
