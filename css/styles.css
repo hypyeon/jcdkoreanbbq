@@ -706,6 +706,7 @@ body {
     gap: 0;
     width: 100vw;
     height: 42vh;
+    margin-bottom: 0;
     background-color: black;
     justify-content: center;
   }
@@ -777,6 +778,7 @@ body {
     background-color: rgb(255, 255, 255);
     justify-content: center;
     scroll-snap-align: center;
+    padding-top: 0;
   }
   #second-section #second-part #logo-end {
     display: none;
