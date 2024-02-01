@@ -21,9 +21,11 @@
 #first-section {
     gap: 3rem;
     scroll-snap-align: center; 
+    padding-top: 8vh;
+    height: 100vh;
     #logo-main {
-        width: 88vw;
-        padding-left: 16px;
+        width: 80vw;
+        padding-left: 14px;
     }
     #store-info {
         text-align: left;
@@ -62,12 +64,13 @@
 }
 #second-section {
     #first-part {
-        height: 100vh;
         scroll-snap-align: start; 
+        height: 100vh;
+        padding-top: 8vh;
         #logo-intro {
-            width: 56vw;
-            padding-left: 14px;
-            margin: 1rem 0;
+            width: 48vw;
+            padding-left: 12px;
+            margin: 1rem 0 2rem 0;
         }
         #images {
             .landscape {
@@ -142,14 +145,15 @@
         #welcome {
             display: none;
         }
-        height: 90vh;
+        padding-top: 8vh;
+        height: 94vh;
         scroll-snap-align: start; 
         a {
             color: white;
         }
         #map {
-            height: 60vh;
-            padding: calc(3rem + 6vh) 0 3rem 0;
+            // padding: calc(3rem + 6vh) 0 3rem 0;
+            padding: 2rem 0;
             iframe {
                 width: 280px;
                 height: 280px;
@@ -167,21 +171,28 @@
             }
         }
         #logo-end {
-            width: 52vw;
-            padding-left: 14px;
+            width: 38vw;
+            padding-left: 12px;
         }
         #white-background {
             width: 100vw;
-            height: 118vh;
+            height: 120vh;
             background-color: white;
             position: absolute;
-            top: calc(100vh + 46vh);
+            top: calc(100vh + 48vh);
             z-index: -2;
         }  
     }
 }
 #footer {
-    height: 10vh;
+    height: 6vh;
+    p {
+        font-size: .65rem;
+        line-height: 1.5;
+    }
+    .copyright {
+        display: none;
+    }
 }
 #section-contact {
     height: 80vh;
@@ -295,8 +306,8 @@
         #first-part {
             gap: 0;
             #logo-intro {
-                width: 40vw;
-
+                width: 48vw;
+                margin-bottom: 1rem;
             }
             #images {
                 gap: .75rem;
@@ -308,12 +319,12 @@
                 .orange-font {
                     font-size: .9rem;
                     line-height: 1.5rem;
-                    padding: 1rem 0;
+                    padding: 1.5rem 1.75rem 1rem 1.75rem;
                 }
                 .gray-font {
                     font-size: .8rem;
                     line-height: 1.25rem;
-                    padding: 1rem 0;
+                    padding: 1rem 3rem;
                 }
             }
         }
@@ -816,7 +827,7 @@
         padding-top: 8vh;
         height: 54vh;
         #logo-main {
-            width: 68vw;
+            width: 58vw;
         }
         #store-info, #double-down {
             display: none;
@@ -829,6 +840,7 @@
         justify-content: space-around;
         flex-direction: column-reverse;
         #first-part {
+            padding-top: 0;
             gap: 0;
             width: 100vw;
             height: 42vh;
@@ -971,7 +983,7 @@
     #footer {
         position: absolute;
         width: 100vw;
-        height: 12vh;
+        height: 8vh;
         padding: 1rem 2.5rem;
         background-color: black;
         p {

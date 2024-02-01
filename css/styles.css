@@ -10,7 +10,8 @@ html {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 100%;
+  height: 100vh;
+  scroll-padding: 0;
 }
 
 body {
@@ -51,10 +52,6 @@ body {
 
 section {
   width: 100vw;
-}
-
-#first-section, #first-part, #second-part {
-  height: 100vh;
 }
 
 .flex {
@@ -102,7 +99,7 @@ section {
 }
 
 .orange-font {
-  color: rgb(255, 93, 44);
+  color: rgb(255, 111, 0);
 }
 
 .gray-font {
@@ -180,10 +177,9 @@ a {
   top: calc(8vh - (8vh - 24px) / 2);
   left: calc(56px - 100vw);
   width: 100vw;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 64vh;
   padding: 3.5rem 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   opacity: 0;
@@ -192,9 +188,9 @@ a {
   border-bottom: 0.5px solid black;
 }
 #header-portrait #nav-portrait #menu li {
-  padding: 1.25rem 0;
+  padding: 1.75rem 0;
   font-size: 1.55rem;
-  color: black;
+  color: white;
   font-weight: 600;
   width: -moz-fit-content;
   width: fit-content;
@@ -203,7 +199,7 @@ a {
 #header-portrait #nav-portrait #menu #order-online {
   color: white;
   background-color: rgb(255, 140, 0);
-  margin-top: 0.75rem;
+  margin-top: 1.75rem;
   padding: 0.5rem 1rem;
   border-radius: 10px;
   letter-spacing: 0;
@@ -267,10 +263,12 @@ body {
 #first-section {
   gap: 3rem;
   scroll-snap-align: center;
+  padding-top: 8vh;
+  height: 100vh;
 }
 #first-section #logo-main {
-  width: 88vw;
-  padding-left: 16px;
+  width: 80vw;
+  padding-left: 14px;
 }
 #first-section #store-info {
   text-align: left;
@@ -302,13 +300,14 @@ body {
 }
 
 #second-section #first-part {
-  height: 100vh;
   scroll-snap-align: start;
+  height: 100vh;
+  padding-top: 8vh;
 }
 #second-section #first-part #logo-intro {
-  width: 56vw;
-  padding-left: 14px;
-  margin: 1rem 0;
+  width: 48vw;
+  padding-left: 12px;
+  margin: 1rem 0 2rem 0;
 }
 #second-section #first-part #images {
   gap: 0.75rem;
@@ -379,7 +378,8 @@ body {
   line-height: 1.5rem;
 }
 #second-section #second-part {
-  height: 90vh;
+  padding-top: 8vh;
+  height: 94vh;
   scroll-snap-align: start;
 }
 #second-section #second-part #welcome {
@@ -389,8 +389,7 @@ body {
   color: white;
 }
 #second-section #second-part #map {
-  height: 60vh;
-  padding: calc(3rem + 6vh) 0 3rem 0;
+  padding: 2rem 0;
 }
 #second-section #second-part #map iframe {
   width: 280px;
@@ -409,20 +408,27 @@ body {
   display: none;
 }
 #second-section #second-part #logo-end {
-  width: 52vw;
-  padding-left: 14px;
+  width: 38vw;
+  padding-left: 12px;
 }
 #second-section #second-part #white-background {
   width: 100vw;
-  height: 118vh;
+  height: 120vh;
   background-color: white;
   position: absolute;
-  top: 146vh;
+  top: 148vh;
   z-index: -2;
 }
 
 #footer {
-  height: 10vh;
+  height: 6vh;
+}
+#footer p {
+  font-size: 0.65rem;
+  line-height: 1.5;
+}
+#footer .copyright {
+  display: none;
 }
 
 #section-contact {
@@ -530,7 +536,8 @@ body {
     gap: 0;
   }
   #second-section #first-part #logo-intro {
-    width: 40vw;
+    width: 48vw;
+    margin-bottom: 1rem;
   }
   #second-section #first-part #images {
     gap: 0.75rem;
@@ -541,12 +548,12 @@ body {
   #second-section #first-part #welcome-message .orange-font {
     font-size: 0.9rem;
     line-height: 1.5rem;
-    padding: 1rem 0;
+    padding: 1.5rem 1.75rem 1rem 1.75rem;
   }
   #second-section #first-part #welcome-message .gray-font {
     font-size: 0.8rem;
     line-height: 1.25rem;
-    padding: 1rem 0;
+    padding: 1rem 3rem;
   }
   #second-section #second-part #map iframe {
     width: 260px;
@@ -986,7 +993,7 @@ body {
     height: 54vh;
   }
   #first-section #logo-main {
-    width: 68vw;
+    width: 58vw;
   }
   #first-section #store-info, #first-section #double-down {
     display: none;
@@ -999,6 +1006,7 @@ body {
     flex-direction: column-reverse;
   }
   #second-section #first-part {
+    padding-top: 0;
     gap: 0;
     width: 100vw;
     height: 42vh;
@@ -1139,7 +1147,7 @@ body {
   #footer {
     position: absolute;
     width: 100vw;
-    height: 12vh;
+    height: 8vh;
     padding: 1rem 2.5rem;
     background-color: black;
   }
