@@ -72,6 +72,9 @@ section {
 .j-c-a {
     justify-content: space-around;
 }
+.j-c-e {
+    justify-content: end;
+}
 .grid {
     display: grid;
 }
@@ -79,7 +82,7 @@ section {
     justify-items: center;
 }
 .orange-font {
-    color: rgb(255, 111, 0);
+    color: rgb(255, 68, 0);
 }
 .gray-font {
     color: rgb(160, 160, 160);
@@ -184,6 +187,12 @@ a {
                 padding: .5rem 1rem;
                 border-radius: 10px;
                 letter-spacing: 0;
+                #coming-soon {
+                    font-size: .75rem;
+                    line-height: 0.8rem;
+                    color: rgb(227, 227, 227);
+                    font-style: italic;
+                }
             }
         }
         input:checked ~ #menu {

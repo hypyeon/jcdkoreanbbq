@@ -19,7 +19,7 @@
                 <a href="./index.html"><li>Home</li></a>
                 <a onclick="openPDF()"><li>Menu</li></a>
                 <a href="tel:+1 503 644 7378"><li>Contact</li></a>
-                <a href="https://www.chownow.com/order/33571/locations/50353" target="_blank"><li id="order-online">Order Online</li></a>
+                <a disabled><li id="order-online">Order Online <br> <p id="coming-soon">coming soon</p></li></a>
             </ul>
         </nav>
     </header>
@@ -50,13 +50,14 @@
             data-aos-duration="2000"
             data-aos-delay="800"
             data-aos-once="false">
-                <div class="info flex a-i-c" id="address">
+                <div class="info flex col a-i-c j-c-e" id="address">
                     <p id="copyLink">
                         3482 SW <br>
                         Cedar Hills Blvd, <br>
                         Beaverton OR <br>
                         97005
                     </p>
+                    <p id="clickToCopy">tap to copy</p>
                 </div>
                 <div class="info flex col j-c-c" id="open-hours">
                     <p>
@@ -81,12 +82,11 @@
                         <img src="./images/JCD-LOGO-w.png" alt="JCD Logo" id="logo-intro">  
                     </div>
                     <div class="grid j-i-c a-i-c" id="images"
-                    data-aos="fade-up" 
+                    data-aos="fade-in" 
                     data-aos-offset="100"
                     data-aos-duration="1600"
                     data-aos-delay="200"
-                    data-aos-once="false"
-                    data-aos-mobile="disable">
+                    data-aos-once="false">
                         <div class="grid-item" id="grid-1"></div>
                         <div class="grid-item landscape" id="g-1">
                             <h4>
@@ -125,7 +125,12 @@
                         </div>
                     </div>    
                 </div>
-                <div id="welcome-message">
+                <div id="welcome-message"
+                data-aos="fade-in" 
+                data-aos-offset="100"
+                data-aos-duration="1600"
+                data-aos-delay="600"
+                data-aos-once="false">
                     <p class="orange-font">
                         JCD has been a family owned and operating business since 2003 and strives to deliver the best authentic experience <br> in Korean barbecue.
                     </p>
@@ -139,8 +144,8 @@
                 <div class="flex col a-s-c" id="map"
                 data-aos="fade" 
                 data-aos-offset="100"
-                data-aos-duration="2000"
-                data-aos-delay="800"
+                data-aos-duration="1500"
+                data-aos-delay="200"
                 data-aos-once="false">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.7637983105565!2d-122.81200852383432!3d45.49470103140336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950ea324c555b5%3A0x13c832d9a63f1fc1!2s3482%20SW%20Cedar%20Hills%20Blvd%2C%20Beaverton%2C%20OR%2097005!5e0!3m2!1sen!2sus!4v1697327348819!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <a href="https://maps.app.goo.gl/uwiWTDG2AUU9Umd79" target="_blank">Open location on Google Map</a>
@@ -199,7 +204,7 @@
             </div>
             <div class="flex col j-c-c" id="footer">
                 <p class="white-font">Copyright &copy; 2024</p>
-                <p>Web Dev & Design <a href="https://www.hayeong.website" target="_blank" class="white-font hayeong">Hayeong Pyeon</a></p>
+                <p>Web Dev & Design <a href="https://linktr.ee/hypyeon" target="_blank" class="white-font hayeong">Hayeong Pyeon</a></p>
                 <p class="copyright">Icons by <a href="https://icons8.com/icons" target="_blank">ICON8</a> & Photos by <a href="https://www.pexels.com/" target="_blank">Pexels</a></p>
             </div>
         </section>
@@ -228,7 +233,7 @@
             alert("Address copied!");
         });
         function openPDF() {
-            window.open('./images/pdf/JCD-menu.pdf', '_blank');
+            window.open('./images/pdf/JCD_BBQ_Menu.pdf', '_blank');
         }
     </script>
 </body>
