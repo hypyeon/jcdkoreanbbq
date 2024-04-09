@@ -1,7 +1,6 @@
 {
     "name": "hayeong/jcdbbq",
-    "description": "JCD Korean BBQ Restaurant",
-    "type": "project",
+    "description": "JCD Korean BBQ",
     "autoload": {
         "psr-4": {
             "Hayeong\\Jcdbbq\\": "src/"
