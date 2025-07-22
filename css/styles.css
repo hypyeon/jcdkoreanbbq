@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 html {
@@ -19,6 +20,10 @@ html {
 body {
   text-align: center;
   z-index: -20;
+}
+
+h3 {
+  font-weight: 200;
 }
 
 .body-black {
@@ -228,14 +233,6 @@ a {
   color: white;
 }
 
-* {
-  font-family: "Nunito Sans", sans-serif;
-}
-
-h3 {
-  font-weight: 200;
-}
-
 .background {
   background: url("../images/JCD.jpg") center center fixed no-repeat;
   background-size: cover;
@@ -306,12 +303,12 @@ h3 {
   scroll-snap-align: start;
   height: 92dvh;
   padding-top: 8dvh;
-  margin-bottom: 8dvh;
+  margin-bottom: 5dvh;
 }
 #second-section #first-part #logo-intro {
   width: 48dvw;
   padding-left: 12px;
-  margin: 1rem 0 1.5rem 0;
+  margin: 2.25rem 0 1.25rem 0;
 }
 #second-section #first-part #images {
   gap: 0.75rem;
@@ -399,16 +396,17 @@ h3 {
 }
 #second-section #second-part #map {
   padding: 2rem 0;
+  gap: 3rem;
 }
 #second-section #second-part #map iframe {
   width: 300px;
   height: 300px;
   border: 2px solid white;
-  border-radius: 50%;
+  border-radius: 50% 50% 5% 50%;
 }
 #second-section #second-part #map a {
   color: white;
-  margin: 1.75rem auto 0 auto;
+  margin: 0 auto;
   width: -moz-fit-content;
   width: fit-content;
   background-color: #E94335;
@@ -441,8 +439,11 @@ h3 {
 #footer .copyright {
   display: none;
 }
-#footer .webdev {
+#footer .webdev a {
+  color: white;
+  cursor: pointer;
   font-family: "Playwrite IS", cursive;
+  font-size: 0.55rem;
 }
 
 #section-contact {
@@ -592,7 +593,7 @@ h3 {
     line-height: 0.9rem;
   }
   #footer .webdev {
-    font-size: 0.5rem;
+    font-size: 0.65rem;
   }
 }
 @media screen and (min-width: 390px) and (max-width: 430px) {
@@ -624,7 +625,7 @@ h3 {
     line-height: 0.9rem;
   }
   #footer .webdev {
-    font-size: 0.55rem;
+    font-size: 0.65rem;
   }
 }
 @media screen and (min-width: 540px) {
@@ -926,6 +927,7 @@ h3 {
   #footer p a {
     color: white;
     cursor: pointer;
+    font-family: "Playwrite IS", cursive;
   }
   #footer p .hayeong:hover {
     text-decoration: none;
@@ -1213,6 +1215,7 @@ h3 {
   #footer p a {
     color: white;
     cursor: pointer;
+    font-family: "Playwrite IS", cursive;
   }
   #footer p .hayeong:hover {
     text-decoration: none;

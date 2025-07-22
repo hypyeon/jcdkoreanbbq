@@ -1,5 +1,4 @@
-@use 'global';
-@use 'variables';
+@use 'global' as g;
 
 .background {
     background: url('../images/JCD.jpg') center center fixed no-repeat;
@@ -46,7 +45,7 @@
             .info-title {
                 text-align: center;
                 line-height: 1.75rem;
-                font-family: "Playwrite IS", cursive;
+                font-family: g.$sec-font;
                 color: #FBFBF9;
                 font-weight: 200;
             }
@@ -81,12 +80,12 @@
         scroll-snap-align: start;
         height: 92dvh;
         padding-top: 8dvh;
-        margin-bottom: 8dvh;
+        margin-bottom: 5dvh;
 
         #logo-intro {
             width: 48dvw;
             padding-left: 12px;
-            margin: 1rem 0 1.5rem 0;
+            margin: 2.25rem 0 1.25rem 0;
         }
 
         #images {
@@ -162,7 +161,7 @@
             }
 
             .second-message {
-                font-family: "Playwrite IS", cursive;
+                font-family: g.$sec-font;
                 font-size: 0.9rem;
                 font-weight: 200;
                 padding: 1rem 2.75rem;
@@ -191,17 +190,18 @@
         #map {
             // padding: calc(3rem + 6vh) 0 3rem 0;
             padding: 2rem 0;
+            gap: 3rem;
 
             iframe {
                 width: 300px;
                 height: 300px;
                 border: 2px solid white;
-                border-radius: 50%;
+                border-radius: 50% 50% 5% 50%;
             }
 
             a {
                 color: white;
-                margin: 1.75rem auto 0 auto;
+                margin: 0 auto;
                 width: fit-content;
                 background-color: #E94335;
                 padding: .5rem 1.25rem;
@@ -247,7 +247,12 @@
     }
 
     .webdev {
-        font-family: "Playwrite IS", cursive;
+        a {
+            color: white;
+            cursor: pointer;
+            font-family: g.$sec-font;
+            font-size: 0.55rem;
+        }
     }
 }
 
@@ -446,7 +451,7 @@
             line-height: .9rem;
         }
         .webdev {
-            font-size: 0.5rem;
+            font-size: 0.65rem;
         }
     }
 }
@@ -499,7 +504,7 @@
             line-height: .9rem;
         }
         .webdev {
-            font-size: 0.55rem;
+            font-size: 0.65rem;
         }
     }
 }
@@ -882,6 +887,7 @@
             a {
                 color: white;
                 cursor: pointer;
+                font-family: g.$sec-font;
             }
 
             .hayeong:hover {
@@ -1270,6 +1276,7 @@
             a {
                 color: white;
                 cursor: pointer;
+                font-family: g.$sec-font;
             }
 
             .hayeong:hover {
