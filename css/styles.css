@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Ruda:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -178,41 +180,29 @@ a {
 }
 #header-portrait #nav-portrait #menu {
   position: absolute;
-  top: calc(8vh - (8vh - 24px) / 2);
-  left: calc(56px - 100vw);
-  width: 100vw;
-  height: 64vh;
-  padding: 3.5rem 0;
-  background-color: rgb(0, 0, 0);
+  top: calc(8dvh - (8dvh - 24px) / 2 + 2dvh);
+  left: calc(20px - 80dvw);
+  width: 80dvw;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   opacity: 0;
   transition: opacity 0.5s ease;
   transform: scale(0);
-  border-bottom: 0.5px solid black;
+  border-radius: 100px;
+  border: 2px rgba(255, 255, 255, 0.75) solid;
 }
 #header-portrait #nav-portrait #menu li {
-  padding: 1.75rem 0;
-  font-size: 1.55rem;
-  color: white;
-  font-weight: 600;
+  font-family: "Playwrite IS", cursive;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: 400;
   width: -moz-fit-content;
   width: fit-content;
   letter-spacing: 1px;
-}
-#header-portrait #nav-portrait #menu #order-online {
-  color: white;
-  background-color: rgb(255, 140, 0);
-  margin-top: 1.75rem;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  letter-spacing: 0;
-}
-#header-portrait #nav-portrait #menu #order-online #coming-soon {
-  font-size: 0.75rem;
-  line-height: 0.8rem;
-  color: rgb(227, 227, 227);
-  font-style: italic;
+  display: inline-block;
 }
 #header-portrait #nav-portrait input:checked ~ #menu {
   opacity: 1;
@@ -249,7 +239,8 @@ h3 {
 }
 
 body {
-  font-family: "Ruda", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
 }
 
 .background {
@@ -263,21 +254,21 @@ body {
   left: 0;
   content: "";
   display: block;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   z-index: -5;
   filter: brightness(40%);
   transform: translate3d(0, 0, 0);
 }
 
 #first-section {
-  gap: 3rem;
+  gap: 3.5rem;
   scroll-snap-align: center;
-  padding-top: 8vh;
-  height: 100vh;
+  padding-top: 8dvh;
+  height: 100dvh;
 }
 #first-section #logo-main {
-  width: 80vw;
+  width: 80dvw;
   padding-left: 14px;
 }
 #first-section #store-info {
@@ -287,44 +278,42 @@ body {
 #first-section #store-info .info {
   background-color: rgba(0, 0, 0, 0.5);
   border: 0.5px solid white;
-  border-radius: 3px;
-  height: 20vh;
-  width: 38vw;
+  border-radius: 6px;
+  height: 24dvh;
+  width: 42dvw;
+  padding: 1.5rem 0;
+  font-size: 0.95rem;
 }
-#first-section #store-info .info p #holidays {
-  font-size: 0.75rem;
-  color: rgb(169, 169, 169);
+#first-section #store-info .info .info-title {
+  text-align: center;
+  line-height: 1.75rem;
+  font-family: "Playwrite IS", cursive;
+  color: #FBFBF9;
+  font-weight: 200;
 }
-#first-section #store-info #address {
-  padding: 1.25rem 0.5rem 0 0.5rem;
+#first-section #store-info .info .info-content {
+  line-height: 1.75rem;
+  padding-left: 1.35rem;
+  font-weight: 200;
 }
-#first-section #store-info #address p {
-  line-height: 1.5rem;
-}
-#first-section #store-info #address #clickToCopy {
-  margin: 0.5rem 0;
-  font-size: 0.75rem;
-  color: rgb(169, 169, 169);
-}
-#first-section #store-info #address:hover {
-  cursor: pointer;
-}
-#first-section #store-info #open-hours {
-  padding-left: 1.25rem;
-  gap: 0.75rem;
+#first-section #store-info .info #copyLink {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: rgba(255, 255, 255, 0.65);
+  text-underline-offset: 4px;
 }
 #first-section #double-down img {
-  width: 15vw;
+  width: 12dvw;
 }
 
 #second-section #first-part {
   scroll-snap-align: start;
-  height: 92vh;
-  padding-top: 8vh;
-  margin-bottom: 8vh;
+  height: 92dvh;
+  padding-top: 8dvh;
+  margin-bottom: 8dvh;
 }
 #second-section #first-part #logo-intro {
-  width: 48vw;
+  width: 48dvw;
   padding-left: 12px;
   margin: 1rem 0 1.5rem 0;
 }
@@ -338,8 +327,8 @@ body {
   display: none;
 }
 #second-section #first-part #images .grid-item {
-  width: 30vw;
-  height: 12vh;
+  width: 30dvw;
+  height: 12dvh;
 }
 #second-section #first-part #images #grid-1 {
   background-image: url("../images/galbi.jpeg");
@@ -379,26 +368,30 @@ body {
 #second-section #first-part #welcome-message #yes-break {
   display: none;
 }
-#second-section #first-part #welcome-message .orange-font {
-  padding: 2rem 1rem 1rem 1rem;
+#second-section #first-part #welcome-message .first-message {
+  padding: 3rem 1rem 2rem 1rem;
   font-size: 1rem;
   line-height: 1.65rem;
-  letter-spacing: 0.25px;
-  font-weight: 700;
+  font-weight: 400;
+  color: rgb(17, 17, 17);
 }
 #second-section #first-part #welcome-message hr {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
-  height: 0.5px;
+  height: 0.25px;
 }
-#second-section #first-part #welcome-message .gray-font {
+#second-section #first-part #welcome-message .second-message {
+  font-family: "Playwrite IS", cursive;
+  font-size: 0.9rem;
   font-weight: 200;
-  padding: 0.95rem 1.25rem;
-  line-height: 1.5rem;
+  padding: 1rem 2.75rem;
+  line-height: 1.35rem;
+  color: rgb(110, 110, 110);
+  letter-spacing: 0.2px;
 }
 #second-section #second-part {
-  padding-top: 8vh;
-  height: 92vh;
+  padding-top: 8dvh;
+  height: 92dvh;
   scroll-snap-align: start;
 }
 #second-section #second-part #welcome {
@@ -411,15 +404,17 @@ body {
   padding: 2rem 0;
 }
 #second-section #second-part #map iframe {
-  width: 280px;
-  height: 280px;
-  border: 0.5px solid black;
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+  border-radius: 50%;
 }
 #second-section #second-part #map a {
+  color: white;
   margin: 1.75rem auto 0 auto;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: rgb(247, 91, 0);
+  background-color: #E94335;
   padding: 0.5rem 1.25rem;
   border-radius: 8px;
   font-size: 0.85rem;
@@ -428,20 +423,20 @@ body {
   display: none;
 }
 #second-section #second-part #logo-end {
-  width: 38vw;
+  width: 38dvw;
   padding-left: 12px;
 }
 #second-section #second-part #white-background {
-  width: 100vw;
-  height: 120vh;
-  background-color: white;
+  width: 100dvw;
+  height: 120dvh;
   position: absolute;
-  top: 148vh;
+  top: 148dvh;
   z-index: -2;
+  background: linear-gradient(to bottom, #FBFBF9 0%, #FBFBF9 50%, rgba(251, 251, 249, 0.8117647059) 75%, rgba(251, 251, 249, 0) 100%);
 }
 
 #footer {
-  height: 8vh;
+  height: 8dvh;
 }
 #footer p {
   font-size: 0.65rem;
@@ -452,21 +447,21 @@ body {
 }
 
 #section-contact {
-  height: 80vh;
-  margin-top: 8vh;
+  height: 80dvh;
+  margin-top: 8dvh;
   gap: 2rem;
 }
 #section-contact .card {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
-  width: 30vw;
-  height: 54vh;
+  width: 30dvw;
+  height: 54dvh;
   background-color: rgb(252, 252, 252);
   gap: 2rem;
 }
 #section-contact iframe {
-  width: 20vw;
-  height: 20vh;
+  width: 20dvw;
+  height: 20dvh;
   border: 0;
 }
 #section-contact p {
@@ -481,8 +476,12 @@ body {
   color: black;
 }
 #section-contact #copyLink {
-  padding: 1.5rem 0 0.25rem 0;
+  padding-left: 1rem;
   line-height: 1.75rem;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: rgba(255, 255, 255, 0.65);
+  text-underline-offset: 4px;
 }
 #section-contact #copyLink:hover {
   text-decoration: underline;
@@ -524,7 +523,7 @@ body {
   color: white;
 }
 #section-contact #footer {
-  top: 88vh;
+  top: 88dvh;
 }
 
 @media screen and (max-width: 375px) {
@@ -671,37 +670,16 @@ body {
   #header-landscape #nav-landscape #menu-landscape a li {
     list-style-type: none;
     margin: 0 3.5rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: white;
     cursor: pointer;
-  }
-  #header-landscape #nav-landscape #menu-landscape a #order-online {
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 0.35rem 1.75rem;
-    border-radius: 12px;
-    background-color: rgb(255, 140, 0);
-    color: white;
-    position: absolute;
-    top: 1.5vh;
-    right: 3vw;
-    font-size: 1.15rem;
-  }
-  #header-landscape #nav-landscape #menu-landscape a #order-online #coming-soon-land {
-    font-size: 0.85rem;
-    color: rgb(222, 222, 222);
-    line-height: 0.75rem;
+    font-family: "Playwrite IS", cursive;
+    font-weight: 400;
+    letter-spacing: 0.2px;
   }
   #header-landscape #nav-landscape #menu-landscape a li:hover {
-    color: rgb(255, 140, 0);
-    transition-duration: 0.6s;
-  }
-  #header-landscape #nav-landscape #menu-landscape a #order-online:hover {
-    font-weight: 400;
-    text-shadow: none;
-    background-color: black;
-    color: rgb(255, 140, 0);
-    transition-duration: 0.6s;
+    color: rgb(0, 0, 0);
+    transition-duration: 0.4s;
   }
   .background {
     background-position-y: 80%;
@@ -717,7 +695,8 @@ body {
     width: 32vw;
     padding-left: 14px;
   }
-  #first-section #store-info, #first-section #double-down {
+  #first-section #store-info,
+  #first-section #double-down {
     display: none;
   }
   #second-section {
@@ -808,7 +787,9 @@ body {
   #second-section #second-part #logo-end {
     display: none;
   }
-  #second-section #second-part #map, #second-section #second-part .store-name, #second-section #second-part #white-background {
+  #second-section #second-part #map,
+  #second-section #second-part .store-name,
+  #second-section #second-part #white-background {
     display: none;
   }
   #second-section #second-part #welcome {
@@ -999,17 +980,6 @@ body {
     font-size: 1.25rem;
     color: white;
   }
-  #header-landscape #nav-landscape #menu-landscape a #order-online {
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 0.25rem 1rem;
-    border-radius: 12px;
-    background-color: rgb(255, 140, 0);
-    color: white;
-    position: absolute;
-    top: 2.5vh;
-    right: 3.5vw;
-  }
   .background {
     background-position-y: 250%;
     filter: brightness(30%);
@@ -1023,7 +993,8 @@ body {
   #first-section #logo-main {
     width: 58vw;
   }
-  #first-section #store-info, #first-section #double-down {
+  #first-section #store-info,
+  #first-section #double-down {
     display: none;
   }
   #second-section {
@@ -1113,7 +1084,9 @@ body {
   #second-section #second-part #logo-end {
     display: none;
   }
-  #second-section #second-part #map, #second-section #second-part .store-name, #second-section #second-part #white-background {
+  #second-section #second-part #map,
+  #second-section #second-part .store-name,
+  #second-section #second-part #white-background {
     display: none;
   }
   #second-section #second-part #welcome {

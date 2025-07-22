@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="./js/scripts.js"></script>
-    <title>JCD BBQ</title>
+    <title>JCD K-BBQ</title>
 </head>
+
 <body class="body-black">
     <header id="header-portrait">
         <nav id="nav-portrait">
             <input type="checkbox" />
             <span></span>
             <span></span>
-            <span></span> 
-            <ul class="flex col j-c-c a-i-c" id="menu">
-                <a href="./index.html"><li>Home</li></a>
-                <a onclick="openPDF()"><li>Menu</li></a>
-                <a href="tel:+1 503 644 7378"><li>Contact</li></a>
-                <a disabled><li id="order-online">Order Online <br> <p id="coming-soon">coming soon</p></li></a>
+            <span></span>
+            <ul class="flex row j-c-a a-i-c" id="menu">
+                <a href="./index.html">
+                    <li>home</li>
+                </a>
+                <a onclick="openPDF()">
+                    <li>menu</li>
+                </a>
+                <a href="tel:+1 503 644 7378">
+                    <li>contact</li>
+                </a>
             </ul>
         </nav>
     </header>
     <header id="header-landscape">
         <nav id="nav-landscape">
             <ul id="menu-landscape">
-                <a href="./index.html"><li>Home</li></a>
-                <a onclick="openPDF()"><li>Menu</li></a>
-                <a href="./contact.html"><li>Contact</li></a>
-                <a disabled><li id="order-online">Order Online <br><p id="coming-soon-land">coming soon</p></li></a>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a onclick="openPDF()">
+                    <li>Menu</li>
+                </a>
+                <a href="./contact.html">
+                    <li>Contact</li>
+                </a>
             </ul>
         </nav>
     </header>
@@ -37,55 +49,50 @@
         <div class="background"></div>
         <div class="relative"></div>
         <section class="flex col j-c-c" id="first-section">
-            <div class="flex j-c-c"
-            data-aos="fade-up" 
-            data-aos-offset="100"
-            data-aos-duration="2000"
-            data-aos-delay="200">
-                <img src="./images/JCD-LOGO-w.png" alt="JCD Logo" id="logo-main"> 
+            <div class="flex j-c-c" data-aos="fade-up" data-aos-offset="100" data-aos-duration="2000"
+                data-aos-delay="200">
+                <img src="./images/JCD-LOGO-w.png" alt="JCD Logo" id="logo-main">
             </div>
-            <div class="flex a-s-c" id="store-info"
-            data-aos="fade-up" 
-            data-aos-offset="100"
-            data-aos-duration="2000"
-            data-aos-delay="800"
-            data-aos-once="false">
-                <div class="info flex col a-i-c j-c-a" id="address">
-                    <p id="copyLink">
+            <div class="flex a-s-c" id="store-info" data-aos="fade-up" data-aos-offset="100" data-aos-duration="2000"
+                data-aos-delay="800" data-aos-once="false">
+                <div class="info flex col j-c-sb a-s-c">
+                    <p class="info-title" id="address">&#128205; Address</p>
+                    <p class="info-content" id="copyLink">
                         3482 SW <br>
                         Cedar Hills Blvd, <br>
                         Beaverton OR <br>
                         97005
                     </p>
-                    <p id="clickToCopy">tap to copy</p>
                 </div>
-                <div class="info flex col j-c-c" id="open-hours">
-                    <p>
-                        <span class="orange-font">Open</span><br>
-                        4PM - 11:30PM
+                <div class="info flex col j-c-sb a-s-c">
+                    <p class="info-title" id="open-hours">
+                        &#128339; Open Hours<br>
                     </p>
-                    <p>
-                        <span class="orange-font">Closed</span> on <br>
-                        Wednesdays <br>
-                    </p>
+                    <div class="info-content">
+                        <p style="line-height: 1.5rem;">
+                            <span style="font-weight: 400;">Mon - <span
+                                    style="color:rgb(156, 205, 254)">Sat</span></span> <br>
+                            4PM - 11:30PM <br>
+                        </p>
+                        <p style="padding-top: 0.5rem; line-height: 1.5rem;">
+                            <span style="color:rgb(249, 135, 135); font-weight: 400;">Sun</span> <br>
+                            4PM - 10:30PM <br>
+                        </p>
+                    </div>
                 </div>
-            </div>   
+            </div>
             <div id="double-down">
                 <img src="images/double-down.png" alt="Down" onclick="scrollDown()">
-            </div> 
+            </div>
         </section>
         <section class="flex col j-c-sb" id="second-section">
             <div class="flex col j-c-c" id="first-part">
                 <div>
                     <div>
-                        <img src="./images/JCD-LOGO-w.png" alt="JCD Logo" id="logo-intro">  
+                        <img src="./images/JCD-LOGO-w.png" alt="JCD Logo" id="logo-intro">
                     </div>
-                    <div class="grid j-i-c a-i-c" id="images"
-                    data-aos="fade-in" 
-                    data-aos-offset="100"
-                    data-aos-duration="1600"
-                    data-aos-delay="200"
-                    data-aos-once="false">
+                    <div class="grid j-i-c a-i-c" id="images" data-aos="fade-in" data-aos-offset="100"
+                        data-aos-duration="1600" data-aos-delay="200" data-aos-once="false">
                         <div class="grid-item" id="grid-1"></div>
                         <div class="grid-item landscape" id="g-1">
                             <h4>
@@ -101,7 +108,8 @@
                                 Bibimbap
                             </h4>
                             <p>
-                                A vibrant harmony of colors and flavors - seasoned vegetables, savory protein, and Gochujang.
+                                A vibrant harmony of colors and flavors - seasoned vegetables, savory protein, and
+                                Gochujang.
                             </p>
                         </div>
                         <div class="grid-item" id="grid-3"></div>
@@ -110,7 +118,8 @@
                                 Bulgogi
                             </h4>
                             <p>
-                                Marinated beef grilled to perfection, allowing you to wrap each bite in a symphony of flavors. 
+                                Marinated beef grilled to perfection, allowing you to wrap each bite in a symphony of
+                                flavors.
                             </p>
                         </div>
                         <div class="grid-item" id="grid-4"></div>
@@ -119,35 +128,29 @@
                                 Samgyeopsal
                             </h4>
                             <p>
-                                Experience the sizzling sensation of Korean BBQ with our Samgyeopsal adventure. 
+                                Experience the sizzling sensation of Korean BBQ with our Samgyeopsal adventure.
                             </p>
                         </div>
-                    </div>    
+                    </div>
                 </div>
-                <div id="welcome-message"
-                data-aos="fade-in" 
-                data-aos-offset="100"
-                data-aos-duration="1600"
-                data-aos-delay="600"
-                data-aos-once="false">
-                    <p class="orange-font">
-                        JCD has been a family owned and operating business since 2003 and strives to deliver the best authentic experience <br> in Korean barbecue.
+                <div id="welcome-message" data-aos="fade-in" data-aos-offset="100" data-aos-duration="1600"
+                    data-aos-delay="600" data-aos-once="false">
+                    <p class="first-message">
+                        JCD K-BBQ has been a family owned restarant since 2003, striving to deliver the best authentic experience in Korean barbecue.
                     </p>
                     <hr>
-                    <p class="gray-font">
-                        JCD K-BBQ uses fresh quality ingredient made to order and offers a selection of premium meats, banchans (side dishes), traditional Korean favorites and specialties <br> from our family recipe. 
+                    <p class="second-message">
+                        "We use fresh quality ingredient made to order and offers a selection of premium meats, banchans
+                        (side dishes), traditional Korean favorites and specialties from our family recipe." 
                     </p>
-                </div>    
+                </div>
             </div>
             <div class="flex col j-c-a" id="second-part">
-                <div class="flex col a-s-c" id="map"
-                data-aos="fade" 
-                data-aos-offset="100"
-                data-aos-duration="1500"
-                data-aos-delay="200"
-                data-aos-once="false">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.7637983105565!2d-122.81200852383432!3d45.49470103140336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950ea324c555b5%3A0x13c832d9a63f1fc1!2s3482%20SW%20Cedar%20Hills%20Blvd%2C%20Beaverton%2C%20OR%2097005!5e0!3m2!1sen!2sus!4v1697327348819!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <a href="https://maps.app.goo.gl/gWcWwTxhy5CU6Vrs6" target="_blank">Open location on Google Map</a>
+                <div class="flex col a-s-c" id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.7637983105565!2d-122.81200852383432!3d45.49470103140336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950ea324c555b5%3A0x13c832d9a63f1fc1!2s3482%20SW%20Cedar%20Hills%20Blvd%2C%20Beaverton%2C%20OR%2097005!5e0!3m2!1sen!2sus!4v1697327348819!5m2!1sen!2sus"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.app.goo.gl/gWcWwTxhy5CU6Vrs6" target="_blank">Open in Google Maps</a>
                     <div id="landscape-only">
                         <p id="days">
                             Mon <br>
@@ -161,26 +164,22 @@
                         <p>
                             4PM - 11:30PM <br>
                             4PM - 11:30PM <br>
-                            <span id="italic">CLOSED</span> <br>
                             4PM - 11:30PM <br>
                             4PM - 11:30PM <br>
                             4PM - 11:30PM <br>
-                            4PM - 11:30PM 
+                            4PM - 11:30PM <br>
+                            4PM - 10:30PM
                         </p>
                     </div>
                 </div>
                 <div class="flex j-c-c" onclick="scrollUp()">
-                    <img src="./images/JCD-LOGO-w.png" alt="JCD Logo" id="logo-end"> 
+                    <img src="./images/JCD-LOGO-w.png" alt="JCD Logo" id="logo-end">
                 </div>
                 <div class="relative" style="display: none;"></div>
                 <div id="white-background"></div>
                 <div class="flex row" id="welcome">
-                    <div class="flex col" id="texts"
-                    data-aos="fade" 
-                    data-aos-offset="100"
-                    data-aos-duration="2000"
-                    data-aos-delay="800"
-                    data-aos-once="false">
+                    <div class="flex col" id="texts" data-aos="fade" data-aos-offset="100" data-aos-duration="2000"
+                        data-aos-delay="800" data-aos-once="false">
                         <div class="flex row" id="welcome-title">
                             <h1>
                                 Welcome to <br>
@@ -191,9 +190,12 @@
                         </div>
                         <div>
                             <p id="subtitle">
-                                JCD has been a family owned and operating business since 2003 <br> and strives to deliver the best authentic experience in Korean barbecue. <br>JCD K-BBQ uses fresh quality ingredient made to order and offers a selection of premium meats, <br> banchans (side dishes), traditional Korean favorites and specialties from our family recipe. 
+                                JCD has been a family owned and operating business since 2003 <br> and strives to
+                                deliver the best authentic experience in Korean barbecue. <br>JCD K-BBQ uses fresh
+                                quality ingredient made to order and offers a selection of premium meats, <br> banchans
+                                (side dishes), traditional Korean favorites and specialties from our family recipe.
                             </p>
-                        </div>    
+                        </div>
                     </div>
                     <div class="flex" id="icons">
                         <img src="./images/Grill.png" alt="Grill" id="grill">
@@ -202,9 +204,11 @@
                 </div>
             </div>
             <div class="flex col j-c-c" id="footer">
-                <p class="white-font">Copyright &copy; 2024</p>
-                <p>Web Dev & Design <a href="https://linktr.ee/hypyeon" target="_blank" class="white-font hayeong">Hayeong Pyeon</a></p>
-                <p class="copyright">Icons by <a href="https://icons8.com/icons" target="_blank">ICON8</a> & Photos by <a href="https://www.pexels.com/" target="_blank">Pexels</a></p>
+                <p class="white-font">Copyright &copy; 2025</p>
+                <p>Web Dev & Design <a href="https://linktr.ee/hypyeon" target="_blank"
+                        class="white-font hayeong">Hayeong Pyeon</a></p>
+                <p class="copyright">Icons by <a href="https://icons8.com/icons" target="_blank">ICON8</a> & Photos by
+                    <a href="https://www.pexels.com/" target="_blank">Pexels</a></p>
             </div>
         </section>
     </main>
@@ -236,4 +240,5 @@
         }
     </script>
 </body>
+
 </html>
