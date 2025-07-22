@@ -229,12 +229,12 @@ a {
 }
 
 h1 {
-  font-family: "Rubik Mono One", monospace;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
 }
 
 h3 {
-  font-family: "Rubik Mono One", monospace;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 200;
 }
 
@@ -295,6 +295,9 @@ body {
   line-height: 1.75rem;
   padding-left: 1.35rem;
   font-weight: 200;
+}
+#first-section #store-info .info .info-content .open-time {
+  line-height: 1.5rem;
 }
 #first-section #store-info .info #copyLink {
   text-decoration-line: underline;
@@ -388,6 +391,7 @@ body {
   line-height: 1.35rem;
   color: rgb(110, 110, 110);
   letter-spacing: 0.2px;
+  text-align: right;
 }
 #second-section #second-part {
   padding-top: 8dvh;
@@ -439,11 +443,13 @@ body {
   height: 8dvh;
 }
 #footer p {
-  font-size: 0.65rem;
   line-height: 1.5;
 }
 #footer .copyright {
   display: none;
+}
+#footer .webdev {
+  font-family: "Playwrite IS", cursive;
 }
 
 #section-contact {
@@ -532,7 +538,7 @@ body {
   }
   header nav #menu li {
     padding: 1rem 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   #first-section {
     gap: 3.5rem;
@@ -545,8 +551,17 @@ body {
   #first-section .store-name p {
     font-size: 0.85rem;
   }
+  #first-section #store-info .info {
+    padding: 0.85rem 0;
+  }
   #first-section #store-info .info p {
     font-size: 0.85rem;
+  }
+  #first-section #store-info .info #copyLink {
+    line-height: 1.5rem;
+  }
+  #first-section #store-info .info .info-content .open-time {
+    line-height: 1.25rem;
   }
   #first-section #double-down img {
     width: 12.5vw;
@@ -564,19 +579,12 @@ body {
   #second-section #first-part #images .grid-item {
     width: 30vw;
   }
-  #second-section #first-part #welcome-message .orange-font {
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    padding: 1.5rem 1.75rem 1rem 1.75rem;
-  }
-  #second-section #first-part #welcome-message .gray-font {
-    font-size: 0.8rem;
-    line-height: 1.25rem;
-    padding: 1rem 3rem;
+  #second-section #first-part #welcome-message .first-message {
+    padding: 2rem 1rem 1rem 1rem;
   }
   #second-section #second-part #map iframe {
     width: 260px;
-    height: 200px;
+    height: 260px;
   }
   #second-section #second-part #map a {
     font-size: 0.9rem;
@@ -586,9 +594,44 @@ body {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-  #footer p {
+  #footer .footer-copy {
     font-size: 0.65rem;
     line-height: 0.9rem;
+  }
+  #footer .webdev {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 430px) {
+  #first-section {
+    gap: 3.75rem;
+  }
+  #first-section .store-name {
+    font-size: 2.75rem;
+    line-height: 3.5rem;
+    padding-top: calc(2rem + 8vh);
+  }
+  #first-section .store-name p {
+    font-size: 0.85rem;
+  }
+  #first-section #store-info .info p {
+    font-size: 0.95rem;
+  }
+  #first-section #double-down img {
+    width: 11dvw;
+  }
+  #second-section #first-part #logo-intro {
+    margin-bottom: 2rem;
+  }
+  #second-section #first-part #images {
+    gap: 0.85rem;
+  }
+  #footer .footer-copy {
+    font-size: 0.65rem;
+    line-height: 0.9rem;
+  }
+  #footer .webdev {
+    font-size: 0.55rem;
   }
 }
 @media screen and (min-width: 540px) {
@@ -731,6 +774,7 @@ body {
   }
   #second-section #first-part #images .landscape h4 {
     font-size: 1.25rem;
+    font-family: "Playwrite IS", cursive;
   }
   #second-section #first-part #images .landscape p {
     color: gray;
@@ -805,15 +849,20 @@ body {
   }
   #second-section #second-part #welcome h1 {
     color: black;
-    font-family: "Ruda", sans-serif;
-    font-weight: 600;
-    font-size: 3.25rem;
-    line-height: 4rem;
+    font-family: "Playwrite IS", cursive;
+    font-weight: 400;
+    font-size: 2.75rem;
+    line-height: 3.25rem;
   }
   #second-section #second-part #welcome h1 #jcdbbq {
-    font-family: "Rubik Mono One", monospace;
-    font-size: 3.75rem;
-    letter-spacing: 1.25px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.2px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 0 1rem;
+    border-radius: 12px;
+    margin-left: 0.5rem;
   }
   #second-section #second-part #welcome p {
     color: gray;
@@ -834,6 +883,7 @@ body {
   }
   #second-section #second-part #welcome #welcome-title {
     align-items: end;
+    font-family: "Playwrite IS", cursive;
   }
   #second-section #second-part #welcome #icons {
     align-items: end;
@@ -886,8 +936,8 @@ body {
   }
   #footer p .hayeong:hover {
     text-decoration: none;
-    color: rgb(255, 189, 108);
-    transition-duration: 0.6s;
+    color: rgb(232, 191, 255);
+    transition-duration: 0.4s;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1366px) {
@@ -950,6 +1000,9 @@ body {
     font-size: 0.75rem;
     line-height: 1.25rem;
   }
+  #footer .webdev {
+    font-size: 0.5rem;
+  }
 }
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
   #header-portrait {
@@ -979,6 +1032,7 @@ body {
     width: 15vw;
     font-size: 1.25rem;
     color: white;
+    font-family: "Playwrite IS", cursive;
   }
   .background {
     background-position-y: 250%;
@@ -1104,15 +1158,20 @@ body {
   }
   #second-section #second-part #welcome h1 {
     color: black;
-    font-family: "Ruda", sans-serif;
-    font-weight: 600;
+    font-family: "Playwrite IS", cursive;
+    font-weight: 400;
     font-size: 2.75rem;
     line-height: 3.25rem;
   }
   #second-section #second-part #welcome h1 #jcdbbq {
-    font-family: "Rubik Mono One", monospace;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 3rem;
-    letter-spacing: 1.25px;
+    letter-spacing: 0.2px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 0 1rem;
+    border-radius: 12px;
+    margin-left: 0.5rem;
   }
   #second-section #second-part #welcome p {
     color: gray;
