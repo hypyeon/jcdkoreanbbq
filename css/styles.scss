@@ -1,5 +1,5 @@
-@import '/css/global';
-@import '/css/variables';
+@use 'global';
+@use 'variables';
 
 .background {
     background: url('../images/JCD.jpg') center center fixed no-repeat;
