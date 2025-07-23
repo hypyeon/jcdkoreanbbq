@@ -37,7 +37,7 @@
             background-color: rgba(0, 0, 0, 0.5);
             border: .5px solid white;
             border-radius: 6px;
-            height: 24dvh;
+            height: 26vh;
             width: 42dvw;
             padding: 1.5rem 0;
             font-size: 0.95rem;
@@ -49,6 +49,7 @@
                 font-family: g.$sec-font;
                 color: #FBFBF9;
                 font-weight: 200;
+                padding-bottom: 1rem;
             }
 
             .info-content {

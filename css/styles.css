@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Ruda:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -130,7 +129,8 @@ a {
   left: calc(100dvw - 56px);
   z-index: 1;
   -webkit-user-select: none;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
 }
 #header-portrait #nav-portrait input {
   width: 40px;
@@ -192,6 +192,7 @@ a {
   font-size: 1.25rem;
   color: black;
   font-weight: 400;
+  width: -moz-fit-content;
   width: fit-content;
   letter-spacing: 1px;
   display: inline-block;
@@ -256,7 +257,7 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   border: 0.5px solid white;
   border-radius: 6px;
-  height: 24dvh;
+  height: 26vh;
   width: 42dvw;
   padding: 1.5rem 0;
   font-size: 0.95rem;
@@ -268,6 +269,7 @@ a {
   font-family: "Playwrite IS", cursive;
   color: #FBFBF9;
   font-weight: 200;
+  padding-bottom: 1rem;
 }
 #first-section #store-info .info .info-content {
   line-height: 1.75rem;
@@ -300,6 +302,7 @@ a {
 }
 #second-section #first-part #images {
   gap: 0.75rem;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -394,6 +397,7 @@ a {
 #second-section #second-part #map a {
   color: white;
   margin: 0 auto;
+  width: -moz-fit-content;
   width: fit-content;
   background-color: #E94335;
   padding: 0.5rem 1.25rem;
@@ -479,7 +483,9 @@ a {
   font-size: 0.85rem;
 }
 #section-contact #open-hours {
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   margin: 1.5rem auto;
   line-height: 2rem;
@@ -868,7 +874,8 @@ a {
     padding-right: 5vw;
   }
   #second-section #second-part #welcome #icons img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     opacity: 0.25;
   }
   #second-section #second-part #welcome #icons #grill {
@@ -1130,6 +1137,7 @@ a {
     justify-content: space-between;
   }
   #second-section #second-part #welcome #texts {
+    width: -moz-fit-content;
     width: fit-content;
     margin: auto;
   }
@@ -1204,6 +1212,4 @@ a {
     color: rgb(255, 189, 108);
     transition-duration: 0.6s;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
